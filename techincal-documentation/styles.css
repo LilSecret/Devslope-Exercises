@@ -1,0 +1,43 @@
+h1 {
+  margin: 0;
+}
+
+h3 {
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+
+footer {
+  margin: 100px 0;
+}
+
+.nav-items, .nav-link {
+  color: blue;
+}
+
+.navigation {
+  margin-top: 32px;
+  position: fixed;
+  top: 0px;
+}
+
+.main-content {
+  width:80%;
+}
+
+.brand {
+  font-style: none;
+  color: purple;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#content-1 {
+  margin: 0;
+}
