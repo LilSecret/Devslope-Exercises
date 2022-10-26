@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registration Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1 class="main-heading">Registration Form</h1>
+    <hr />
+    <form action="/" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" required />
+      <br />
+      <label for="middleInit">Middle Initial:</label>
+      <input type="text" name="middleInit" id="middleInit" required />
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" required />
+      <br />
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label for="birthday">What is your Birthday?</label>
+      <input type="date" name="birthday" id="birthday" />
+      <h3 class="label-header">Gender</h3>
+      <input type="radio" name="gender" id="male" required />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <h3 class="label-header">
+        What
+        <a
+          href="https://www.google.com/search?q=pets&sxsrf=ALiCzsYndetGzE_5yd1UYmQiG4dH82i2Qw:1666742187084&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiE4fi_yvz6AhX1LEQIHd9IAt4Q_AUoAXoECAIQAw&biw=1920&bih=937&dpr=1"
+          >pets</a
+        >
+        do you currently have in your living home?
+      </h3>
+      <input type="checkbox" name="cats" id="cats" />
+      <label for="cats">Cats</label>
+      <input type="checkbox" name="dogs" id="dogs" />
+      <label for="dogs">Dogs</label>
+      <input type="checkbox" name="fish" id="fish" />
+      <label for="fish">Fish</label>
+      <input type="checkbox" name="other" id="other" />
+      <label for="other">Other</label>
+      <br />
+      <textarea
+        name="other"
+        id="other"
+        cols="30"
+        rows="8"
+        placeholder="Other animlas living with you."
+      ></textarea>
+      <h3 class="label-header">What Vehicle do you drive?</h3>
+      <label for="vehicle">Choose your vehicle:</label>
+      <select name="vehicle" id="vehicle">
+        <option value="default" selected>Pick your car.</option>
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="chevrolet">Chevrolet</option>
+        <option value="ford">Ford</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="jeep">Jeep</option>
+        <option value="bmw">BMW</option>
+        <option value="porsche">Porsche</option>
+        <option value="subaru">Subaru</option>
+        <option value="nissan">Nissan</option>
+      </select>
+      <br />
+      <label for="phoneNumber">What number is best to contact you at?</label>
+      <br />
+      <input type="tel" name="phoneNumber" id="phoneNumber" required />
+      <br />
+      <textarea
+        name="comments"
+        id="comments"
+        cols="30"
+        rows="8"
+        placeholder="Any Questions?"
+      ></textarea>
+      <br />
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
