@@ -1,0 +1,71 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form action="/" method="post">
+      <h1>Employee Interests Survey form</h1>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+      <br />
+      <label for="department">Department:</label>
+      <input
+        type="text"
+        name="department"
+        id="department"
+        placeholder="Enter your department"
+      />
+      <br />
+      <label for="aboutYou">Tell us a little about yourself:</label>
+      <br />
+      <textarea name="aboutYou" id="aboutYou" cols="30" rows="10"></textarea>
+      <br />
+      <label for="exercise">Do you exercise at home?</label>
+      <input type="radio" name="exercise" id="yes" value="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="exercise" id="no" value="no" />
+      <label for="no">No</label>
+      <br />
+      <label for="favoriteTopics"
+        >How do you like to read about your favorite topics?</label
+      >
+      <br />
+      <input type="checkbox" name="phoneApps" id="phoneApps" />
+      <label for="phoneApps">Phone Apps</label>
+      <input type="checkbox" name="online" id="online" />
+      <label for="online">Online</label>
+      <input type="checkbox" name="books" id="books" />
+      <label for="books">Books</label>
+      <input type="checkbox" name="magazines" id="magazines" />
+      <label for="magazines">Magazines</label>
+      <br />
+      <label for="favoriteMovieGenre">What is your favorite movie genre?</label>
+      <select name="favoriteMovieGenre" id="favoriteMovieGenre">
+        <option value="choose" selected>Choose</option>
+        <option value="Citizen Kane">Citizen Kane</option>
+        <option value="Casablanca">Casablanca</option>
+        <option value="The Godfather">The Godfather</option>
+        <option value="Lawrence of Arabia">Lawrence of Arabia</option>
+        <option value="The Wizard of Oz">The Wizard of Oz</option>
+        <option value="The Graduate">The Graduate</option>
+        <option value="On the Waterfront">On the Waterfront</option>
+        <option value="Schindler's List">Schindler's List</option>
+        <option value="Singing in the Rain">Singing in the Rain</option>
+        <option value="Its a Wonderful Life">Its a Wonderful Life</option>
+        <option value="Sunset Blvd.">Sunset Blvd.</option>
+        <option value="The Bridge on the River Kwai">
+          The Bridge on the River Kwai
+        </option>
+        <option value="Star Wars">Star Wars</option>
+        <option value="The African Queen">The African Queen</option>
+        <option value="Psycho">Psycho</option>
+      </select>
+      <button type="submit">Submit form</button>
+    </form>
+  </body>
+</html>
