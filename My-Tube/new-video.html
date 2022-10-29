@@ -18,42 +18,46 @@
     </nav>
     <h1>Add New Video</h1>
     <hr />
-    <h3 for="videoTitle">Video Title</h3>
-    <input
-      type="text"
-      name="videoTitle"
-      id="videoTitle"
-      placeholder="Input Value"
-    />
-    <br />
-    <h2 for="description">Description</h2>
-    <textarea
-      name=""
-      id=""
-      cols="35"
-      rows="10"
-      placeholder="Text area content"
-    ></textarea>
-    <h2 for="video">Video</h2>
-    <input type="file" name="video" id="video" />
-    <br />
-    <br />
-    <select value="collection">
-      <option name="collection-1" id="collection-1" value="collection 1">
-        Collection 1
-      </option>
-      <option name="collection-2" id="collection-2" value="collection 2">
-        Collection 2
-      </option>
-      <option name="collection-3" id="collection-3" value="collection 2">
-        Collection 2
-      </option>
-    </select>
-    <h2 for="visibility">Visibility</h2>
-    <input type="radio" name="visibility" id="public" />
-    <label for="public">Public</label>
-    <input type="radio" name="visibility" id="private" />
-    <label for="private">Private</label>
+    <form action="/" method="post">
+      <h3 for="videoTitle">Video Title</h3>
+      <input
+        type="text"
+        name="videoTitle"
+        id="videoTitle"
+        placeholder="Input Value"
+      />
+      <br />
+      <h2 for="description">Description</h2>
+      <textarea
+        name=""
+        id=""
+        cols="35"
+        rows="10"
+        placeholder="Text area content"
+      ></textarea>
+      <h2 for="video">Video</h2>
+      <input type="file" name="video" id="video" />
+      <br />
+      <br />
+      <select value="collection">
+        <option name="collection-1" id="collection-1" value="collection 1">
+          Collection 1
+        </option>
+        <option name="collection-2" id="collection-2" value="collection 2">
+          Collection 2
+        </option>
+        <option name="collection-3" id="collection-3" value="collection 2">
+          Collection 2
+        </option>
+      </select>
+      <h2 for="visibility">Visibility</h2>
+      <input type="radio" name="visibility" id="public" />
+      <label for="public">Public</label>
+      <input type="radio" name="visibility" id="private" />
+      <label for="private">Private</label>
+      <br />
+      <button type="submit">Upload Video</button>
+    </form>
     <hr />
     <footer>
       <address>&copy: Copyright Rights of a Random Person</address>
