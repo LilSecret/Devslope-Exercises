@@ -5,34 +5,39 @@ table, tr, td {
  tr {
   border: 0;
  }
- td {
-  padding: 0 10px;
- }
-img {
-  width: 256px;
-}
-/* main classes for content  */
-.left {
-  text-align: left;
-  background-color: #FF8787;
-  border: solid 2px #3C4048;
-  border-top: none;
-  border-left: none;
-  padding: 50px 0 0 50px;
-}
+ img {
+   width: 256px;
+  }
+  /* main classes for content  */
+  .left {
+    text-align: left;
+    background-color: #FF8787;
+    border: solid 2px #3C4048;
+    border-top: none;
+    border-left: none;
+    padding: 50px 0 0 50px;
+  }
 
-.right {
-  text-align: right;
-  background-color: #B3FFAE;
-  border: solid 2px #3C4048;
-  border-top: none;
-  border-right: none;
-  padding: 50px 50px 0 50px;
-}
-
-.table-img {
-  width: 300px;
-  height: 200px;
+  .left-list {
+    padding: 0;
+    padding-left: 15px;
+   }
+  
+  .right {
+    text-align: right;
+    background-color: #B3FFAE;
+    border: solid 2px #3C4048;
+    border-top: none;
+    border-right: none;
+    padding: 50px 50px 0 50px;
+  }
+  .right-list {
+  padding: 0;
+  padding-right: 15px;
+  }
+  .table-img {
+    width: 300px;
+    height: 200px;
 }
 /* main heading */
 .top-heading {
@@ -46,6 +51,7 @@ img {
   background-color: #3C4048;
   border: solid 5px #3C4048;
   border-radius: 10px;
+  width: 900px;
 }
 .thead1 {
   border-top-left-radius: 5px;
