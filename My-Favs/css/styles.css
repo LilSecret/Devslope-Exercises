@@ -1,65 +1,86 @@
-table, tr, td {
-  border: 1px solid black;
-  margin: 0;
- }
- tr {
-  border: 0;
- }
- img {
-   width: 256px;
-  }
-  /* main classes for content  */
-  .left {
-    text-align: left;
-    background-color: #FF8787;
-    border: solid 2px #3C4048;
-    border-top: none;
-    border-left: none;
-    padding: 50px 0 0 50px;
-  }
-
-  .left-list {
-    padding: 0;
-    padding-left: 15px;
-   }
-  
-  .right {
-    text-align: right;
-    background-color: #B3FFAE;
-    border: solid 2px #3C4048;
-    border-top: none;
-    border-right: none;
-    padding: 50px 50px 0 50px;
-  }
-  .right-list {
-  padding: 0;
-  padding-right: 15px;
-  }
-  .table-img {
-    width: 300px;
-    height: 200px;
+body {
+  margin: 0px;
 }
-/* main heading */
+/* main headings */
 .top-heading {
   text-align: center;
   padding: 100px 0 80px;
   font-size: 3.5rem;
 }
+
+.left-header {
+  border-top-left-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.right-header {
+  border-top-right-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.top-heading, .table-heading, .cell-header {
+  font-family: 'Philosopher', sans-serif;
+}
+
 /* the favorites and not so favorites table  */
-.favs-table {
+.favorites-and-not-so-favorites-table {
   margin: auto;
   background-color: #3C4048;
   border: solid 5px #3C4048;
   border-radius: 10px;
-  width: 900px;
-}
-.thead1 {
-  border-top-left-radius: 5px;
-}
-.thead2 {
-  border-top-right-radius: 5px;
+  margin-bottom: 50px;
 }
 
-.top-heading, .table-heading {
-  font-family: 'Philosopher', sans-serif;
+/* main classes for content  */
+.left {
+  text-align: left;
+  background-color: #FF8787;
+  border-left: none;
+  padding: 50px 0 20px 50px;
+}
+
+.right {
+  text-align: right;
+  background-color: #B3FFAE;
+  border-right: none;
+  padding: 50px 50px 20px 0;
+}
+
+.cell {
+  border: solid 2px #3C4048;
+  border-top: none;
+  max-width: 450px;
+  min-width: 450px;
+}
+
+.cell-img {
+  width: 300px;
+  height: 200px;
+  border: solid 2px #3C4048;
+  border-radius: 5px;
+}
+
+.cell-para {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1;
+}
+
+.bottom-left-cell {
+  border-bottom-left-radius: 5px;
+}
+.bottom-right-cell {
+  border-bottom-right-radius: 5px;
+}
+
+/* footer styles */
+.footer {
+  background-color: #3C4048;
+  color: #B2B2B2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-item {
+  padding: 0 10px;
 }
