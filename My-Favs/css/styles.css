@@ -3,9 +3,9 @@ body {
 }
 /* main headings */
 .top-heading {
-  text-align: center;
-  padding: 100px 0 80px;
   font-size: 3.5rem;
+  padding: 100px 0 80px;
+  text-align: center;
 }
 
 .left-header {
@@ -24,25 +24,27 @@ body {
 
 /* the favorites and not so favorites table  */
 .favorites-and-not-so-favorites-table {
-  margin: auto;
   background-color: #3C4048;
   border: solid 5px #3C4048;
   border-radius: 10px;
+  margin: auto;
   margin-bottom: 50px;
 }
 
 /* main classes for content  */
 .left {
-  text-align: left;
   background-color: #FF8787;
   border-left: none;
+  color: #E0144C;
+  text-align: left;
   padding: 50px 0 20px 50px;
 }
 
 .right {
-  text-align: right;
   background-color: #B3FFAE;
   border-right: none;
+  color: #5DA7DB;
+  text-align: right;
   padding: 50px 50px 20px 0;
 }
 
