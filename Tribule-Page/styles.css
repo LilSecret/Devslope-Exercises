@@ -1,0 +1,72 @@
+body {
+  background-color: #FFE1E1;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+/* top section */
+.top-image {
+  position: absolute;
+  /* top: 0; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 30.8rem;
+  max-height: 30.8rem;
+  z-index: -1;
+}
+
+.top-img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(206, 205, 205);
+  margin: 150px 0 10px;
+  width: 300px;
+}
+
+.banner {
+  background: url("images/egyptian-design.png") repeat-x;
+  background-size: 100px;
+  color: #dbb610;
+  padding: 10px 0 10px;
+}
+
+.illustrious, .heading {
+  text-shadow: 10px 10px 20px rgb(34, 34, 34);
+  font-family: 'Shalimar', cursive;
+  font-size: 4rem;
+  letter-spacing: .8rem;
+  margin: 0;
+}
+
+/* main content */
+.main-content {
+  text-align: left;
+  margin: 100px auto;
+  width: 60%;
+}
+
+.timeline-date {
+  margin: 40px 0;
+  font-family: 'PT Serif', serif;
+  font-size: 1.5rem;
+}
+
+.special-date {
+  font-weight: 600;
+}
+/* footer  */
+.footer {
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(54, 54, 54);
+  color: rgb(170, 170, 170);
+}
+
+@media (max-width: 800px) {
+  .illustrious {
+    font-size: 3rem;
+    color: white;
+  }
+}
