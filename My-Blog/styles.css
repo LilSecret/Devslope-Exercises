@@ -1,13 +1,6 @@
 body {
   margin: 0;
 }
-hr {
-  border: solid 3px #B2B2B2;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-  width: 70%;
-}
 /* fonts  */
 .main-heading, .content-heading {
   font-family: 'Stick No Bills', sans-serif;
@@ -50,9 +43,18 @@ hr {
   margin: 0 10px;
 }
 
+.bar {
+  border: solid 3px #B2B2B2;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 70%;
+}
+
 /* blogs - main content  */
 .blog {
   border: solid 1px #cecccc;
+  border-radius: 5px;
   width: 60%;
   padding: 20px 30px; 
   margin: 50px auto;
