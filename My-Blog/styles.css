@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 /* fonts for all pages */
 .main-heading, .content-heading, .blog-heading {
   font-family: 'Stick No Bills', sans-serif;
@@ -8,6 +9,23 @@ body {
 
 .content-paragraph, .footer-item {
   font-family: 'Dosis', sans-serif;
+}
+
+/* hyper link styles */
+.icon {
+  color:rgb(61, 60, 60);
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon:hover {
+  color:rgb(158, 157, 157);
+}
+
+.blog-link {
+  text-decoration: none;
+  color:rgb(37, 37, 37);
 }
 
 /* top section for all pages */
@@ -35,12 +53,9 @@ body {
 
 .header-socials {
   display: inline-block;
+  position: relative;
+  left: 150px;
   margin-left: 200px;
-}
-
-.icon {
-  font-size: 3rem;
-  margin: 0 10px;
 }
 
 .bar {
@@ -56,6 +71,7 @@ body {
   background-color: rgb(61, 60, 60);
   color: rgb(209, 208, 208);
   display: flex;
+  font-style: italic;
   justify-content: space-evenly;
   position: relative;
   margin: 70px 0 0 0;
@@ -67,6 +83,10 @@ body {
   width: 60%;
   padding: 20px 30px; 
   margin: 50px auto;
+}
+
+.blogs:hover {
+  border: solid 1px rgb(61, 60, 60);
 }
 
 .blogs-img {
@@ -97,4 +117,5 @@ body {
   border-radius: 5px;
   display: block;
   margin: 0 auto;
+  width: 80%;
 }
