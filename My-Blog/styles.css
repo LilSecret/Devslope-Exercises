@@ -1,5 +1,5 @@
-img {
-  width: 50%;
+body {
+  margin: 0;
 }
 hr {
   border: solid 3px #B2B2B2;
@@ -8,6 +8,7 @@ hr {
   border-left: none;
   width: 70%;
 }
+
 /* top section  */
 .top-container {
   margin: 40px auto 0;
@@ -38,4 +39,34 @@ hr {
 .icon {
   font-size: 3rem;
   margin: 0 10px;
+}
+
+/* blogs - main content  */
+.blog {
+  border: solid 2px #B2B2B2;
+  width: 60%;
+  margin: 40px auto;
+}
+
+.blog-content {
+  margin: 20px;
+}
+
+.content-img {
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+}
+
+.content {
+  margin: 0 0 0 30px;
+}
+/* footer  */
+.footer {
+  background-color: rgb(61, 60, 60);
+  color: rgb(209, 208, 208);
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 50px 0 0 0;
 }
