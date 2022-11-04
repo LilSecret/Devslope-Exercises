@@ -8,11 +8,20 @@ hr {
   border-left: none;
   width: 70%;
 }
+/* fonts  */
+.main-heading, .content-heading {
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.content-paragraph, .footer-item {
+  font-family: 'Dosis', sans-serif;
+}
 
 /* top section  */
 .top-container {
   margin: 40px auto 0;
   text-align: center;
+  color: rgb(61, 60, 60);
 }
 .profile-img {
   border-radius: 100px;
@@ -43,13 +52,10 @@ hr {
 
 /* blogs - main content  */
 .blog {
-  border: solid 2px #B2B2B2;
+  border: solid 1px #cecccc;
   width: 60%;
-  margin: 40px auto;
-}
-
-.blog-content {
-  margin: 20px;
+  padding: 20px 30px; 
+  margin: 50px auto;
 }
 
 .content-img {
@@ -59,7 +65,7 @@ hr {
 }
 
 .content {
-  margin: 0 0 0 30px;
+  margin-left: 30px;
 }
 /* footer  */
 .footer {
@@ -68,5 +74,5 @@ hr {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  margin: 50px 0 0 0;
+  margin: 70px 0 0 0;
 }
