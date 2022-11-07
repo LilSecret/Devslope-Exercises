@@ -1,0 +1,67 @@
+.background {
+  background-image: url("images/mountains-in-the-night.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.top-heading {
+  color: rgb(207, 204, 204);
+  font-size: 3rem;
+  margin: 200px auto 0;
+  width: 40%;
+}
+
+.survey-form {
+  background-color: rgba(81, 10, 173, .70);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2% 3%;;
+  width: 40%;
+}
+/* label fields */
+.label {
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(207, 204, 204);
+  margin: 10px 0 5px;
+}
+
+.label-input, .select-box {
+  background-color: rgb(41, 41, 41);
+  border: solid 1px rgb(216, 104, 147);
+  border-radius: 5px;
+  color: rgb(216, 104, 147);
+  font-size: 1rem;
+  height: 2rem;
+  margin: 5px 0 10px;
+  padding: 3px 5px;
+  width: 100%;
+}
+
+.textarea {
+  height: 100px;
+  overflow: hidden;
+  resize: none;
+}
+
+.radio-label {
+  margin: 25px 0 0;
+}
+
+.radio-input-label, .checkbox-label {
+  display: inline-block;
+  margin: 20px 5px 25px;
+}
+
+.submit-btn {
+  background-color: rgb(41, 41, 41);
+  border: solid 1px rgb(216, 104, 147);
+  border-radius: 5px;
+  color: rgb(216, 104, 147);
+  margin: 30px 0 0;
+  padding: 10px 20px;
+  position: relative;
+  left: 85%;
+}
