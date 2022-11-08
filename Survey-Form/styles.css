@@ -65,3 +65,12 @@
   position: relative;
   left: 85%;
 }
+
+/* fonts for the pages */
+.top-heading, .label {
+  font-family: 'Zilla Slab', serif;
+}
+
+.label-input {
+  font-family: 'Roboto Slab', serif;
+}
