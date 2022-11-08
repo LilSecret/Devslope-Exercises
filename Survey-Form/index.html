@@ -52,22 +52,75 @@
       <label class="label radio-label" for="exercise"
         >Do you exercise at home?</label
       >
-      <input type="radio" name="exercise" id="yes" value="yes" />
-      <label class="label radio-input-label" for="yes">Yes</label>
-      <input type="radio" name="exercise" id="no" value="no" />
-      <label class="label radio-input-label" for="no">No</label>
+      <label class="label radio-input-label" for="yes">
+        <input
+          class="radio-input"
+          type="radio"
+          name="exercise"
+          id="yes"
+          value="yes"
+        />
+        <div class="radio-circle"></div>
+        Yes
+      </label>
+      <label for="no" class="label radio-input-label">
+        <input
+          class="radio-input"
+          type="radio"
+          name="exercise"
+          id="no"
+          value="no"
+        />
+        <div class="radio-circle"></div>
+        No
+      </label>
       <!-- favorite topics section -->
       <label class="label" for="favoriteTopics"
         >How do you like to read about your favorite topics?</label
       >
-      <input type="checkbox" name="phoneApps" id="phoneApps" />
-      <label class="label checkbox-label" for="phoneApps">Phone Apps</label>
-      <input type="checkbox" name="online" id="online" />
-      <label class="label checkbox-label" for="online">Online</label>
-      <input type="checkbox" name="books" id="books" />
-      <label class="label checkbox-label" for="books">Books</label>
-      <input type="checkbox" name="magazines" id="magazines" />
-      <label class="label checkbox-label" for="magazines">Magazines</label>
+      <label for="phoneApps" class="label checkbox-label">
+        <input
+          class="default-checkbox"
+          type="checkbox"
+          name="phoneApps"
+          id="phoneApps"
+          value="phoneApps"
+        />
+        <div class="new-checkbox"></div>
+        Phone Apps
+      </label>
+      <label for="online" class="label checkbox-label">
+        <input
+          type="checkbox"
+          class="default-checkbox"
+          name="online"
+          id="online"
+          value="online"
+        />
+        <div class="new-checkbox"></div>
+        Online
+      </label>
+      <label for="books" class="label checkbox-label">
+        <input
+          type="checkbox"
+          class="default-checkbox"
+          name="books"
+          id="books"
+          value="books"
+        />
+        <div class="new-checkbox"></div>
+        Books
+      </label>
+      <label for="magazines" class="label checkbox-label">
+        <input
+          type="checkbox"
+          class="default-checkbox"
+          name="magazines"
+          id="magazines"
+          value="magazines"
+        />
+        Magazines
+      </label>
       <!-- favorite movie genre -->
       <label class="label" for="favoriteMovieGenre"
         >What is your favorite movie genre?</label
@@ -83,7 +136,9 @@
         <option value="Action">Action</option>
         <option value="Faithfulness and Gospel">Faithfulness and Gospel</option>
       </select>
-      <button class="submit-btn" type="submit">Submit form</button>
+      <div class="btn">
+        <button class="submit-btn" type="submit">Submit form</button>
+      </div>
     </form>
   </body>
 </html>
