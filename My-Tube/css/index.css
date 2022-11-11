@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+/* sidebar styles */
+.side-bar {
+  background-color: #3B3486;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+}
+
+.side-bar-logo {
+  display: block;
+  margin: 50px auto;
+  width: 100px;
+}
+
+.side-bar-ul {
+  list-style: none;
+}
+
+.side-bar-li {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.side-bar-link {
+  color: #FFE9B1;
+  text-decoration: 0;
+}
