@@ -3,64 +3,105 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Add Video</title>
-    <meta name="description" content="" />
+    <title>New Video</title>
+    <meta name="description" content="My Tube Website" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Marhey&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my stylesheet  -->
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/pages/collection1.html">Collection 1</a>
-      <a href="/pages/collection2.html">Collection 2</a>
-      <a href="/pages/collection3.html">Collection 3</a>
-      <a href="/new-video.html">New Video</a>
-    </nav>
-    <h1>Add New Video</h1>
-    <hr />
-    <form action="/" method="post">
-      <h3 for="videoTitle">Video Title</h3>
-      <input
-        type="text"
-        name="videoTitle"
-        id="videoTitle"
-        placeholder="Input Value"
-      />
-      <br />
-      <h2 for="description">Description</h2>
-      <textarea
-        name="description"
-        id="description"
-        cols="35"
-        rows="10"
-        placeholder="Text area content"
-      ></textarea>
-      <h2 for="video">Video</h2>
-      <input type="file" name="video" id="video" />
-      <br />
-      <br />
-      <select value="collection">
-        <option name="collection-1" id="collection-1" value="collection 1">
-          Collection 1
-        </option>
-        <option name="collection-2" id="collection-2" value="collection 2">
-          Collection 2
-        </option>
-        <option name="collection-3" id="collection-3" value="collection 2">
-          Collection 2
-        </option>
-      </select>
-      <h2 for="visibility">Visibility</h2>
-      <input type="radio" name="visibility" id="public" />
-      <label for="public">Public</label>
-      <input type="radio" name="visibility" id="private" />
-      <label for="private">Private</label>
-      <br />
-      <button type="submit">Upload Video</button>
-    </form>
-    <hr />
-    <footer>
-      <address>&copy: Copyright Rights of a Random Person</address>
-    </footer>
+    <!-- side navigation bar  -->
+    <div class="side-bar">
+      <div class="logo">
+        <h1 class="main-heading">My Tube</h1>
+      </div>
+      <ul>
+        <li class="side-bar-li">
+          <a class="side-bar-link" href="/"
+            ><i class="fa-solid icon fa-house"></i> Home</a
+          >
+        </li>
+        <li class="side-bar-li">
+          <a class="side-bar-link" href="/pages/collection1.html"
+            ><i class="fa-solid icon fa-folder-open"></i> Collection 1</a
+          >
+        </li>
+        <li class="side-bar-li">
+          <a class="side-bar-link" href="/pages/collection2.html"
+            ><i class="fa-solid icon fa-folder-open"></i> Collection 2</a
+          >
+        </li>
+        <li class="side-bar-li">
+          <a class="side-bar-link" href="/pages/collection3.html"
+            ><i class="fa-solid icon fa-folder-open"></i> Collection 3</a
+          >
+        </li>
+        <li class="side-bar-li">
+          <a class="side-bar-link" href="/new-video.html"
+            ><i class="fa-solid icon fa-file-video"></i> New Video</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- main-content  -->
+    <div class="main-content">
+      <h1 class="main-heading">Add New Video</h1>
+      <hr />
+      <form action="/" method="post">
+        <h3 for="videoTitle">Video Title</h3>
+        <input
+          type="text"
+          name="videoTitle"
+          id="videoTitle"
+          placeholder="Input Value"
+        />
+        <br />
+        <h2 for="description">Description</h2>
+        <textarea
+          name="description"
+          id="description"
+          cols="35"
+          rows="10"
+          placeholder="Text area content"
+        ></textarea>
+        <h2 for="video">Video</h2>
+        <input type="file" name="video" id="video" />
+        <br />
+        <br />
+        <select value="collection">
+          <option name="collection-1" id="collection-1" value="collection 1">
+            Collection 1
+          </option>
+          <option name="collection-2" id="collection-2" value="collection 2">
+            Collection 2
+          </option>
+          <option name="collection-3" id="collection-3" value="collection 2">
+            Collection 2
+          </option>
+        </select>
+        <h2 for="visibility">Visibility</h2>
+        <input type="radio" name="visibility" id="public" />
+        <label for="public">Public</label>
+        <input type="radio" name="visibility" id="private" />
+        <label for="private">Private</label>
+        <br />
+        <button type="submit">Upload Video</button>
+      </form>
+      <hr />
+      <footer>
+        <address>&copy: Copyright Rights of a Random Person</address>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6335a9bd6c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

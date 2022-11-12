@@ -48,7 +48,39 @@ ul {
 
 
 /* content styles  */
+hr {
+  border: solid 1px #5837D0;
+  width: 95%;
+}
+
+.video-row {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iframe {
+  width: 480px;
+  border-radius: 5px;
+  margin: 100px 20px 30px;
+}
+
 .main-content {
   margin-left: 350px;
   padding: 50px 0 0;
 }
+
+/* fonts  */
+ .logo, .main-heading {
+  font-family: 'Marhey', cursive;
+ }
+
+ /* media Queries  */
+ /* @media (max-width: 1000px) { */
+  /* .iframe {
+    display: block;
+    width: 90%;
+  } */
+ /* } */
+
+ /* @media (max-width: ) */
