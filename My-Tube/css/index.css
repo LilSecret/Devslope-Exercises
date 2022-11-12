@@ -48,6 +48,7 @@ ul {
 
 
 /* content styles  */
-/* .main-content {
-  
-} */
+.main-content {
+  margin-left: 350px;
+  padding: 50px 0 0;
+}
