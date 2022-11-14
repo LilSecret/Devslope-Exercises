@@ -1,12 +1,16 @@
+/* all styles */
 body {
   margin: 0;
   font-family: 'Lora', serif;
   background-color: #5DA7DB;
 }
 
-ul {
-  padding-left: 0;
+hr {
+  border: solid 3px #5837D0;
+  border-radius: 5px;
+  width: 95%;
 }
+
 /* sidebar styles */
 .side-bar {
   background-color: #5837D0;
@@ -24,6 +28,7 @@ ul {
 }
 
 .side-bar ul {
+  padding-left: 0;
   list-style: none;
 }
 
@@ -45,37 +50,7 @@ ul {
   color: #7DE5ED;
   text-decoration: none;
 }
-
-
-/* home content styles  */
-hr {
-  border: solid 3px #5837D0;
-  border-radius: 5px;
-  width: 95%;
-}
-
-.video-row {
-  width: 90%;
-  margin: 0 auto 100px;
-}
-
-.video-wrapper {
-  display: inline-block;
-  width: 450px;
-  margin: 0 auto;
-  text-align: center;
-  /* this is suppose to stop the text from over flowing */
-  white-space: nowrap;
-  /* this gets the text and if it is longer than the width it doesn't display it.  */
-  overflow: hidden;
-  /* this is supposed to get the overflowing text and put in into 3 dots...  */
-  text-overflow: ellipsis;
-}
-
-.video-wrapper a{
-  height: 1.2rem;
-}
-
+/* main content styles  */
 .iframe {
   border: solid 5px #F0EABE;
   width: 400px;
@@ -91,7 +66,6 @@ hr {
 .main-content a {
   color: #F0EABE;
   text-decoration: none;
-  /* display: inline-block; */
   margin: 0 auto;
 }
 
@@ -100,6 +74,54 @@ hr {
   font-family: 'Marhey', cursive;
  }
 
- /* media Queries  */
+/* home content styles  */
 
+.video-row {
+  width: 90%;
+  margin: 0 auto 100px;
+}
 
+.video-wrapper {
+  display: inline-block;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-wrapper a{
+  height: 1.2rem;
+}
+
+.video-wrapper p {
+  width: 300px;
+  margin: auto;
+  /* this gets the text and if it is longer than the width it doesn't display it.  */
+  overflow: hidden;
+  /* this is suppose to stop the text from over flowing */
+  white-space: nowrap;
+  /* this is supposed to get the overflowing text and put in into 3 dots...  */
+  text-overflow: ellipsis;
+}
+
+.footer {
+  margin: 70px 0 0 350px;
+  text-align: left;
+}
+
+.footer-item {
+  margin: 0;
+}
+ /* Media Queries  */
+/* Home Page  */
+@media (max-width: 1400px) {
+  .video-wrapper {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .iframe {
+    width: 500px;
+  }
+}
