@@ -69,6 +69,11 @@ hr {
   margin: 0 auto;
 }
 
+.bottom-hr {
+  margin-top: 100px;
+}
+
+
 /* fonts  */
  .logo, .main-heading {
   font-family: 'Marhey', cursive;
@@ -78,7 +83,7 @@ hr {
 
 .video-row {
   width: 90%;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 
 .video-wrapper {
