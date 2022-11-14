@@ -38,10 +38,6 @@ hr {
   font-size: 1.3rem;
 }
 
-.side-bar li:hover {
-  background-color: #5DA7DB;
-}
-
 .side-bar li:last-child {
   border-bottom: none;
 }
@@ -60,7 +56,7 @@ hr {
 
 .main-content {
   margin-left: 350px;
-  padding: 50px 0 0;
+  padding: 50px 0 100px;
 }
 
 .main-content a {
@@ -72,14 +68,6 @@ hr {
 .bottom-hr {
   margin-top: 100px;
 }
-
-
-/* fonts  */
- .logo, .main-heading {
-  font-family: 'Marhey', cursive;
- }
-
-/* home content styles  */
 
 .video-row {
   width: 90%;
@@ -97,7 +85,9 @@ hr {
   height: 1.2rem;
 }
 
-.video-wrapper p {
+.video-title {
+  font-size: 1.2rem;
+  font-weight: 600;
   width: 300px;
   margin: auto;
   /* this gets the text and if it is longer than the width it doesn't display it.  */
@@ -109,13 +99,27 @@ hr {
 }
 
 .footer {
-  margin: 70px 0 0 350px;
-  text-align: left;
+  bottom: 50px;
+  margin: 50px 0 0 350px;
 }
 
 .footer-item {
   margin: 0;
 }
+
+/* hover state styles for good ui  */
+.side-bar li:hover {
+  background-color: #5DA7DB;
+}
+
+.main-content a:hover {
+  color: #5837D0;
+}
+
+.iframe:hover {
+  border: solid 5px #5837D0;
+}
+
  /* Media Queries  */
 /* Home Page  */
 @media (max-width: 1400px) {
