@@ -112,6 +112,25 @@ hr {
   margin: 0;
 }
 
+/* single page styles */
+.lg-video {
+  border: solid 5px #F0EABE;
+  border-radius: 5px;
+  display: block;
+  width: 1000px;
+  height: 500px;
+  margin: 50px 0 30px;
+  /* margin: 50px auto 30px; */
+}
+
+.video-details {
+  border: solid 2px #F0EABE;
+  border-radius: 5px;
+  display: inline-block;
+  width: 985px;
+  padding: 20px 10px;
+}
+
 /* hover state styles for good ui  */
 .side-bar li:hover {
   background-color: #5DA7DB;
