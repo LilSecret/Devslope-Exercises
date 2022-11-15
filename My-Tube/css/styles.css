@@ -1,7 +1,7 @@
 /* all styles */
 body {
+  font-family: 'Crete Round', serif;
   margin: 0;
-  font-family: 'Lora', serif;
   background-color: #5DA7DB;
 }
 
@@ -47,8 +47,13 @@ hr {
   text-decoration: none;
 }
 /* main content styles  */
+.top-heading {
+  user-select: none;
+}
+
 .iframe {
   border: solid 5px #F0EABE;
+  height: 240px;
   width: 400px;
   border-radius: 5px;
   margin: 100px 20px 10px;
@@ -134,3 +139,8 @@ hr {
     width: 500px;
   }
 }
+
+/* New video page styles  */
+/* input {
+  background-color: #F0EABE;
+} */
