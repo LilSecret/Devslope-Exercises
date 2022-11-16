@@ -1,8 +1,9 @@
 /* all styles */
 body {
+  background: linear-gradient(45deg, #5DA7DB, #21E1E1); 
+  background-attachment: fixed;
   font-family: 'Crete Round', serif;
   margin: 0;
-  background-color: #5DA7DB;
 }
 
 hr {
@@ -120,7 +121,6 @@ hr {
   width: 1000px;
   height: 500px;
   margin: 50px 0 30px;
-  /* margin: 50px auto 30px; */
 }
 
 .video-details {
@@ -129,6 +129,39 @@ hr {
   display: inline-block;
   width: 985px;
   padding: 20px 10px;
+}
+
+/* New video styles  */
+.new-video-form {
+  background-color: #F0EABE;
+  border-radius: 5px;
+  padding: 50px 100px;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  opacity: .9;
+}
+
+.left {
+  display: inline-block;
+  width: 40%;
+}
+
+.right {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  bottom: 150px;
+}
+
+.input-label {
+  font-size: 2rem;
+  display: block;
+  margin: 20px 0;
+}
+
+.icon {
+  display: block;
 }
 
 /* hover state styles for good ui  */
@@ -158,8 +191,3 @@ hr {
     width: 500px;
   }
 }
-
-/* New video page styles  */
-/* input {
-  background-color: #F0EABE;
-} */
