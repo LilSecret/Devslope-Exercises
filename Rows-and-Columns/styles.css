@@ -1,0 +1,62 @@
+div div {
+  background-color: aqua;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.ryze {
+  background-image: url("images/ryze-lol.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.kayn {
+  background-image: url("images/kayn-lol.jpg");
+  background-size: cover;
+}
+
+.trundle {
+  background-image: url("images/trundle-lol.jpg");
+  background-size: cover;
+}
+
+.shen {
+  background-image: url("images/shen-lol.jpg");
+  background-size: cover;
+  grid-column: 3 / 5;
+}
+
+.poppy {
+  background-image: url("images/poppy-lol.jpg");
+  background-size: cover;
+}
+
+.yasuo {
+  background-image: url("images/yasuo-lol.jpg");
+  background-size: cover;
+}
+
+.soraka {
+  background-image: url("images/soraka-lol.png");
+  background-size: cover;
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+}
+
+.morgana {
+  background-image: url("images/morgana-lol.png");
+  background-size: cover;
+}
+
+.kayle {
+  background-image: url("images/kayle-lol.png");
+  background-size: cover;
+}
