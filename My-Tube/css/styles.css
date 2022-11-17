@@ -1,8 +1,19 @@
+/* fonts  */
+body,
+.textarea,
+.submit-btn {
+  font-family: 'Crete Round', serif;
+}
+
+.logo,
+.input {
+  font-family: 'Marhey', cursive;
+}
+
 /* all styles */
 body {
   background: linear-gradient(45deg, #5DA7DB, #21E1E1); 
   background-attachment: fixed;
-  font-family: 'Crete Round', serif;
   margin: 0;
 }
 
@@ -23,7 +34,6 @@ hr {
 .logo {
   color: #F0EABE;
   font-size: 1.5rem;
-  font-family: 'Marhey', cursive;
   text-align: center;
   padding: 20px 20px;
 }
@@ -137,21 +147,39 @@ hr {
   border-radius: 5px;
   padding: 50px 100px;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: 50px auto;
   opacity: .9;
 }
 
-.left {
-  display: inline-block;
-  width: 40%;
+.right {
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+  margin-left: 20px;
 }
 
-.right {
-  display: inline-block;
-  width: 40%;
-  position: relative;
-  bottom: 150px;
+.right .input {
+  text-align: center;
+}
+
+.input {
+  background-color: #5837D0;
+  border-radius: 5px;
+  color: #21E1E1;
+  font-size: 1.5rem;
+  width: 400px;
+  padding: 10px 20px;
+}
+
+.textarea {
+  background-color: #5837D0;
+  border-radius: 5px;
+  color: #21E1E1;
+  font-size: 1rem;
+  padding: 10px 20px;
+  width: 400px;
+  resize: none;
 }
 
 .input-label {
@@ -162,6 +190,80 @@ hr {
 
 .icon {
   display: block;
+}
+
+.default-btn {
+  display: none;
+}
+
+.new-btn {
+  font-size: 1.5rem;
+  background-color: #5837D0;
+  border-radius: 5px;
+  color: #21E1E1;
+  padding: 10px 20px;
+  height: 30px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+/* radio buttons styles */
+.default-radio-btn {
+  display: none;
+}
+
+.new-radio-btn {
+  background-color: #5837D0;
+  border: solid 1px #5DA7DB;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.new-radio-btn::after {
+  background-color: #21E1E1;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: transform .1s;
+}
+
+.default-radio-btn:checked + .new-radio-btn::after {
+  transform: scale(1)
+}
+
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+/* submit button styles */
+.form-btn {
+  text-align: right;
+}
+
+.submit-btn {
+  align-items: center;
+  background-color: #5837D0;
+  border-radius: 5px;
+  color: #21E1E1;
+  display: inline-flex;;
+  font-size: 1rem;
+  height: 30px;
+  padding: 20px 30px;
+}
+
+.extra-margin {
+  margin-bottom: 50px;
 }
 
 /* hover state styles for good ui  */

@@ -55,48 +55,67 @@
       <h1 class="top-heading">Add New Video</h1>
       <hr />
       <form class="new-video-form" action="/" method="post">
-        <div class="left">
-          <label class="input-label" for="videoTitle">Video Title</label>
-          <input
-            class="input"
-            type="text"
-            name="videoTitle"
-            id="videoTitle"
-            placeholder="Input Value"
-          />
-          <label class="input-label" for="description">Description</label>
-          <textarea
-            class="input"
-            name="description"
-            id="description"
-            cols="35"
-            rows="10"
-            placeholder="Text area content"
-          ></textarea>
-        </div>
-        <div class="right">
-          <label class="input-label" for="video">
-          Select Video
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          <input class="default-btn" type="file" name="video" id="video" accept="video/*,.mp4"/>
-          <div class="new-btn"></div>
-          </label>
-          <select value="collection">
-            <option name="collection-1" id="collection-1" value="collection 1">
-              Collection 1
-            </option>
-            <option name="collection-2" id="collection-2" value="collection 2">
-              Collection 2
-            </option>
-            <option name="collection-3" id="collection-3" value="collection 2">
-              Collection 2
-            </option>
-          </select>
-          <h2 for="visibility">Visibility</h2>
-          <input type="radio" name="visibility" id="public" />
-          <label for="public">Public</label>
-          <input type="radio" name="visibility" id="private" />
-          <label for="private">Private</label>
+        <table>
+          <tr>
+            <td>
+              <div class="left">
+                <label class="input-label" for="videoTitle">Video Title</label>
+                <input
+                  class="input"
+                  type="text"
+                  name="videoTitle"
+                  id="videoTitle"
+                  placeholder="Enter Video Title"
+                />
+                <label class="input-label" for="description">Description</label>
+                <textarea
+                  class="textarea"
+                  name="description"
+                  id="description"
+                  cols="35"
+                  rows="10"
+                  placeholder="Text area content"
+                ></textarea>
+              </div>
+            </td>
+            <td>
+              <div class="right">
+                <label class="input-label extra-margin" for="video">
+                Select Video
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <input class="default-btn" type="file" name="video" id="video" accept="video/*,.mp4"/>
+                <div class="new-btn">
+                    Choose File
+                </div>
+                </label>
+                <select class="input" value="collection">
+                  <option name="collection-1" id="collection-1" value="collection 1">
+                    Collection 1
+                  </option>
+                  <option name="collection-2" id="collection-2" value="collection 2">
+                    Collection 2
+                  </option>
+                  <option name="collection-3" id="collection-3" value="collection 2">
+                    Collection 3
+                  </option>
+                </select>
+                <label class="input-label" for="visibility">Visibility</label>
+                <label class="radio-label" for="public">
+                  <input class="default-radio-btn" type="radio" name="visibility" id="public" />
+                  <div class="new-radio-btn"></div>
+                  Public
+                </label>
+                <label class="radio-label" for="private">
+                  <input class="default-radio-btn" type="radio" name="visibility" id="private" />
+                  <div class="new-radio-btn"></div>
+                  Private
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="form-btn">
+          <button class="submit-btn" type="submit">Add Video</button>
         </div>
       </form>
     <script
