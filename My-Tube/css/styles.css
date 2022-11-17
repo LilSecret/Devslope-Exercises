@@ -275,6 +275,8 @@ hr {
 
  /* Media Queries  */
 /* Home Page  */
+/* Ive been on the project for too long and it needs to be submitted */
+/* So its not responsive at the moment. I will come back and fix that once I've learned it in detail.  */
 @media (max-width: 1400px) {
   .video-wrapper {
     display: block;
