@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(23, 153, 153);
+}
+
+div {
+  height: 100px;
+  width: 100px;
+}
+
+.grid-gallery {
+  background-color: #212020;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orangered {
+  background-color: orangered;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.green {
+  background-color: green;
+}
+
+.limegreen {
+  background-color: limegreen;
+}
+
+.plum {
+  background-color: plum;
+}
