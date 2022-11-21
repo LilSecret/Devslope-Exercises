@@ -1,5 +1,6 @@
 body {
   background-color: rgb(23, 153, 153);
+  text-align: center;
 }
 
 div {
@@ -11,9 +12,10 @@ div {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 200px);
+  grid-template-rows: repeat(6, 150px);
   padding: 50px 100px;
-  margin: 50px 100px;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .lightblue {
