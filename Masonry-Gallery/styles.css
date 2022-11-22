@@ -7,13 +7,17 @@ div {
   background-color: white;
 }
 
+ul {
+  padding: 0;
+}
+
 .grid-gallery {
   background-color: #212020;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 150px);
-  padding: 50px 100px;
+  padding: 20px 50px;
   margin: 0 auto;
   width: 50%;
 }
@@ -93,3 +97,75 @@ div {
 }
 
 /* styles for thumbnail list */
+
+div {
+  background-color: transparent;
+}
+
+.thumbnail-list {
+  background-color: #0F0f0f;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 550px;
+  padding: 20px 0 10px;
+}
+
+.employee {
+  align-items: center;
+  display: flex;
+  margin: 20px auto;
+  /* this doesn't let the user touch the text  */
+  user-select: none;
+}
+
+.employee-profile {
+  border: solid 2px #FAE800;
+  border-radius: 50%;
+  height: 80px;
+  width: 75px;
+}
+
+
+.employee-details {
+  align-self: flex-start;
+  color: white;
+  margin: 0 20px;
+  text-align: left;
+  width: 300px;
+}
+
+.employee-name {
+  color: white;
+  margin: 0 auto;
+}
+
+.employee-address {
+  margin: 0 auto;
+}
+
+.contact-icon {
+  align-self: flex-start;
+  font-size: 1.3rem;
+  color: #F8C822;
+  margin-top: 20px;
+}
+
+.contact-icon:hover {
+  color: #FAE800;
+}
+
+.thumbnail-line {
+  border: solid 1px #686868;
+  width: 90%;
+}
+
+/* thumbnail fonts  */
+.employee-name {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.employee-details {
+  font-family: 'Merriweather', serif;
+}
