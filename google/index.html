@@ -6,27 +6,46 @@
     <title>Google</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my stylesheet  -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
-      <div class="left-nav-links">
-        <a href="" class="nav-link">About</a>
-        <a href="" class="nav-link">Store</a>
+      <div class="left-nav">
+        <a href="" class="top-left-link">About</a>
+        <a href="" class="top-left-link">Store</a>
       </div>
-      <div class="right-nav-links">
-        <a href="" class="nav-link">Gmail</a>
-        <a href="" class="nav-link">Images</a>
-        <a href=""><img src="/images/google-apps.png" alt="google apps" /></a>
-        <a href=""><img src="/images/profile.jpg" alt="my profile image" /></a>
+      <div class="right-nav">
+        <a class="top-right-link" href="" class="nav-link">Gmail</a>
+        <a class="top-right-link" href="" class="nav-link">Images</a>
+        <a href=""
+          ><img class="nav-img" src="/images/google-apps.png" alt="google apps"
+        /></a>
+        <a href=""
+          ><img
+            class="nav-img profile-img"
+            src="/images/profile.jpg"
+            alt="my profile image"
+        /></a>
       </div>
     </nav>
     <div class="content">
-      <img src="/images/google-logo.png" alt="google logo" />
+      <img
+        class="main-google-img"
+        src="/images/google-logo.png"
+        alt="google logo"
+      />
       <form action="/search-page.html" method="post">
-        <div class="google-input">
+        <div class="google-search-wrapper">
           <i class="grey-icon fa-solid fa-magnifying-glass"></i>
-          <input type="text" />
+          <input class="google-search-input" type="text" />
           <img src="/images/google-input-icons.png" alt="google search icons" />
         </div>
       </form>
@@ -35,18 +54,18 @@
     </div>
     <footer>
       <div class="footer-first-links">
-        <a class="footer-link" href="https://google.com">Advertising</a>
-        <a class="footer-link" href="https://google.com">Business</a>
-        <a class="footer-link" href="https://google.com">How search works</a>
+        <a class="bottom-link" href="https://google.com">Advertising</a>
+        <a class="bottom-link" href="https://google.com">Business</a>
+        <a class="bottom-link" href="https://google.com">How search works</a>
       </div>
       <div class="footer-center-link">
         <i class="footer-icon fa-solid fa-leaf"></i>
-        <a class="footer-link" href="">Carbon neutral since 2007</a>
+        <a class="bottom-link" href="">Carbon neutral since 2007</a>
       </div>
       <div class="footer-last-links">
-        <a class="footer-link" href="">Privacy</a>
-        <a class="footer-link" href="">Terms</a>
-        <a class="footer-link" href="">Settings</a>
+        <a class="bottom-link" href="">Privacy</a>
+        <a class="bottom-link" href="">Terms</a>
+        <a class="bottom-link" href="">Settings</a>
       </div>
     </footer>
     <script

@@ -1,18 +1,104 @@
 body {
   background-color: #202124;
+  margin: 0;
+  text-align: center;
 }
 
-.google-input {
+.bottom-link {
+  color: #999DA2;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-decoration: none;
+}
+
+.grey-link:hover {
+  text-decoration: underline;
+}
+
+/* navbar styles */
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  padding: 12px 30px;
+}
+
+.top-left-link {
+  color: #BDC1C6;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.top-left-link:hover {
+  text-decoration: underline;
+}
+
+.top-right-link {
+  color: #FFFFFF;
+  margin-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.top-right-link:hover {
+  text-decoration: underline;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-img {
+  border-radius: 50%;
+  border: solid 3px #202124;
+  margin-left: 20px;
+}
+
+.nav-img:hover {
+  border: solid 3px #303134;
+}
+
+/* center content styles */
+
+.content {
+  display: column;
+  align-items: center;
+}
+
+.main-google-img {
+  border-radius: 16px;
+  margin-top: 150px;
+}
+
+.google-search-wrapper {
   background-color: #202124;
   border: solid 1px #65696D;
-  border-radius: 16px;
+  border-radius: 40px;
+  display: flex;
   width: 50%;
   padding: 10px 20px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 30%;
 }
 
-.google-input:hover {
+/* figure out the hover states for the search wrapper and search input  */
+.google-search-wrapper:hover + ,.google-search-input:hover {
   background-color: #303134;
 }
+
+
+.google-search-input {
+  background-color:#202124;
+  border: none;
+  width: 80%;
+}
+
+
 
 .grey-icon {
   color: #65696D;
@@ -35,14 +121,15 @@ body {
 footer {
   background-color: #171717;
   display: flex;
-  padding: 20px 40px;
+  font-size: 14px;
   justify-content: space-between;
+  padding: 20px 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
-.footer-link {
-  color: #999DA2;
-  text-decoration: none;
-}
 
 .footer-icon {
   color: green;
