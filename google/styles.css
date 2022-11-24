@@ -1,3 +1,49 @@
 body {
   background-color: #202124;
 }
+
+.google-input {
+  background-color: #202124;
+  border: solid 1px #65696D;
+  border-radius: 16px;
+  width: 50%;
+  padding: 10px 20px;
+}
+
+.google-input:hover {
+  background-color: #303134;
+}
+
+.grey-icon {
+  color: #65696D;
+}
+
+.lucky-btns {
+  background-color: rgb(48, 49, 52);
+  border: solid 1px #202124;
+  border-radius: 4px;
+  color: #E8EAED;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.lucky-btns:hover {
+  border: solid 1px #65696D;
+}
+
+/* footer styles */
+footer {
+  background-color: #171717;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: #999DA2;
+  text-decoration: none;
+}
+
+.footer-icon {
+  color: green;
+}
