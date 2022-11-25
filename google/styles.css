@@ -4,11 +4,6 @@ body {
   text-align: center;
 }
 
-
-.grey-link:hover {
-  text-decoration: underline;
-}
-
 /* navbar styles */
 nav {
   align-items: center;
@@ -89,23 +84,22 @@ nav {
   background-color: #303134;
 }
 
-.google-search-input:focus {
-  border: none;
-}
-
 .google-search-input {
   background-color:#202124;
   border: none;
   width: 80%;
 }
 
+.google-search-input:focus {
+  caret-color: white;
+  outline: none;
+}
 
-
-.grey-icon {
+.fa-icon {
   color: #65696D;
 }
 
-.lucky-btns {
+.lucky-btn {
   background-color: rgb(48, 49, 52);
   border: solid 1px #202124;
   border-radius: 4px;
@@ -116,7 +110,7 @@ nav {
   margin-left: 15px;
 }
 
-.lucky-btns:hover {
+.lucky-btn:hover {
   border: solid 1px #65696D;
 }
 
