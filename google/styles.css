@@ -4,11 +4,6 @@ body {
   text-align: center;
 }
 
-.bottom-link {
-  color: #999DA2;
-  font-family: 'Roboto', Arial, sans-serif;
-  text-decoration: none;
-}
 
 .grey-link:hover {
   text-decoration: underline;
@@ -79,18 +74,24 @@ nav {
   display: flex;
   width: 50%;
   padding: 10px 20px;
-  margin: auto;
+  margin: 10px auto;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 30%;
 }
 
-/* figure out the hover states for the search wrapper and search input  */
-.google-search-wrapper:hover + ,.google-search-input:hover {
+.google-search-wrapper:hover .google-search-input {
   background-color: #303134;
 }
 
+.google-search-wrapper:hover {
+  background-color: #303134;
+}
+
+.google-search-input:focus {
+  border: none;
+}
 
 .google-search-input {
   background-color:#202124;
@@ -110,7 +111,9 @@ nav {
   border-radius: 4px;
   color: #E8EAED;
   display: inline-block;
+  font-family: 'Roboto', sans-serif;
   padding: 10px 20px;
+  margin-left: 15px;
 }
 
 .lucky-btns:hover {
@@ -130,6 +133,21 @@ footer {
   left: 0;
 }
 
+.bottom-link {
+  color: #999DA2;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.bottom-link:hover {
+  text-decoration: underline;
+}
+
+.footer-center-link {
+  position: relative;
+  right: 50px;
+}
 
 .footer-icon {
   color: green;
