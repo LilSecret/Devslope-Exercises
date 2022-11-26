@@ -12,3 +12,174 @@ button {
 }
 
 img { max-width: 100%; }
+
+.home-container {
+	display: grid;
+}
+/* head section  */
+.hero {
+	display: grid;
+	gap: 20px;
+	grid-template-areas: 
+		"hero-header hero-header skate1"
+		"hero-header hero-header skate2"
+	;
+}
+
+.hero--header {
+	background-image: url("/images/hero-skateboard.jpeg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-area: hero-header;
+	height: 400px;
+}
+
+.hero--header p,
+.hero--header h1 {
+	background-color: white;
+	display: block;
+	width: 40%;
+	padding: 10px 20px;
+	margin-left: 10%;
+}
+
+.cta p {
+	margin: 0;
+}
+
+.price {
+	font-size: 50px;
+}
+
+.skate-1 {
+	background-color: #333;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-area: skate1;
+}
+
+.skate-2 {
+	background-color: #333;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-area: skate2;
+}
+
+/* menu nav buttons  */
+.menu {
+	margin: 30px 0 0;
+}
+
+.menu ul {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+	list-style: none;
+	padding: 0;
+}
+
+.menu a {
+	background-color: #333;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+[aria-controls="menu-list"] {
+	display: none;
+}
+
+.features {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	margin: 30px 0;
+}
+
+.feature {
+	background-color: white;
+	border: solid 1px white;
+	box-shadow: 0 0 5px black;
+	padding: 20px;
+	text-align: center;
+}
+
+.icon {
+	width: 100px;
+}
+
+.feature p {
+	color: rgba(0, 0, 0, .5);
+}
+
+/* learn more section  */
+.learn-more, .learn-more-alt {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 100px;
+}
+
+.about__details h2 {
+	font-size: 2.5rem;
+}
+
+.about__details p {
+	margin: 0;
+}
+
+.about__details p:last-of-type {
+	margin-bottom: 20px;
+}
+
+.about__details button {
+	font-size: 1.5rem;
+}
+
+.learn-more-alt img {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+/* grid skateboard gallery  */
+.skate-gallery {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skate-gallery img {
+	height: 200px;
+}
+
+.skate-gallery h2 {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 20px;
+	grid-column: 1 / 7;
+}
+
+.skate-gallery h2:before, .skate-gallery h2:after {
+	display: block;
+	content: "";
+	height: 10px;
+	background: linear-gradient(to right, transparent, #333);
+}
+
+.skate-gallery h2:after {
+	background: linear-gradient(to right, #333, transparent)
+}
