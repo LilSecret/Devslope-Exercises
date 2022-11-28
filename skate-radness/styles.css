@@ -253,10 +253,39 @@ img { max-width: 100%; }
 		grid-row: 2 / 3;
 		margin-top: 30px;
 	}
-.skate-gallery {
-	margin: 30px 20px;
-}
-.skate-img-10 {
-	width: 100%;
-}
+	.skate-gallery {
+		margin: 30px 20px;
+	}
+	.skate-img-10 {
+		width: 100%;
+	}
+
+/* aria controls for buttons  */
+	.menu {
+		order: -1;
+	}
+	.menu ul {
+		max-height: 0;
+		overflow: hidden;
+		transform: translateX(90);
+		transition: all .5s;
+	}
+
+	[aria-controls="menu-list"] {
+		display: block;
+		margin-bottom: 10px;
+	}
+	[aria-expanded="true"] ~ ul {
+		display: grid;
+		transform: rotateX( 0 );
+	}
+	[aria-expanded="false"] .close {
+		display: none;
+	}
+	[aria-expanded="true"] .close {
+		display: inline-block;
+	}
+	[aria-expanded="true"] .open {
+		display: none;
+	}
 }

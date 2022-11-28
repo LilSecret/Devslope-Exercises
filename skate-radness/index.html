@@ -137,5 +137,15 @@
         <img class="skate-img-10" src="./images/ChenMizrack.jpeg" alt="skate" />
       </section>
     </div>
+    <script>
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>
