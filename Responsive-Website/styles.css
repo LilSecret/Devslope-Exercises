@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+/* fonts  */
+body { font-family: 'Solway', serif; }
+.navbar .name,
+.navbar .link {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.heading .heading,
+.team .heading{
+  font-family: 'Cinzel', serif;
+}
+
 /*global styles  */
 .details {
   color:#999;
@@ -26,6 +38,10 @@ body {
   padding: 20px 0;
 }
 
+.brand {
+  user-select: none;
+}
+
 .brand .logo {
   width: 75px;
   height: 75px;
@@ -43,7 +59,7 @@ body {
   margin-right: 60px;
 }
 
-.right .link {
+.navbar .link {
   color: black;
   margin: 0 20px;
   font-size: 1.3rem;
@@ -66,7 +82,7 @@ body {
   text-align: center;
   display: grid;
   gap: 0 50px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
   grid-template-areas: 
   "head head head"
   "one two three"
@@ -86,7 +102,7 @@ body {
   text-align: left;
 }
 
-.bedroom {
+.card .bedroom {
   width: 100%;
   height: 300px;
 }
@@ -97,18 +113,36 @@ body {
 }
 
 /* team section  */
-.team .top-heading {
+.team {
+  display: grid;
+  justify-content: center;
+  gap: 20px 40px;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-areas: 
+  "header header header header"
+  "kanye melissa kevin ario"
+  ;
+}
+
+/* team grid areas  */
+.team .header { grid-area: header };
+.team .kanye { grid-area: kanye };
+.team .melissa { grid-area: melissa };
+.team .kevin { grid-area: kevin };
+.team .ario { grid-area: ario }
+
+.team .header .heading {
   align-items: center;
   color: #6b6b6b;
   display: grid;
   font-size: 4rem;
   gap: 10px;
-  grid-template-columns: 3fr 300px 3fr;
+  grid-template-columns: 3fr 340px 3fr;
   word-wrap: none;
 }
 
 
-.team .top-heading:before {
+.team .header .heading:before {
   justify-self: flex-end;
   content: "";
   display: block;
@@ -117,7 +151,7 @@ body {
   background-color: black;
 }
 
-.team .top-heading:after {
+.team .header .heading:after {
   content: "";
   display: block;
   height: 3px;
@@ -131,26 +165,20 @@ body {
   margin: 10px auto;
 }
 
-.employees {
-  display: flex;
-  justify-content: center;
-}
-
 .employee {
-  margin: 30px 40px;
   text-align: left;
 }
 
-.profile-img {
+.employee .profile-img {
   width: 250px;
   height: 250px;
 }
 
-.socials {
+.employee .socials {
   display: flex;
 }
 
-.socials .icon {
+.employee .socials .icon {
   width: 25px;
   margin: 0 3px;
 }
@@ -224,33 +252,33 @@ body {
   margin-top: 50px;
 }
 
-.cta-section .group {
+.footer .cta-section .group {
   width: 250px;
 }
 
-.cta-section .heading {
+.footer .cta-section .heading {
   color: white;
   font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
-.cta-section {
+.footer .cta-section {
   display: flex;
   margin: 100px 0 50px;
   justify-content: space-around;
   text-align: center;
 }
 
-.cta {
+.footer .cta {
   margin: 5px 0;
 }
 
-.cta .link {
+.footer .cta .link {
   text-decoration: none;
   color: #777;
 }
 
-.cta .link:hover {
+.footer .cta .link:hover {
   text-decoration: underline;
 }
 
@@ -262,12 +290,34 @@ body {
   border-left: none;
 }
 
-.copyrights {
+.footer .copyrights {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.copyrights p {
+.footer .copyrights p {
   margin: 5px 0;
+}
+
+@media (max-width: 850px) {
+  .about {
+    grid-template-areas: 
+    "one one one"
+    "two two two"
+    "three three three"
+    ;
+  }
+  
+  .about .heading .details {
+    width: 80%;
+  }
+  
+  /* .team {
+    grid-template-areas: 
+    "header header header header"
+    "kanye kanye melissa melissa"
+    "kevin kevin ario ario"
+    ;
+  } */
 }

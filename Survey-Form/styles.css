@@ -77,7 +77,7 @@
 
 .radio-circle {
   border: solid 2px #432C7A;
-  border-radius: 50%;
+  border-radius: 50px;
   margin-right: 5px;
   padding: 1px;
   height: 1rem;
@@ -85,7 +85,7 @@
 }
 
 .radio-circle::after {
-  border-radius: 50%;
+  border-radius: 50px;
   content: "";
   display: block;
   width: 100%;
@@ -105,9 +105,9 @@
 }
 
 .new-checkbox {
-  border: solid 2px #432C7A;
+  border: solid 3px #432C7A;
   margin-right: 5px;
-  padding: 1px;
+  padding: 2px;
   width: 1rem;
   height: 1rem;
 }
