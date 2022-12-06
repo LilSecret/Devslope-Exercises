@@ -67,6 +67,7 @@ body { font-family: 'Solway', serif; }
   text-decoration: none;
 }
 
+
 /* about us   */
 .about .header .title {
   color: black;
@@ -118,37 +119,33 @@ body { font-family: 'Solway', serif; }
 /* team section  */
 .team {
   display: grid;
-  gap: 0 20px;
-  grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
+  gap: 0 10px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
   "team team team team"
   "kanye melissa kevin ario"
   ;
-  margin: 0 20%;
+  margin: 0 20% 100px;
 }
 
 /* team grid areas  */
-.team .header { grid-area: team };
-.team .kanye { grid-area: kanye };
-.team .melissa { grid-area: melissa };
-.team .kevin { grid-area: kevin };
+.team .header { grid-area: team }
+.team .kanye { grid-area: kanye }
+.team .melissa { grid-area: melissa }
+.team .kevin { grid-area: kevin }
 .team .ario { grid-area: ario }
 
 .team .header .title {
   align-items: center;
-  color: black;
   display: grid;
-  font-size: 4rem;
-  gap: 10px;
   grid-template-columns: 3fr 340px 3fr;
-  word-wrap: none;
+  font-size: 4rem;
 }
 
-
 .team .header .title:before {
-  justify-self: flex-end;
   content: "";
   display: block;
+  justify-self: flex-end;
   height: 3px;
   width: 50px;
   background-color: black;
@@ -157,6 +154,7 @@ body { font-family: 'Solway', serif; }
 .team .header .title:after {
   content: "";
   display: block;
+  justify-self: flex-start;
   height: 3px;
   width: 50px;
   background-color: black;
@@ -303,28 +301,19 @@ body { font-family: 'Solway', serif; }
   margin: 5px 0;
 }
 
-@media (max-width: 1000px) {
+
+@media (max-width: 650px) {
   .about {
-    display: flex;
-    flex-direction: column;
-  }
-  .about .header .title {
-    margin-bottom: 20px;
-  }
-  
-  .about .header .details {
-    margin: 0 auto 40px;
-    width: 100%;
-  }
-  
-  .about .card {
-    width: 100%;
+    margin: 15%;
   }
 }
 
-@media (max-width: 749px) {
-  .about .title {
-    font-size: 2rem !important;
+@media (max-width: 800px) {
+  .navbar .right {
+    display: none;
+  }
+  .about .header .title {
+    font-size: 3rem !important;
   }
   .about .header .details {
     font-size: 1.4rem;
@@ -334,8 +323,13 @@ body { font-family: 'Solway', serif; }
     flex-direction: column;
     align-items: center;
   }
-  .team .title {
-    font-size: 2rem;
+  .team .header .title {
+    font-size: 3rem !important;
+    grid-template-columns: 3fr 260px 3fr;
+  }
+  .team .header .details {
+    margin: 10px;
+    width: auto;
   }
   .employee {
     display: flex;
@@ -345,7 +339,7 @@ body { font-family: 'Solway', serif; }
   .employee .content {
     margin-left: 40px;
   }
-
+  
   .employee .profile-img {
     width: 40%;
   }
@@ -364,23 +358,56 @@ body { font-family: 'Solway', serif; }
     display: flex;
     justify-content: flex-end;
   }
+  .footer .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .footer .cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .group {
+    margin-bottom: 50px;
+  }
 }
-
-@media (min-width: 750px) and (max-width: 1200px) {
+@media (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .header .title {
+    margin-bottom: 20px;
+  }
+  
+  .about .header .details {
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+  
+  .about .card {
+    width: 100%;
+  }
+}
+@media (min-width: 750px) and (max-width: 1300px) {
+  .about .header .details {
+    margin-bottom: 60px;
+  }
   .team {
-    gap: 10px;
+    gap: 20px;
+    grid-template-columns: repeat(4, 120px);
     grid-template-areas: 
     "team team team team"
     "kanye kanye melissa melissa"
     "kevin kevin ario ario"
     ;
-    margin: 0 10% 100px;
+    justify-content: center;
+    margin: 0 20% 100px;
   }
   .team .header .details {
     width: 100%;
   }
 }
-/* mainly for the about section at top  */
 @media (min-width: 1001px) and (max-width: 1400px) {
   .about {
     display: flex;
