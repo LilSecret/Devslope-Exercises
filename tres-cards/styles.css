@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+/* global styles  */
+.card {
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.heading {
+  color: black;
+  font-weight: 600;
+}
+
+.details {
+  color: rgb(146, 144, 144);
+  font-size: 1.4rem;
+}
+
