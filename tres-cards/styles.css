@@ -38,13 +38,13 @@ a:hover {
 }
 
 .profile {
-  max-width: 150px;
-  max-height: 150px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
 .content {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .heading {
@@ -75,4 +75,21 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin: 30px auto 0;
+}
+
+@media (max-width: 800px) {
+  .deck {
+    flex-direction: column;
+    width: auto;
+  }
+  .card {
+    margin: 20px auto;
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+  }
 }
