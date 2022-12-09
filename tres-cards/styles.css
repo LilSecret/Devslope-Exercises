@@ -29,6 +29,10 @@ a:hover {
   position: relative;
 }
 
+.card:hover {
+  background-color:rgba(146, 144, 144, .2);
+}
+
 .wrapper {
   display: flex;
 }
