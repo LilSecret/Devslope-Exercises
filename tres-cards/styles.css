@@ -16,7 +16,7 @@ a:hover {
 .deck {
   display: flex;
   justify-content: space-evenly;
-  width: 1500px;
+  width: 80%;
   margin: auto;
 }
 
@@ -49,17 +49,17 @@ a:hover {
 
 .heading {
   color: black;
-  font-weight: 600;
   font-size: 1.4rem;
-  width: 300px;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   overflow: hidden;
 }
 
 .paragraph {
   color: rgb(146, 144, 144);
   font-size: 1.2rem;
-  width: 300px;
+  width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -75,17 +75,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin: 30px auto 0;
-}
-
-@media (max-width: 800px) {
-  .deck {
-    flex-direction: column;
-    width: auto;
-  }
-  .card {
-    margin: 20px auto;
-    width: 500px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -106,5 +95,36 @@ a:hover {
   }
   .card .wrapper:last-of-type {
     margin: 10px auto 0;
+  }
+}
+
+@media (max-width: 944px) {
+  .deck {
+    flex-direction: column;
+    width: auto;
+  }
+  .card {
+    margin: 20px auto;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+  .content {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .profile {
+    width: 110px;
+    height: 110px;
+  }
+  .content {
+    margin-left: 15px;
   }
 }
