@@ -1,0 +1,13 @@
+:root {
+  --white: #fff;
+  --black: black;
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --link: #57a6ff;
+  --footer: #34314b;
+  --footer-base: #2e2b45;
+  --contrast: var(var(--font-color-light));
+  --danger: rgb(160, 5, 5);
+  --success: rgb(13, 197, 13);
+}
