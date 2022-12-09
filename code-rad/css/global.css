@@ -8,6 +8,8 @@
   --footer: #34314b;
   --footer-base: #2e2b45;
   --contrast: var(var(--font-color-light));
-  --danger: rgb(160, 5, 5);
-  --success: rgb(13, 197, 13);
+  --success: #64ecf5;
+  --danger: #ff8b8D;
+  --grad-1: #a1ecff;
+  --grad-2: #7dbcff;
 }
