@@ -55,10 +55,11 @@ a:hover {
 .paragraph {
   color: rgb(146, 144, 144);
   font-size: 1.2rem;
+  width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
-  text-overflow: ellipsis;
-  /* max-lines: 2; */
-  max-height: 100px;
 }
 
 .icon {
