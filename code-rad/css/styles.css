@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: ease-in .3s;
+  z-index: 10;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
