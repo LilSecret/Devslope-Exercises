@@ -33,7 +33,6 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--link);
 }
 
 h2 {
@@ -54,6 +53,21 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 0.938rem 1.563rem;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  transition: ease-in-out 0.3s;
+}
+
+.white-btn {
+  background-color: var(--white);
+  box-shadow: 0 2px 5px rgba(255, 252, 252, 0.8);
+  color: var(--link);
 }
 
 @media (min-width: 1200px) {
