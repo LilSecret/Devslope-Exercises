@@ -60,3 +60,17 @@
   height: 100%;
   z-index: -1;
 }
+
+.hero .wrapper {
+  margin-top: 100px;
+}
+
+.hero .heading {
+  margin-bottom: 30px;
+}
+
+.hero .button {
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 15px 25px;
+}
