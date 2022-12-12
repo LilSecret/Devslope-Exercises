@@ -17,6 +17,14 @@ body {
   box-sizing: border-box;
 }
 
+.wrapper {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3.125rem;
+}
+
 .container {
   display: block;
 }
