@@ -6,26 +6,33 @@
     <title>Mobile Form</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- my stylesheet  -->
     <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
-    <nav class="navbar wrapper">
-      <i class="icon fa-solid fa-bars"></i>
-      <h3 class="heading">Contacts</h3>
-      <i class="icon fa-solid fa-magnifying-glass"></i>
-      <i class="icon fa-solid fa-magnifying-glass"></i>
+    <nav class="navbar">
+      <i class="light icon fa-solid fa-bars"></i>
+      <h3 class="light heading">Contacts</h3>
+      <i class="light icon fa-solid fa-magnifying-glass"></i>
+      <i class="light icon fa-solid fa-magnifying-glass"></i>
     </nav>
     <main class="main-content">
       <form action="/" method="post">
-        <i class="icon fa-solid fa-user" for="name"></i>
+        <i class="grey icon fa-solid fa-user" for="name"></i>
         <input class="open" type="name" id="name" name="name">
-        <i class="icon fa-solid fa-phone" for="phoneNumber"></i>
+        <i class="grey icon fa-solid fa-phone" for="phoneNumber"></i>
         <input class="close" type="tel" name="phoneNumber" id="phoneNumber">
         <select class="close" name="gender" id="gender">
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        <i class="icon fa-solid fa-location-dot" for="address"></i>
+        <i class="grey icon fa-solid fa-location-dot" for="address"></i>
         <input class="open" type="text" name="address" id="address">
         <input type="text" class="close" id="city" name="city">
         <select class="open" name="state" id="state">
@@ -82,9 +89,9 @@
           <option value="WY">Wyoming</option>
         </select>
         <input class="open" type="tel" name="zipCode" id="zipCode">
-        <i class="icon fa-solid fa-envelope" for="email"></i>
+        <i class="grey icon fa-solid fa-envelope" for="email"></i>
         <input class="close" type="email" name="email" id="email">
-        <i class="icon fa-solid fa-cake-candles" for="birthday"></i>
+        <i class="grey icon fa-solid fa-cake-candles" for="birthday"></i>
         <input class="open" type="date" name="birthday" id="birthday">
       </form>
     </main>

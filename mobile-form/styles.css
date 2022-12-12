@@ -1,0 +1,45 @@
+:root {
+  --purple: #6202EE;
+  --white: #FFFFFF;
+  --grey: #757575;
+}
+
+/* global styles  */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+}
+
+.light {
+  color: var(--white);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* single styles  */
+.navbar {
+  align-items: center;
+  background-color: var(--purple);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 2fr 50px 50px;
+}
