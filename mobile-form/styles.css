@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper {
-  width: 50%;
+  width: 600px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -79,3 +79,36 @@ body {
   display: grid;
   grid-template-columns: auto 2fr auto auto;
 }
+
+/* form grid areas  */
+
+.form {
+  align-items: center;
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+  "user name name name name name"
+  "phone number number number gender gender"
+  "location address address address address address"
+  ". city city city city city"
+  ". state state state zip zip"
+  "envelope email email email email email"
+  "cake date date date date date"
+  ;
+}
+
+.fa-user { grid-area: user }
+.name { grid-area: name }
+.fa-phone { grid-area: phone }
+.number { grid-area: number }
+.gender { grid-area: gender }
+.fa-location-dot { grid-area: location }
+.address { grid-area: address }
+.city { grid-area: city }
+.state { grid-area: state }
+.zip { grid-area: zip }
+.fa-envelope { grid-area: envelope }
+.email { grid-area: email }
+.fa-cake-candles { grid-area: cake }
+.date { grid-area: date }
