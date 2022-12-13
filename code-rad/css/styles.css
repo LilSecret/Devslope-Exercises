@@ -164,3 +164,10 @@
   transform: translateX(-50%);
   top: 100px;
 }
+
+/* package section  */
+.packages-section {
+  color: var(--black);
+  margin: 100px auto;
+  text-align: center;
+}
