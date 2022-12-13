@@ -7,7 +7,7 @@
   --link: #57a6ff;
   --footer: #34314b;
   --footer-base: #2e2b45;
-  --contrast: var(var(--font-color-light));
+  --contrast: rgba(246, 248, 249, 0.8);
   --success: #64ecf5;
   --danger: #ff8b8D;
   --grad-1: #a1ecff;
@@ -48,7 +48,7 @@ img {
 }
 
 section {
-  padding: 100px 0;
+  padding: 6.25rem 0 3.125rem;
 }
 
 .container {
@@ -71,13 +71,17 @@ section {
 
 .btn-white {
   background-color: var(--white);
-  box-shadow: 0 2px 5px rgba(255, 252, 252, 0.8);
+  box-shadow: 0 0.125rem 0.313rem rgba(255, 252, 252, 0.8);
   color: var(--link);
 }
 
 .btn-primary {
   background: linear-gradient(to right, var(--grad-1), var(--grad-2));
   color: var(--white);
+}
+
+.bg-contrast {
+  background-color: var(--contrast);
 }
 
 @media (min-width: 1200px) {
