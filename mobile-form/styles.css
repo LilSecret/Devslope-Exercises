@@ -31,6 +31,7 @@ body {
 }
 
 .icon {
+  border-radius: 1rem;
   font-size: 1.5rem;
   padding: 0.938rem 1.875rem;
 }
@@ -76,6 +77,31 @@ body {
 .light.icon:hover {
   background-color: #8f45fd;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  background-color: red;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
 /* single styles  */
 .navbar {
   align-items: center;
