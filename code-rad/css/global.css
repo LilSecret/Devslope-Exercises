@@ -59,6 +59,11 @@ section {
   margin-right: auto;
 }
 
+.heading {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .btn {
   border-radius: 2rem;
   padding: 0.938rem 1.563rem;
