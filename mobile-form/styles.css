@@ -85,7 +85,6 @@ select {
   appearance: none;
   position: relative;
   cursor: pointer;
-  transition: .2s ease-in;
 }
 
 select::-ms-expand {
@@ -118,6 +117,12 @@ select::after {
 .zip::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.date {
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* form grid areas  */

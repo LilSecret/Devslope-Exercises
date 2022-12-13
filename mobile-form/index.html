@@ -95,10 +95,18 @@
           <i class="grey icon fa-solid fa-envelope" for="email"></i>
           <input class="close input email" type="email" name="email" id="email" placeholder="Email">
           <i class="grey icon fa-solid fa-cake-candles" for="birthday"></i>
-          <input class="open input date" type="number" name="birthday" id="birthday" placeholder="Birthday">
+          <div class="open input date">
+            Birthday
+            <input class="special-date" type="date">
+          </div>
+          <!-- <input class="open input date" type="number" name="birthday" id="birthday" placeholder="Birthday"> -->
       </form>
     </main>
     <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
+    <script>
+      var birthday = document.querySelector(".special-date").
+      console.log(birthday);
+    </script>
   </body>
 </html>
 
