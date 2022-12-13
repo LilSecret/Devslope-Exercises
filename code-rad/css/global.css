@@ -8,7 +8,7 @@
   --footer: #34314b;
   --footer-base: #2e2b45;
   --contrast: rgba(246, 248, 249, 0.8);
-  --success: #64ecf5;
+  --success: #64f590;
   --danger: #ff8b8D;
   --grad-1: #a1ecff;
   --grad-2: #7dbcff;
@@ -63,6 +63,9 @@ section {
   font-weight: bold;
   font-size: 2rem;
 }
+
+.success { color: var(--success); }
+.danger { color: var(--danger); }
 
 .btn {
   border-radius: 2rem;

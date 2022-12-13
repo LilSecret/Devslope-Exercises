@@ -167,7 +167,68 @@
 
 /* package section  */
 .packages-section {
-  color: var(--black);
+  color: var(--font-color-base);
   margin: 100px auto;
   text-align: center;
 }
+
+.packages {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: var(--contrast);
+  border-radius: 8px;
+  padding: 10px 40px;
+  position: relative;
+  width: 300px;
+}
+
+.card .heading {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+.card .price {
+  font-size: 2rem;
+  color: var(--link);
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.card .time {
+  margin: 0 auto 50px;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 2px var(--font-color-base);
+}
+
+
+.package-perk:first-of-type {
+  margin-top: 10px;
+}
+
+.package-perk {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.package-perk .fa-solid { font-size: 1.5rem; }
+.fa-xmark { margin-right: 5px; }
+
+.middle {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.card .btn-primary {
+  margin: 10px 20px;
+}
+
+.middle .fa-check { color: var(--success); }
+.middle .fa-xmark { color: var(--danger); }
