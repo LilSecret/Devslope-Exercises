@@ -112,6 +112,14 @@ select::after {
   padding: 0.625rem;
 }
 
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button,
+.zip::-webkit-outer-spin-button,
+.zip::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /* form grid areas  */
 
 .form {

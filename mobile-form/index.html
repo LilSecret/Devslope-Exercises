@@ -28,7 +28,7 @@
           <i class="grey icon fa-solid fa-user" for="name"></i>
           <input class="open input name" type="name" id="name" name="name" placeholder="Name">
           <i class="grey icon fa-solid fa-phone" for="phoneNumber"></i>
-          <input class="close input number" type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+          <input class="close input number" type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" max="10">
           <select class="close input gender" name="gender" id="gender">
             <option selected disabled>Choose one</option>
             <option value="male">Male</option>
@@ -91,11 +91,11 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
-          <input class="open input zip" type="tel" name="zipCode" id="zipCode" placeholder="Zip">
+          <input class="open input zip" type="number" name="zipCode" id="zipCode" placeholder="Zip">
           <i class="grey icon fa-solid fa-envelope" for="email"></i>
           <input class="close input email" type="email" name="email" id="email" placeholder="Email">
           <i class="grey icon fa-solid fa-cake-candles" for="birthday"></i>
-          <input class="close input date" type="text" name="birthday" id="birthday" placeholder="Birthday">
+          <input class="open input date" type="number" name="birthday" id="birthday" placeholder="Birthday">
       </form>
     </main>
     <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
