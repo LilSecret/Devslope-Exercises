@@ -186,8 +186,9 @@ header::before {
 .card {
   background-color: var(--white);
   border-radius: 0.5rem;
-  padding: 0.625rem 0;
+  padding: 0.625rem 10px;
   position: relative;
+  user-select: none;
 }
 
 .card .heading {
@@ -224,9 +225,11 @@ header::before {
 
 .card.middle {
   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+  padding: 0 1.25rem 2.5rem;
   z-index: 2;
-  padding: 0 1.25rem;
 }
-.card.middle .btn-primary { margin: 0.625rem 1.25rem; }
+
+.card.middle .package-perk { margin-bottom: 0.938rem; }
+.card.middle .btn { padding-right: 3.125rem; }
 .card.middle .fa-check { color: var(--success); }
 .card.middle .fa-xmark { color: var(--danger); }
