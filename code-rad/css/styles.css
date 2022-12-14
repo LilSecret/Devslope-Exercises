@@ -242,6 +242,7 @@ header::before {
   box-shadow: 0 0 0.313rem rgba(97, 97, 97, 0.5);
   border-radius: 0.5rem;
   padding: 1.875rem;
+  position: relative;
 }
 
 .testimonial .header {
@@ -249,7 +250,7 @@ header::before {
   align-items: center;
 }
 
-.testimonial.one img {
+.testimonial.one .profile {
   width: 4.375rem;
   height: 4.375rem;
   margin-right: 1.875rem;
@@ -258,6 +259,14 @@ header::before {
 .testimonial.one p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.testimonial.one .quote {
+  width: 4.375rem;
+  height: 4.375rem;
+  position: absolute;
+  right: 1.875rem;
+  top: 22.875rem;
 }
 
 .testimonial .name {
@@ -271,7 +280,7 @@ header::before {
   font-size: 0.875rem;
 }
 
-.testimonial img {
+.testimonial .profile {
   border-radius: 50%;
   margin-right: 0.938rem;
   width: 3.125rem;
