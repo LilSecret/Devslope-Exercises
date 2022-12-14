@@ -60,6 +60,17 @@ section {
   margin-right: auto;
 }
 
+.small-container {
+  margin: 6.25rem auto;
+  color: var(--font-color-base);
+  text-align: center;
+}
+
+.big-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 .heading {
   font-weight: bold;
   font-size: 2rem;
@@ -98,5 +109,5 @@ section {
 }
 
 @media (min-width: 768px) {
-  .pricing-table { width: 800px; }
+  .small-container { width: 800px; }
 }
