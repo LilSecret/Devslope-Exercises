@@ -51,6 +51,11 @@ section {
   padding: 6.25rem 0 3.125rem;
 }
 
+hr {
+  border: none;
+  border-bottom: solid 2px var(--font-color-base);
+}
+
 .container {
   width: 100%;
   padding-left: 0.938rem;
@@ -94,4 +99,8 @@ section {
 
 @media (min-width: 1200px) {
   .container { width: 1140px }
+}
+
+@media (min-width: 768px) {
+  .pricing-table { width: 800px; }
 }
