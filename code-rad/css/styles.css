@@ -206,6 +206,11 @@ header::before {
   margin: 0 auto 50px;
 }
 
+.card hr {
+  border: none;
+  border-bottom: solid 2px var(--font-color-base);
+}
+
 .card .package-perk:first-of-type { margin-top: 0.625rem; }
 
 .card .package-perk {

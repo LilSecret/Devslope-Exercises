@@ -51,10 +51,6 @@ section {
   padding: 6.25rem 0 3.125rem;
 }
 
-hr {
-  border: none;
-  border-bottom: solid 2px var(--font-color-base);
-}
 
 .container {
   width: 100%;
