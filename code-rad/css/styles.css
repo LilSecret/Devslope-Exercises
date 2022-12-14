@@ -159,19 +159,19 @@ header::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 100px;
+  top: 6.25rem;
 }
 
 .pricing-section {
   color: var(--font-color-base);
-  margin: 100px auto;
+  margin: 6.25rem auto;
   text-align: center;
 }
 
 .pricing-table {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.625rem;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   grid-template-areas: 
   "header header header"
   "first middle last"
@@ -184,9 +184,9 @@ header::before {
 .pricing-table .last{ grid-area: last; }
 
 .card {
-  background-color: var(--contrast);
-  border-radius: 8px;
-  padding: 10px 0;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0;
   position: relative;
 }
 
@@ -206,7 +206,7 @@ header::before {
   margin: 0 auto 50px;
 }
 
-.card .package-perk:first-of-type { margin-top: 10px; }
+.card .package-perk:first-of-type { margin-top: 0.625rem; }
 
 .card .package-perk {
   align-items: center;
@@ -215,13 +215,13 @@ header::before {
 }
 
 .card .package-perk .fa-solid { font-size: 1.5rem; }
-.fa-xmark { margin-right: 5px; }
+.fa-xmark { margin-right: 0.313rem; }
 
 .card.middle {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
   z-index: 2;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
-.card.middle .btn-primary { margin: 10px 20px; }
+.card.middle .btn-primary { margin: 0.625rem 1.25rem; }
 .card.middle .fa-check { color: var(--success); }
 .card.middle .fa-xmark { color: var(--danger); }
