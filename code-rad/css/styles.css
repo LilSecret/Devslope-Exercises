@@ -346,6 +346,10 @@ footer {
   width: 15px;
 }
 
+.service-wrapper p {
+  color: var(--font-color-light);
+}
+
 .small-container.footer-bottom {
   margin: 0 auto;
 }
