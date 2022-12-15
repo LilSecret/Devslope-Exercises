@@ -367,6 +367,17 @@ footer {
   width: 100%;
 }
 
-.small-container.footer-bottom {
+.footer-bottom-wrapper {
+  align-items: center;
+  display: flex;
+  max-width: 45%;
   margin: 0 auto;
+  justify-content: space-between;
 }
+
+.footer-bottom-links a {
+  color: var(--white);
+  margin: 0 10px;
+}
+
+.small-container.footer-bottom { margin: 0 auto; }
