@@ -289,3 +289,63 @@ header::before {
 
 .testimonials .big-heading { margin-bottom: 9.375rem; }
 .testimonial p { color: var(--font-color-base); }
+
+/* footer section  */
+footer {
+  background-color: var(--footer);
+  padding-top: 100px;
+}
+.footer-top {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 100px;
+}
+
+.footer-bottom {
+  background-color: var(--footer-base);
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-top .col {
+  justify-self: center;
+}
+
+.footer-top .col h5 {
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer-top .contact {
+  margin-bottom: 20px;
+}
+
+.footer-top .contact p {
+  color: var(--white);
+  /* margin: 0 auto; */
+}
+
+.footer-top .socials {
+  display: flex;
+  color: var(--white);
+}
+
+.footer-top .socials a {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.socials .icon {
+  margin-right: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.small-container.footer-bottom {
+  margin: 0 auto;
+}
