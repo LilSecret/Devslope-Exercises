@@ -302,11 +302,6 @@ footer {
   padding: 100px;
 }
 
-.footer-bottom {
-  background-color: var(--footer-base);
-  padding: 10px 0;
-  width: 100%;
-}
 
 .footer-top .col {
   justify-self: center;
@@ -348,6 +343,28 @@ footer {
 
 .service-wrapper p {
   color: var(--font-color-light);
+}
+
+.recent-post {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.recent-post-video-wrapper {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.post-inner h5 { margin: 0 auto; }
+
+.post-inner a {
+  color: var(--white);
+}
+
+.footer-bottom {
+  background-color: var(--footer-base);
+  padding: 10px 0;
+  width: 100%;
 }
 
 .small-container.footer-bottom {
