@@ -302,6 +302,14 @@ footer {
   padding: 100px;
 }
 
+<<<<<<< HEAD
+=======
+.footer-bottom {
+  background-color: var(--footer-base);
+  padding: 10px 0;
+  width: 100%;
+}
+>>>>>>> 1053325edad05b6dcffecbae7a4ca2ea51b5a11d
 
 .footer-top .col {
   justify-self: center;
