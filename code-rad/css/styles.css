@@ -314,7 +314,14 @@ footer {
 .footer-top .col h5 {
   color: var(--white);
   font-weight: 500;
+  font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.footer-top .service-wrapper h5 { font-weight: bold; }
+
+.footer-top .col p {
+  margin: 0 auto;
 }
 
 .footer-top .contact {
@@ -355,12 +362,22 @@ footer {
 }
 
 .recent-post-video-wrapper {
-  width: 7.5rem;
+  width: 10rem;
   margin-right: 0.625rem;
 }
 
-.post-inner h5 { margin: 0 auto; }
+.post-inner { margin-top: -0.313rem; }
 
+.post-inner p {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.post-inner span {
+  color: var(--font-color-light);
+  font-size: .8rem;
+}
 .post-inner a {
   color: var(--white);
 }
