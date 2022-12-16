@@ -192,7 +192,7 @@ header::before {
 
 .card hr {
   border: none;
-  border-bottom: solid 2px var(--font-color-base);
+  border-bottom: solid 0.125rem var(--font-color-base);
 }
 
 .card .package-perk:first-of-type { margin-top: 0.625rem; }
@@ -293,13 +293,13 @@ header::before {
 /* footer section  */
 footer {
   background-color: var(--footer);
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 .footer-top {
   display: grid;
-  gap: 50px;
+  gap: 3.125rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 100px;
+  padding: 6.25rem;
 }
 
 .footer-top .col {
@@ -309,11 +309,11 @@ footer {
 .footer-top .col h5 {
   color: var(--white);
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .footer-top .contact {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .footer-top .contact p {
@@ -332,12 +332,12 @@ footer {
 }
 
 .socials .icon {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .icon {
-  margin-right: 10px;
-  width: 15px;
+  margin-right: 0.625rem;
+  width: 0.938rem;
 }
 
 .service-wrapper p {
@@ -346,12 +346,12 @@ footer {
 
 .recent-post {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .recent-post-video-wrapper {
-  width: 120px;
-  margin-right: 10px;
+  width: 7.5rem;
+  margin-right: 0.625rem;
 }
 
 .post-inner h5 { margin: 0 auto; }
@@ -362,7 +362,7 @@ footer {
 
 .footer-bottom {
   background-color: var(--footer-base);
-  padding: 10px 0;
+  padding: 0.625rem 0;
   width: 100%;
 }
 
@@ -376,21 +376,21 @@ footer {
 
 .footer-bottom-links a {
   color: var(--white);
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .small-container.footer-bottom { margin: 0 auto; }
 
 #scrollBtn {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
   color: var(--white);
   cursor: pointer;
   display: block;
   position: fixed;
-  right: 25px;
-  bottom: 25px;
-  padding: 10px 20px;
+  right: 1.563rem;
+  bottom: 1.563rem;
+  padding: 0.625rem 1.25rem;
   font-size: 2rem;
   z-index: 5;
 }
