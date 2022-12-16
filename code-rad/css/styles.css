@@ -391,9 +391,11 @@ footer {
 .footer-bottom-wrapper {
   align-items: center;
   display: flex;
-  max-width: 45%;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.footer-bottom .copyright {
+  margin-right: 6.25rem;
 }
 
 .footer-bottom-links a {
