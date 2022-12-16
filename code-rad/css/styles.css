@@ -11,7 +11,7 @@
   z-index: 5;
 }
 
-.navbar .container {
+.nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,16 +116,17 @@ header::before {
   margin-right: 0.938rem;
 }
 
-.service-card h3 {
-  margin-top: 0;
-}
-
 .service-card .img-1 { background: linear-gradient(45deg, #A555EC 0%, #00E7FF 100%); }
 .service-card .img-2 { background: linear-gradient(45deg, #ADE792 0%, #C060A1 100%); }
 .service-card .img-3 { background: linear-gradient(45deg, #FFE15D 0%, #393E46 100%); }
 .service-card .img-4 { background: linear-gradient(45deg, #54B435 0%, #E6CBA8 100%); }
 .service-card .img-5 { background: linear-gradient(45deg, #9CFF2E 0%, #A7FFE4 100%); }
 .service-card .img-6 { background: linear-gradient(45deg, #ADDDD0 0%, #E80F88 100%); }
+
+.service-card h3 {
+  margin-top: 0;
+}
+
 
 .our-story {
   text-align: center;
@@ -134,7 +135,7 @@ header::before {
 
 .our-story .header { margin-bottom: 6.25rem; }
 .our-story .header .heading { font-size: 2.5rem; }
-.our-story-video a { position: relative; }
+.story-video a { position: relative; }
 
 .our-story .story-video-bg {
   border-radius: 0.5rem;
@@ -142,7 +143,7 @@ header::before {
   margin-bottom: -15.625rem;
 }
 
-.our-story-video .play-btn {
+.story-video .play-btn {
   box-shadow: 0 0.313rem 0.625rem #a555ec4b;
   border-radius: 0.5rem;
   width: 6.25rem;
@@ -163,14 +164,14 @@ header::before {
   ;
   margin: 0 auto;
 }
-.pricing-table .header-section{ grid-area: header; }
+.pricing-table .header{ grid-area: header; }
 .pricing-table .first{ grid-area: first; }
 .pricing-table .middle{ grid-area: middle; }
 .pricing-table .last{ grid-area: last; }
 
-.header-section { margin: 7.5rem auto 4.688rem; }
+.pricing-table .header { margin: 7.5rem auto 4.688rem; }
 
-.card {
+.pricing-card {
   background-color: var(--white);
   border-radius: 0.5rem;
   padding: 2.5rem 0.625rem;
@@ -178,49 +179,49 @@ header::before {
   user-select: none;
 }
 
-.card .heading {
+.pricing-card .heading {
   color: var(--black);
   font-size: 1.5rem;
 }
 
-.card .price {
+.pricing-card .price {
   font-size: 2rem;
   color: var(--link);
   font-weight: bold;
   margin: 0 auto;
 }
 
-.card .time {
+.pricing-card .time {
   margin: 0 auto 3.125rem;
 }
 
-.card hr {
+.pricing-card hr {
   border: none;
   border-bottom: solid 0.125rem var(--font-color-base);
 }
 
-.card .package-perk:first-of-type { margin-top: 0.625rem; }
+.pricing-card .perk:first-of-type { margin-top: 0.625rem; }
 
-.card .package-perk {
+.pricing-card .perk {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.card .package-perk .fa-solid { font-size: 1.5rem; }
-.fa-xmark { margin-right: 0.313rem; }
+.pricing-card .perk .fa-solid { font-size: 1.5rem; }
+.pricing-card .perk .fa-xmark { margin-right: 0.313rem; }
 
-.card.middle {
+.pricing-card.middle {
   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
   padding: 0 1.25rem 2.5rem;
   z-index: 2;
 }
 
-.card.middle .btn { width: 100%; }
-.card.middle .btn a { color: var(--white); }
-.card.middle .package-perk { margin-bottom: 0.938rem; }
-.card.middle .fa-check { color: var(--success); }
-.card.middle .fa-xmark { color: var(--danger); }
+.pricing-card.middle .btn { width: 100%; }
+.pricing-card.middle .btn a { color: var(--white); }
+.pricing-card.middle .package-perk { margin-bottom: 0.938rem; }
+.pricing-card.middle .fa-check { color: var(--success); }
+.pricing-card.middle .fa-xmark { color: var(--danger); }
 
 .testimonials { color: var(--black); }
 
@@ -246,11 +247,6 @@ header::before {
   position: relative;
 }
 
-.testimonial .header {
-  display: flex;
-  align-items: center;
-}
-
 .testimonial.one .profile {
   width: 4.375rem;
   height: 4.375rem;
@@ -270,15 +266,9 @@ header::before {
   top: 22.875rem;
 }
 
-.testimonial .name {
-  margin: 0 auto 0.625rem;
-  font-weight: 600;
-  font-size: 1.125rem;
-}
-
-.testimonial p {
-  line-height: 1.6;
-  font-size: 0.875rem;
+.testimonial .header {
+  display: flex;
+  align-items: center;
 }
 
 .testimonial .profile {
@@ -288,10 +278,20 @@ header::before {
   height: 3.125rem;
 }
 
-.testimonials .big-heading { margin-bottom: 9.375rem; }
-.testimonial p { color: var(--font-color-base); }
+.testimonial .name {
+  margin: 0 auto 0.625rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
 
-/* footer section  */
+.testimonial p {
+  line-height: 1.6;
+  font-size: 0.875rem;
+  color: var(--font-color-base);
+}
+
+.testimonials .big-heading { margin-bottom: 9.375rem; }
+
 footer {
   background-color: var(--footer);
   padding-top: 6.25rem;
@@ -314,70 +314,56 @@ footer {
   margin-bottom: 1rem;
 }
 
-.footer-top .service-wrapper h5 { font-weight: bold; }
+.footer-top .col p { margin: 0 auto; }
+.footer-top .col.one .contact { margin-bottom: 1.25rem; }
+.footer-top .col.one .contact p:first-of-type { margin-top: -0.313rem; }
+.footer-top .col.one .contact p { color: var(--white); }
 
-.footer-top .col p {
-  margin: 0 auto;
-}
-
-.footer-top .contact {
-  margin-bottom: 1.25rem;
-}
-
-.footer-top .contact p:first-of-type { margin-top: -0.313rem; }
-.footer-top .contact p {
-  color: var(--white);
-}
-
-.footer-top .socials {
+.footer-top .col.one .socials {
   display: flex;
   color: var(--white);
 }
 
-.footer-top .socials a {
+.footer-top .col.one .socials a {
   color: var(--white);
   font-size: 1rem;
 }
 
-.contact .icon {
+.col.one .contact .icon {
   margin-right: 0.625rem;
   width: 0.938rem;
 }
 
-.socials .icon {
+.col.one .socials .icon {
   margin-right: 1.875rem;
 }
 
-.footer-top .service-wrapper .first-heading{ margin-top: -0.313rem; }
+.footer-top .col.two h5 { font-weight: bold; }
+.footer-top .col.two .first-heading{ margin-top: -0.313rem; }
+.footer-top .col.two p { color: var(--font-color-light); }
 
-.service-wrapper p {
-  color: var(--font-color-light);
-}
-
-.recent-post {
+.col.three .recent-post {
   display: flex;
   margin-bottom: 1.25rem;
 }
 
-.recent-post-video-wrapper {
+.col.three .video-wrapper {
   width: 10rem;
   margin-right: 0.625rem;
 }
 
-.post-inner { margin-top: -0.313rem; }
+.col.three .post-inner { margin-top: -0.313rem; }
 
-.post-inner p {
+.col.three .post-inner p {
   margin: 0 auto;
   font-weight: bold;
   font-size: .8rem;
 }
 
+.post-inner a { color: var(--white); }
 .post-inner span {
   color: var(--font-color-light);
   font-size: .8rem;
-}
-.post-inner a {
-  color: var(--white);
 }
 
 .footer-bottom {
