@@ -177,9 +177,9 @@ header::before {
 .card {
   background-color: var(--white);
   border-radius: 0.5rem;
-  padding: 0.625rem 0.625rem;
+  padding: 2.5rem 0.625rem;
   position: relative;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .card .heading {
@@ -220,11 +220,8 @@ header::before {
   z-index: 2;
 }
 
-.card.middle .btn {
- padding-right: 3.125rem;
- padding-left: 3.125rem;
-}
-
+.card.middle .btn { width: 100%; }
+.card.middle .btn a { color: var(--white); }
 .card.middle .package-perk { margin-bottom: 0.938rem; }
 .card.middle .fa-check { color: var(--success); }
 .card.middle .fa-xmark { color: var(--danger); }
