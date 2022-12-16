@@ -39,11 +39,16 @@ header,
   color: var(--white);
   position: relative;
   z-index: 1;
-  padding: 8rem 0;
 }
 
-header { background-image: url("/assets/bg-header-1.jpg"); }
-.our-story { background-image: url("/assets/bg-demo.jpg"); }
+header {
+  background-image: url("/assets/bg-header-1.jpg");
+  padding: 9.375rem 0;
+}
+.our-story {
+ background-image: url("/assets/bg-demo.jpg");
+ padding: 8rem 0;
+}
 
 header::before {
   background: linear-gradient(
@@ -75,7 +80,7 @@ header::before {
 }
 
 .why-me-wrapper div { flex: 1; }
-.why-me-wrapper .block-text { margin-right: 3.125rem; }
+.why-me-wrapper .block-text { padding-right: 6.25rem; }
 .why-me-wrapper .block-text span { font-weight: 300; }
 
 .why-me-wrapper .block-text h2 {
@@ -127,6 +132,9 @@ header::before {
   text-align: center;
   position: relative;
 }
+
+.our-story .header { margin-bottom: 100px; }
+.our-story .header .heading { font-size: 2.5rem; }
 
 .our-story-video a {
   position: relative;
