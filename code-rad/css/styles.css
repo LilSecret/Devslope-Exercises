@@ -119,7 +119,7 @@ header::before {
 .service-card h3 {
   margin-top: 0;
 }
-/* card img colors   */
+
 .service-card .img-1 { background: linear-gradient(45deg, #A555EC 0%, #00E7FF 100%); }
 .service-card .img-2 { background: linear-gradient(45deg, #ADE792 0%, #C060A1 100%); }
 .service-card .img-3 { background: linear-gradient(45deg, #FFE15D 0%, #393E46 100%); }
@@ -127,18 +127,14 @@ header::before {
 .service-card .img-5 { background: linear-gradient(45deg, #9CFF2E 0%, #A7FFE4 100%); }
 .service-card .img-6 { background: linear-gradient(45deg, #ADDDD0 0%, #E80F88 100%); }
 
-
 .our-story {
   text-align: center;
   position: relative;
 }
 
-.our-story .header { margin-bottom: 100px; }
+.our-story .header { margin-bottom: 6.25rem; }
 .our-story .header .heading { font-size: 2.5rem; }
-
-.our-story-video a {
-  position: relative;
-}
+.our-story-video a { position: relative; }
 
 .our-story .story-video-bg {
   border-radius: 0.5rem;
@@ -179,7 +175,7 @@ header::before {
   border-radius: 0.5rem;
   padding: 2.5rem 0.625rem;
   position: relative;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .card .heading {
@@ -328,9 +324,9 @@ footer {
   margin-bottom: 1.25rem;
 }
 
+.footer-top .contact p:first-of-type { margin-top: -0.313rem; }
 .footer-top .contact p {
   color: var(--white);
-  /* margin: 0 auto; */
 }
 
 .footer-top .socials {
@@ -343,14 +339,16 @@ footer {
   font-size: 1rem;
 }
 
+.contact .icon {
+  margin-right: 0.625rem;
+  width: 0.938rem;
+}
+
 .socials .icon {
   margin-right: 1.875rem;
 }
 
-.icon {
-  margin-right: 0.625rem;
-  width: 0.938rem;
-}
+.footer-top .service-wrapper .first-heading{ margin-top: -0.313rem; }
 
 .service-wrapper p {
   color: var(--font-color-light);
