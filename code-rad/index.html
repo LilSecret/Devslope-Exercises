@@ -365,6 +365,17 @@
     <i class="fa-solid fa-arrow-up"></i>
   </a>
 
+  <script>
+    const navButton = document.querySelector("button[aria-expanded]");
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute("aria-expanded") === "true" || false;
+      navButton.setAttribute("aria-expanded", !expanded);
+    }
+
+    navButton.addEventListener("click", toggleNav)
+  </script>
+
   <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
 </body>
 

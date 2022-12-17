@@ -1,0 +1,18 @@
+/* ipads and tablets portrait  */
+/* ipads and tablets portrait  */
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  [aria-expanded="false"] ~ #navbarDropdown {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ #navbarDropdown {
+    display: block;
+  }
+}

@@ -17,6 +17,15 @@
   justify-content: space-between;
 }
 
+.nav-toggle-btn {
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 10px 7px;
+}
+
 .nav .logo {
   color: var(--white);
   font-size: 2rem;

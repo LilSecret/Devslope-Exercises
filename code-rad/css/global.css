@@ -60,6 +60,7 @@ section {
   padding-right: 0.938rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .small-container {
