@@ -112,5 +112,5 @@ section {
 }
 
 @media (min-width: 768px) {
-  .small-container { width: 800px; }
+  .small-container { width: 750px; }
 }

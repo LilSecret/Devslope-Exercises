@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav-toggle-btn {
@@ -166,7 +167,7 @@ header::before {
 .pricing-table {
   display: grid;
   gap: 0.625rem;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-areas: 
   "header header header"
   "first middle last"
