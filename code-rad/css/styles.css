@@ -23,8 +23,10 @@
   background: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
   border: solid 1px grey;
   color: var(--white);
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
+  outline: none;
   padding: 5px 10px 7px;
 }
 
