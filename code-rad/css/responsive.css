@@ -1,5 +1,4 @@
 /* ipads and tablets portrait  */
-/* ipads and tablets portrait  */
 @media screen and (max-width: 768px) {
   [aria-controls="navbarDropdown"] {
     display: block;
@@ -28,5 +27,4 @@
     color: var(--black);
     margin-right: 20px;
   }
-
 }
