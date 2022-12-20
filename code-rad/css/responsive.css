@@ -27,4 +27,9 @@
     color: var(--black);
     margin-right: 20px;
   }
+
+  .pricing-table .header p {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
