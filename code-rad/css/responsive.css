@@ -61,26 +61,38 @@
     flex-direction: column;
     text-align: center;
   }
+  
   .why-me-wrapper .block-text {
     padding-right: 0;
   }
+
   .testimonials-grid {
     grid-template-areas:
     "one one one one"
     "two two three three"
     ;
   }
+
   .testimonial.one .quote {
     top: 20px;
     bottom: initial;
   }
+
   .footer-top {
     display: flex;
     flex-direction: column;
   }
+
   .footer-top .col.one { order: 3; }
   .footer-top .col {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .footer-bottom-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom .copyright { margin-right: initial }
 }
