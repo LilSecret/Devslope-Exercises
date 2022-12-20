@@ -74,4 +74,13 @@
     top: 20px;
     bottom: initial;
   }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-top .col.one { order: 3; }
+  .footer-top .col {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
