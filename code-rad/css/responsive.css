@@ -50,5 +50,11 @@
 }
 
 @media screen and (max-width: 480px) {
-
+  .why-me-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .why-me-wrapper .block-text {
+    padding-right: 0;
+  }
 }
