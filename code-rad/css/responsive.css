@@ -32,4 +32,6 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .footer-top .col.three { grid-column: 1 / 3; }
 }
