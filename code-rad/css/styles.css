@@ -15,8 +15,8 @@
   background-color: var(--white);
 }
 
-.navbar.scrollBar .nav-toggle-btn,
-.navbar.scrollBar .link {
+.navbar.scrollBar .logo,
+.navbar.scrollBar .nav-toggle-btn {
   color: var(--font-color-dark);
 }
 
