@@ -57,6 +57,8 @@
 }
 
 @media screen and (max-width: 480px) {
+  header { text-align: center; }
+  
   .why-me-wrapper {
     flex-direction: column;
     text-align: center;
