@@ -64,4 +64,14 @@
   .why-me-wrapper .block-text {
     padding-right: 0;
   }
+  .testimonials-grid {
+    grid-template-areas:
+    "one one one one"
+    "two two three three"
+    ;
+  }
+  .testimonial.one .quote {
+    top: 20px;
+    bottom: initial;
+  }
 }
