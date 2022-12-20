@@ -161,7 +161,7 @@ header::before {
 
 .our-story .story-video-bg {
   border-radius: 0.5rem;
-  width: 37.5rem;
+  max-width: 37.5rem;
   margin-bottom: -15.625rem;
 }
 
@@ -178,20 +178,14 @@ header::before {
 
 .pricing-table {
   display: grid;
-  gap: 0.625rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-areas: 
-  "header header header"
-  "first middle last"
-  ;
   margin: 0 auto;
 }
-.pricing-table .header{ grid-area: header; }
-.pricing-table .first{ grid-area: first; }
-.pricing-table .middle{ grid-area: middle; }
-.pricing-table .last{ grid-area: last; }
 
-.pricing-table .header { margin: 7.5rem auto 4.688rem; }
+.pricing-table .header {
+  margin: 7.5rem auto 4.688rem;
+  grid-column: 1 / 4;
+}
 
 .pricing-card {
   background-color: var(--white);
