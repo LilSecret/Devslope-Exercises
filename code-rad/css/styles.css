@@ -11,6 +11,15 @@
   z-index: 5;
 }
 
+.navbar.scrollBar {
+  background-color: var(--white);
+}
+
+.navbar.scrollBar .nav-toggle-btn,
+.navbar.scrollBar .link {
+  color: var(--font-color-dark);
+}
+
 .nav .container {
   display: flex;
   align-items: center;
@@ -22,7 +31,7 @@
   border-radius: 0.5rem;
   /* background: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%); */
   /* border: solid 1px grey; */
-  /* padding: 5px 10px 7px; */
+  padding: 5px 10px 7px;
   background: none;
   border: none;
   color: var(--white);
