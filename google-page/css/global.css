@@ -7,9 +7,10 @@
   --grey: #8AA0A6;
   --dark-grey-one: #303134;
   --dark-grey-two: #3C4043;
+  --background-color: #202124;
 }
 
 body {
-  background-color: var(--dark-grey-two);
+  background-color: var(--background-color);
   font-family: 'Roboto', sans-serif;
 }
