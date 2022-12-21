@@ -1,0 +1,94 @@
+.navbar {
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.nav .brand {
+  margin-right: 30px;
+}
+
+.nav .search-box {
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--dark-grey-one);
+  display: flex;
+  padding: 15px 20px;
+  margin-right: auto;
+}
+
+.nav .search-box input {
+  background-color: var(--dark-grey-one);
+  border: none;
+  caret-color: var(--white);
+  color: var(--white);
+  font-size: 1rem;
+  outline: none;
+  width: 500px;
+}
+
+.nav .search-icon {
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 1.2rem;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav .item {
+  padding: 8px;
+  border-radius: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.right-nav .item:hover {
+  background-color: var(--dark-grey-two);
+}
+
+.right-nav .icon {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.right-nav .profile {
+  padding: 5px;
+}
+
+.nav-tabs {
+  margin-top: 10px;
+  margin-left: 220px;
+  color: var(--light-grey);
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs .tab {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.tab .icon { margin-right: 4px; }
+.nav-tabs .tab:last-of-type { margin-right: 100px; }
+.nav-tabs button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: var(--light-grey);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-tabs button:hover {
+  border: 1px solid var(--light-grey);
+  background-color: var(--dark-grey-one);
+  color: var(--white);
+
+}
