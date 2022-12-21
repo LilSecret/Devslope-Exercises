@@ -8,3 +8,7 @@
   --dark-grey-one: #303134;
   --dark-grey-two: #3C4043;
 }
+
+body {
+  background-color: var(--dark-grey-two);
+}
