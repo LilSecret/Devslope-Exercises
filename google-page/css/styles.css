@@ -3,7 +3,7 @@
   background-color: var(--background-color);
   display: flex;
   width: 100%;
-  padding: 20px 50px;
+  padding: 30px 50px;
 }
 
 .nav .brand {
@@ -61,7 +61,6 @@
 }
 
 .nav-tabs {
-  margin-top: 10px;
   margin-left: 220px;
   color: var(--light-grey);
   display: flex;
@@ -81,14 +80,24 @@
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 5px 15px;
   color: var(--light-grey);
   font-family: 'Open Sans', sans-serif;
+  padding: 5px 15px;
 }
 
 .nav-tabs button:hover {
   border: 1px solid var(--light-grey);
   background-color: var(--dark-grey-one);
   color: var(--white);
+}
 
+.main-content {
+  margin-left: 220px;
+}
+
+.results {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--light-grey);
+  margin-bottom: 20px;
 }
