@@ -62,7 +62,7 @@
 
 .nav-tabs {
   margin-left: 220px;
-  color: var(--light-grey);
+  color: var(--light-grey-one);
   display: flex;
   align-items: center;
 }
@@ -80,24 +80,45 @@
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
-  color: var(--light-grey);
+  color: var(--light-grey-one);
   font-family: 'Open Sans', sans-serif;
   padding: 5px 15px;
 }
 
 .nav-tabs button:hover {
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--light-grey-one);
   background-color: var(--dark-grey-one);
   color: var(--white);
 }
 
-.main-content {
+.body-wrapper {
+  display: flex;
   margin-left: 220px;
+  margin-right: 220px;
 }
 
-.results {
+.body-wrapper div { flex: 1; }
+.main-content { width: 40%; }
+
+.results-time {
   display: inline-block;
-  font-size: 14px;
-  color: var(--light-grey);
+  color: var(--light-grey-one);
   margin-bottom: 20px;
+}
+
+.site-link {
+  display: block;
+  color: var(--white);
+}
+
+.site-title {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px initial;
+}
+
+.right {
+  border-left: solid 1px var(--light-grey-two);
+  padding-left: 100px;
 }

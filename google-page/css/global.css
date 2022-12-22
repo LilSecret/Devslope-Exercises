@@ -3,7 +3,8 @@
   --dark-grey: #202124;
   --light-blue: #8AB4F8;
   --blue: #4285F4;
-  --light-grey: #9AA0A6;
+  --light-grey-one: #9AA0A6;
+  --light-grey-two: #bcc0c3;
   --grey: #8AA0A6;
   --dark-grey-one: #303134;
   --dark-grey-two: #3C4043;
@@ -25,9 +26,11 @@ body {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--dark-grey-two);
+  border-bottom: 1px solid var(--light-grey-two);
   height: 0;
   width: 100%;
 }
 
+
+span { font-size: 14px; }
 .blue { color: var(--blue); }
