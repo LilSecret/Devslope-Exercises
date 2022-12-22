@@ -190,3 +190,11 @@
   font-size: 22px;
   font-weight: normal;
 }
+
+.search-top .header .fa-solid { color: var(--light-grey-one); }
+
+.search-top p {
+  line-height: 1.58;
+  color: var(--light-grey-one);
+  font-size: 14px;
+}
