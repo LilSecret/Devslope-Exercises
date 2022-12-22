@@ -26,11 +26,15 @@ body {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--light-grey-two);
+  border-bottom: 1px solid var(--dark-grey-one);
   height: 0;
   width: 100%;
 }
 
+a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
 
 span { font-size: 14px; }
 .blue { color: var(--blue); }

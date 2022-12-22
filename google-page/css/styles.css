@@ -106,6 +106,10 @@
   margin-bottom: 20px;
 }
 
+.website {
+  padding-right: 100px;
+}
+
 .site-link {
   display: block;
   color: var(--white);
@@ -113,9 +117,21 @@
 
 .site-title {
   color: var(--light-blue);
+  display: block;
   text-decoration: none;
   font-size: 20px;
-  margin: 20px initial;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.site-details p{
+  margin: 0;
+  line-height: 1.58;
+  font-size: 14px;
+}
+
+.site-docs a:hover {
+  text-decoration: underline;
 }
 
 .right {
