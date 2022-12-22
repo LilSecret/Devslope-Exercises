@@ -107,8 +107,8 @@
   position: absolute;
 }
 
-.website {
-  padding-right: 100px;
+.website-wrapper {
+  margin-right: 100px;
   margin-top: 45px;
 }
 
@@ -136,19 +136,28 @@
   text-decoration: underline;
 }
 
-.others-search .top {
+.people-ask-wrapper {
+  margin-right: 
+}
+
+.people-ask .top {
   display: flex;
   align-items: center;
   margin-top: 45px;
 }
 
-.others-search h3 {
+.people-ask h3 {
   line-height: 28px;
   font-size: 22px;
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 20px;
+}
+
+.people-ask .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .others-search .fa-solid { color: var(--light-grey-one); }
