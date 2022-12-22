@@ -242,3 +242,5 @@
   transform: translateY(-50%);
   right: 5px;
 }
+
+.search-types hr { margin: 0; }
