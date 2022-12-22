@@ -104,10 +104,12 @@
   display: inline-block;
   color: var(--light-grey-one);
   margin-bottom: 20px;
+  position: absolute;
 }
 
 .website {
   padding-right: 100px;
+  margin-top: 45px;
 }
 
 .site-link {
