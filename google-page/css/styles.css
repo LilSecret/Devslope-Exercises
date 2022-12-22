@@ -193,9 +193,7 @@
   font-size: 14px;
 }
 
-.genres span {
-  color: rgba(555, 555, 555, 0.8);
-}
+.genres span { color: rgba(555, 555, 555, 0.8); }
 
 .genres a {
   color: var(--light-grey-one);
@@ -208,9 +206,7 @@
   right: 3px;
 }
 
-.search-types h3 {
-  margin: 16px 0;
-}
+.search-types h3 { margin: 16px 0; }
 
 .search-type {
   color: var(--light-grey-one);
@@ -225,9 +221,7 @@
   padding: 15px 0;
 }
 
-.search-type-container:hover {
-  background-color: var(--dark-grey-one);
-}
+.search-type-container:hover { background-color: var(--dark-grey-one); }
 
 .search-type-container h5 {
   margin: 0 0 10px;
