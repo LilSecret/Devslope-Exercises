@@ -180,3 +180,12 @@
   padding-left: 20px;
   margin-top: 45px;
 }
+
+.search-top .header {
+  display: flex;
+  align-items: center;
+}
+
+.search-top .header h3 {
+  margin: 0 10px 0 initial;
+}
