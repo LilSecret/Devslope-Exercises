@@ -151,6 +151,7 @@
 
 .people-ask .container {
   color: var(--light-grey-one);
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   font-weight: normal;
@@ -177,4 +178,5 @@
 .right {
   border-left: solid 1px var(--dark-grey-two);
   padding-left: 20px;
+  margin-top: 45px;
 }
