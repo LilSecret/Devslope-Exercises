@@ -38,3 +38,9 @@ a {
 
 span { font-size: 14px; }
 .blue { color: var(--blue); }
+
+.search-heading {
+  margin: 0 10px 0 0;
+  font-size: 22px;
+  font-weight: normal;
+}
