@@ -136,6 +136,23 @@
   text-decoration: underline;
 }
 
+.others-search .top {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.others-search h3 {
+  line-height: 28px;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.others-search .fa-solid { color: var(--light-grey-one); }
+
 .right {
   border-left: solid 1px var(--light-grey-two);
   padding-left: 100px;
