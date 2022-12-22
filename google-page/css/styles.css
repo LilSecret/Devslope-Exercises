@@ -104,7 +104,7 @@
 }
 
 .website-wrapper {
-  margin-right: 100px;
+  margin-right: 150px;
   margin-top: 45px;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .site-docs a:hover { text-decoration: underline; }
-.people-ask-wrapper { margin-right: 50px; }
+.people-ask-wrapper { margin-right: 100px; }
 
 .people-ask .top {
   display: flex;
@@ -175,6 +175,6 @@
 
 
 .right {
-  border-left: solid 1px var(--light-grey-two);
-  padding-left: 100px;
+  border-left: solid 1px var(--dark-grey-two);
+  padding-left: 20px;
 }
