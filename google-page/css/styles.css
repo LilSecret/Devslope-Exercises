@@ -94,7 +94,7 @@
 }
 
 .body-wrapper div { flex: 1; }
-.main-content { width: 40%; }
+.main-content-wrapper { max-width: 50%; }
 
 .results-time {
   display: inline-block;
@@ -173,12 +173,11 @@
 .people-ask .last-line hr { margin-right: 5px; }
 .people-ask .last-line a:hover { text-decoration: underline; }
 
-
-
-.right {
+.search-content-wrapper {
   border-left: solid 1px var(--dark-grey-two);
   padding-left: 20px;
   margin-top: 45px;
+  max-width: 400px;
 }
 
 .search-top .header {
@@ -187,5 +186,7 @@
 }
 
 .search-top .header h3 {
-  margin: 0 10px 0 initial;
+  margin: 0 10px 0 0;
+  font-size: 22px;
+  font-weight: normal;
 }
