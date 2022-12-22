@@ -198,3 +198,18 @@
   color: var(--light-grey-one);
   font-size: 14px;
 }
+
+.genres span {
+  color: rgba(555, 555, 555, 0.8);
+}
+
+.genres a {
+  color: var(--light-grey-one);
+  display: inline;
+  text-decoration: underline;
+}
+
+.genres .comma {
+  position: relative;
+  right: 3px;
+}
