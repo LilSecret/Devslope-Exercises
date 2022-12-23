@@ -8,3 +8,72 @@
   --font-base-two: #606368;
   --success: #01C8A7;
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--font-base-one);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 10%;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 20px 25px;
+}
+
+.btn-primary {
+  background-color: var(--primary );
+  color: var(--white);
+}
+
+.btn-light {
+  background-color: var(--white);
+  color: var(--primary)
+}
+
+
+.tag {
+  border: none;
+  border-radius: 2rem;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 12px;
+}
+
+.tag-primary { background-color: var(--primary); }
+.tag-success { background-color: var(--success); }
+
+.header {
+  text-align: center;
+}
+
+.header h5 {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-weight: normal;
+  font-size: 17px;
+}
