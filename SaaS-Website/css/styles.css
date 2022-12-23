@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.navbar-right {
+  align-items: center;
+  display: flex;
+}
+
+.nav .logo {
+  width: 200px;
+}
+
+.nav .link {
+  margin-right: 20px;
+  font-weight: 500;
+  color: var(--font-base-one);
+  font-size: 17px;
+}
+
+.hero {
+  padding-top: 100px;
+}

@@ -22,7 +22,7 @@ body {
 }
 
 img {
-  width: 10%;
+  width: 100%;
 }
 
 a {
@@ -77,3 +77,6 @@ a {
   font-weight: normal;
   font-size: 17px;
 }
+
+/* Colors */
+.primary { color: var(--primary) !important; }
