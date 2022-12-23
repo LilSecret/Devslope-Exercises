@@ -25,3 +25,21 @@
 .hero {
   padding-top: 100px;
 }
+
+.hero-wrapper {
+  display: flex;
+}
+
+.hero-logos {
+  display: flex;
+  position: relative;
+}
+
+.hero .logo {
+  box-sizing: content-box;
+  border-radius: 5rem;
+  box-shadow: 0px 0px 10px grey;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
