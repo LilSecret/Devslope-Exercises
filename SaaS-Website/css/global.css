@@ -32,6 +32,11 @@ a {
   font-family: sans-serif;
 }
 
+.container {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 .btn {
   border: none;
   border-radius: 2rem;
