@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   padding: 30px 100px;
+  z-index: 10;
 }
 
 .navbar-right {
@@ -23,12 +24,15 @@
 }
 
 .hero {
-  padding-top: 100px;
+  padding-top: 70px;
+  height: 80vh;
 }
 
 .hero-wrapper {
+  align-items: center;
   display: flex;
   position: relative;
+  height: 70vh;
 }
 
 .hero-wrapper div {
@@ -37,8 +41,9 @@
 
 .hero .block-text h1 {
   color: var(--dark);
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.2;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 600;
 }
