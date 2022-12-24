@@ -3,7 +3,7 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 30px 50px;
+  padding: 30px 100px;
 }
 
 .navbar-right {
@@ -28,11 +28,34 @@
 
 .hero-wrapper {
   display: flex;
+  position: relative;
+}
+
+.hero-wrapper div {
+  flex: 1;
+}
+
+.hero .block-text h1 {
+  color: var(--dark);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.hero .block-text p {
+  color: var(--font-base-one);
+}
+
+.hero .block-text .btn-light {
+  font-weight: bold;
 }
 
 .hero-logos {
+  background-color: grey;
   display: flex;
   position: relative;
+  height: 100%;
 }
 
 .hero .logo {
@@ -42,4 +65,9 @@
   width: 100px;
   height: 100px;
   padding: 20px;
+  position: absolute;
+}
+
+.hero .logo.google {
+  top: 20px;
 }
