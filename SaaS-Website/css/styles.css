@@ -57,22 +57,61 @@
 }
 
 .hero-logos {
-  background-color: grey;
-  display: flex;
   position: relative;
   height: 100%;
 }
 
 .hero .logo {
+  background-color: white;
   box-sizing: content-box;
   border-radius: 5rem;
-  box-shadow: 0px 0px 10px grey;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(105,105,105,0.6);
   position: absolute;
 }
 
+.hero .logo.big {
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+}
+
+.hero .logo.small {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
 .hero .logo.google {
+  right: 570px;
   top: 20px;
+}
+
+.hero .logo.paypal {
+  top: 250px;
+  right: 570px;
+}
+
+.hero .logo.weave {
+  top: 250px;
+  right: 200px;
+}
+
+.hero .logo.asana {
+  top: 20px;
+  right: 0px;
+}
+
+.hero .logo.atlassian {
+  top: 20px;
+  right: 350px;
+}
+
+.hero .logo.calender {
+  bottom: 0px;
+  right: 20px;
+}
+
+.hero .logo.google-a {
+  bottom: 100px;
+  right: 420px;
 }
