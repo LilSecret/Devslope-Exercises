@@ -76,13 +76,13 @@ a {
 .header h5 {
   color: var(--dark);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 33px;
   margin-bottom: 10px;
 }
 
 .header p {
   font-weight: normal;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 /* Colors */
