@@ -159,3 +159,18 @@
 .benefits .card-img-wrapper {
   width: 30%;
 }
+
+.prospectives {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 50px;
+}
+
+.prospectives .block-text-left {
+  margin-right: 150px;
+}
+
+.prospectives h3 {
+  font-size: 2rem;
+  color: var(--dark);
+}
