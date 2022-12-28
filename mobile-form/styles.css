@@ -5,7 +5,7 @@
   --light-grey: #E8E8E8;
 }
 
-/* global styles  */
+/* global */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -24,10 +24,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 3.125rem;
-}
-
-.container {
-  display: block;
 }
 
 .icon {
@@ -69,6 +65,22 @@ body {
   color: var(--grey);
 }
 
+.select-input {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
+
+.select-input select {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.icon-arrow {
+  user-select: none;
+  pointer-events: none;
+}
+
 /* global states  */
 .input:focus {
   outline: solid 1px var(--purple);
@@ -78,7 +90,15 @@ body {
   background-color: #8f45fd;
 }
 
+.select-input select:focus {
+  outline: none;
+}
+
+/* .select-input:active ~ .select-input select:active */
+
+/* get rid of default web stuff  */
 select {
+  border: none !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;

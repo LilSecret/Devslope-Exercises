@@ -29,11 +29,14 @@
           <input class="open input name" type="name" id="name" name="name" placeholder="Name">
           <i class="grey icon fa-solid fa-phone" for="phoneNumber"></i>
           <input class="close input number" type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" max="10">
-          <select class="close input gender" name="gender" id="gender">
-            <option selected disabled>Choose one</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
+          <div class="close input gender select-input">
+            <select class="close input gender" name="gender" id="gender">
+              <option selected disabled>Choose one</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <i class="icon-arrow fa-solid fa-caret-down"></i>
+          </div>
           <i class="grey icon fa-solid fa-location-dot" for="address"></i>
           <input class="open input address" type="text" name="address" id="address" placeholder="Address">
           <input type="text" class="close input city" id="city" name="city" placeholder="City">
