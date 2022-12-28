@@ -174,3 +174,40 @@
   font-size: 2rem;
   color: var(--dark);
 }
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.timeline .point {
+  padding: 30px;
+  border-radius: 50%;
+  background-color: var(--dark-white);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.timeline .point::after {
+  display: block;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.timeline .line {
+  background-color: #E6E9F2;
+  height: 2px;
+  display: inline-block;
+  width: 100px;
+  margin: 0 10px;
+}
