@@ -96,7 +96,7 @@ body {
 
 /* .select-input:active ~ .select-input select:active */
 
-/* get rid of default web stuff  */
+/* get rid of default input icon  */
 select {
   border: none !important;
   -webkit-appearance: none;
@@ -105,20 +105,6 @@ select {
   appearance: none;
   position: relative;
   cursor: pointer;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-select::after {
-  background-color: red;
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  z-index: 2;
 }
 
 /* single styles  */
