@@ -69,16 +69,20 @@ body {
   align-items: center;
   display: flex;
   font-size: 1rem;
+  position: relative;
 }
 
 .select-input select {
-  padding: 0;
-  margin-right: 10px;
+  padding: 1.25rem;
+  width: 100%;
 }
 
 .icon-arrow {
+  color: var(--grey);
   user-select: none;
   pointer-events: none;
+  position: absolute;
+  right: 20px;
 }
 
 /* global states  */
