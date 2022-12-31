@@ -133,6 +133,35 @@ select {
   user-select: none;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  position: relative;
+}
+
+.date input {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.date input {
+  opacity: 0;
+}
+
+.date h5 {
+  margin: 0;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.date .calendar {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 /* form grid areas  */
