@@ -18,30 +18,30 @@
   <body>
     <nav class="navbar">
       <i class="light icon fa-solid fa-bars"></i>
-      <h3 class="light heading">Contacts</h3>
+      <h3 class="light navbar-label">Contacts</h3>
       <i class="light icon fa-solid fa-magnifying-glass"></i>
       <i class="light icon fa-solid fa-ellipsis-vertical"></i>
     </nav>
     
-    <main class="wrapper">
-      <form class="form" action="/" method="post">
+    <main class="mobile-form-wrapper">
+      <form class="mobile-form" action="/" method="post">
           <i class="grey icon fa-solid fa-user" for="name"></i>
-          <input class="open input name" type="name" id="name" name="name" placeholder="Name">
-          <i class="grey icon fa-solid fa-phone" for="phoneNumber"></i>
-          <input class="close input number" type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" max="10">
-          <div class="close gender select-input">
-            <select class="close input gender" name="gender" id="gender">
+          <input class="input open name" type="name" id="name" name="name" placeholder="Name">
+          <i class="icon grey fa-solid fa-phone" for="phoneNumber"></i>
+          <input class="input close number" type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" max="10">
+          <div class="dropdown-input close gender">
+            <select class="input close" name="gender" id="gender">
               <option selected disabled>Choose one</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
-            <i class="icon-arrow fa-solid fa-caret-down"></i>
+            <i class="dropdown-icon fa-solid fa-caret-down"></i>
           </div>
-          <i class="grey icon fa-solid fa-location-dot" for="address"></i>
-          <input class="open input address" type="text" name="address" id="address" placeholder="Address">
-          <input type="text" class="close input city" id="city" name="city" placeholder="City">
-          <div class="open state select-input">
-            <select class="open input state" name="state" id="state">
+          <i class="icon grey fa-solid fa-location-dot" for="address"></i>
+          <input class="input open address" type="text" name="address" id="address" placeholder="Address">
+          <input type="text" class="input close city" id="city" name="city" placeholder="City">
+          <div class="dropdown-input open state">
+            <select class="open input" name="state" id="state">
               <option selected disabled>Choose State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -95,18 +95,17 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
-            <i class="icon-arrow fa-solid fa-caret-down"></i>
+            <i class="dropdown-icon fa-solid fa-caret-down"></i>
           </div>
-          <input class="open input zip" type="number" name="zipCode" id="zipCode" placeholder="Zip">
-          <i class="grey icon fa-solid fa-envelope" for="email"></i>
-          <input class="close input email" type="email" name="email" id="email" placeholder="Email">
-          <i class="grey icon fa-solid fa-cake-candles" for="birthday"></i>
-          <div class="open input date">
-            <h5 class="">Birthday</h5>
-            <input class="open special-date" type="date" value="Birthday">
+          <input class="input open zip" type="number" name="zipCode" id="zipCode" placeholder="Zip">
+          <i class="icon grey fa-solid fa-envelope" for="email"></i>
+          <input class="input close email" type="email" name="email" id="email" placeholder="Email">
+          <i class="icon grey fa-solid fa-cake-candles" for="birthday"></i>
+          <div class="input open date">
+            <h5 class="birthday">Birthday</h5>
+            <input class="special-date open" type="date" value="Birthday">
             <i class="calendar fa-solid fa-calendar-day"></i>
           </div>
-          <!-- <input class="open input date" type="number" name="birthday" id="birthday" placeholder="Birthday"> -->
       </form>
     </main>
 

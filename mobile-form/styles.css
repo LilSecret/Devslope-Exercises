@@ -5,7 +5,7 @@
   --light-grey: #E8E8E8;
 }
 
-/* global */
+/* global or scalable styles*/
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -16,14 +16,6 @@ body {
 ::after,
 ::before {
   box-sizing: border-box;
-}
-
-.wrapper {
-  width: 600px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 3.125rem;
 }
 
 .icon {
@@ -51,39 +43,28 @@ body {
   color: var(--grey);
 }
 
-.heading {
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.light {
-  color: var(--white);
-}
-
-.grey {
-  color: var(--grey);
-}
-
-.select-input {
+.dropdown-input {
   align-items: center;
   display: flex;
   font-size: 1rem;
   position: relative;
 }
 
-.select-input select {
+.dropdown-input select {
   padding: 1.25rem;
   width: 100%;
 }
 
-.icon-arrow {
+.dropdown-icon {
   color: var(--grey);
   user-select: none;
   pointer-events: none;
   position: absolute;
   right: 20px;
 }
+
+.light { color: var(--white); }
+.grey { color: var(--grey); }
 
 /* global states  */
 .input:focus {
@@ -119,6 +100,20 @@ select {
   display: grid;
   grid-template-columns: auto 2fr auto auto;
   padding: 0.625rem;
+}
+
+.navbar-label {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mobile-form-wrapper {
+  width: 600px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3.125rem;
 }
 
 .number::-webkit-outer-spin-button,
@@ -166,7 +161,7 @@ select {
 
 /* form grid areas  */
 
-.form {
+.mobile-form {
   align-items: center;
   display: grid;
   gap: 1.25rem;
