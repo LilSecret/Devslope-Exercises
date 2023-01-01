@@ -79,9 +79,6 @@ body {
   outline: none;
 }
 
-/* .select-input:active ~ .select-input select:active */
-
-/* get rid of default input icon  */
 select {
   border: none !important;
   -webkit-appearance: none;
@@ -116,15 +113,13 @@ select {
   margin-top: 3.125rem;
 }
 
-.number::-webkit-outer-spin-button,
-.number::-webkit-inner-spin-button,
-.zip::-webkit-outer-spin-button,
-.zip::-webkit-inner-spin-button {
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.date {
+.date-input {
   user-select: none;
   display: flex;
   justify-content: space-between;
@@ -132,16 +127,16 @@ select {
   position: relative;
 }
 
-.date input {
+.date-input input {
   width: 100%;
   padding: 1.25rem;
 }
 
-.date input {
+.date-input input {
   opacity: 0;
 }
 
-.date h5 {
+.date-input h5 {
   margin: 0;
   font-weight: normal;
   position: absolute;
@@ -151,7 +146,7 @@ select {
   transform: translateY(-50%);
 }
 
-.date .calendar {
+.date-input .calendar {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -180,7 +175,7 @@ select {
 .fa-user { grid-area: user }
 .name { grid-area: name }
 .fa-phone { grid-area: phone }
-.number { grid-area: number }
+.phone-number { grid-area: number }
 .gender { grid-area: gender }
 .fa-location-dot { grid-area: location }
 .address { grid-area: address }
@@ -190,4 +185,4 @@ select {
 .fa-envelope { grid-area: envelope }
 .email { grid-area: email }
 .fa-cake-candles { grid-area: cake }
-.date { grid-area: date }
+.date-input { grid-area: date }
