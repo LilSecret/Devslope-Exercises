@@ -44,6 +44,7 @@ a {
   border-radius: 2rem;
   font-size: 1rem;
   padding: 20px 25px;
+  cursor: pointer;
 }
 
 .btn-primary {
