@@ -233,3 +233,20 @@
   margin-right: 30px;
   margin-left: 30px;
 } */
+
+/* hubspot section  */
+.hubspot-wrapper {
+  display: flex;
+}
+
+.hubspot-gallery {
+  position: relative;
+}
+
+.hubspot-gallery .dots {
+  position: absolute;
+}
+
+.hubspot .block-text-right {
+  /* color: black; */
+}
