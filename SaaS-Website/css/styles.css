@@ -24,16 +24,15 @@
   font-size: 17px;
 }
 
-.hero {
-  padding-top: 70px;
-  height: 80vh;
-}
-
 .hero-wrapper {
   align-items: center;
   display: flex;
   position: relative;
-  height: 70vh;
+  height: 80vh;
+  padding-top: 140px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
 
 .hero-wrapper div {
