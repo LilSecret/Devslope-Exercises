@@ -39,6 +39,10 @@ a {
   margin-left: 100px;
 }
 
+.wrapper {
+  margin: 100px auto;
+}
+
 .btn {
   border: none;
   border-radius: 2rem;
