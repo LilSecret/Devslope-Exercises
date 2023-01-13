@@ -244,8 +244,13 @@
 
 .hubspot-gallery .dots {
   position: absolute;
+  z-index: -1;
 }
 
-.hubspot .block-text-right {
-  /* color: black; */
+.hubspot-gallery .person-wrapper {
+  width: 50vh;
+}
+
+.hubspot-gallery .person {
+  z-index: 2;
 }
