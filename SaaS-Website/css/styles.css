@@ -180,26 +180,18 @@
   color: var(--dark);
 }
 
-.timeline {
-  margin: 100px auto;
-}
-
 .timeline-wrapper {
   display: flex;
-  align-items: center;
   width: 60%;
   margin: auto;
 }
 
-.timeline-line {
-  justify-content: center;
+.timeline-element {
+  position: relative;
+  text-align: center;
 }
 
-.timeline-headings {
-  justify-content: space-between;
-}
-
-.timeline .point {
+.timeline-point {
   padding: 30px;
   border-radius: 50%;
   background-color: var(--dark-white);
@@ -208,7 +200,7 @@
   height: 30px;
 }
 
-.timeline .point::after {
+.timeline-point::after {
   display: block;
   background-color: var(--primary);
   border-radius: 50%;
@@ -221,23 +213,22 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.timeline .line {
+.timeline-spacer {
   background-color: #E6E9F2;
   height: 2px;
   display: inline-block;
-  width: 10%;
-  margin: 0 10px;
+  width: 20%;
+  margin: 30px 10px 0;
 }
 
-/* .timeline-headings {
-  display: flex;
-  justify-content: center;
-} */
-
-/* .timeline-headings h5 {
-  margin-right: 30px;
-  margin-left: 30px;
-} */
+.timeline-heading {
+  position: absolute;
+  flex-wrap: nowrap;
+  margin: 5px auto 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
 
 /* hubspot section  */
 .hubspot-wrapper {
