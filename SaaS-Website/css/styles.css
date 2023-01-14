@@ -1,5 +1,11 @@
+.hero-gradient {
+  background: url("/assets/banners/hero-gradient.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
 .navbar {
-  background-color: var(--white);
+  /* background-color: var(--white); */
   display: flex;
   justify-content: space-between;
   position: fixed;
