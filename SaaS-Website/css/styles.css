@@ -235,19 +235,39 @@
   display: flex;
 }
 
+.hubspot-wrapper > * {
+  flex-basis: 50%;
+}
+
 .hubspot-gallery {
   position: relative;
 }
 
 .hubspot-gallery .dots {
   position: absolute;
-  z-index: -1;
 }
 
-.hubspot-gallery .person-wrapper {
-  width: 50vh;
+.block-text-right {
+  margin-left: 100px;
+  color: var(--dark);
 }
 
-.hubspot-gallery .person {
-  z-index: 2;
+.block-text-right .hubspot-logo-wrapper {
+  width: 150px;
+}
+
+.block-text-right p {
+  font-size: 2rem;
+}
+
+.block-text-right h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 5px;
+}
+
+.block-text-right span {
+  color: var(--font-base-one);
+  font-weight: bold;
+  font-size: 1rem;
 }
