@@ -232,19 +232,29 @@
 
 /* hubspot section  */
 .hubspot-wrapper {
-  display: flex;
-}
-
-.hubspot-wrapper > * {
-  flex-basis: 50%;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  height: 50vh;
+  position: relative;
 }
 
 .hubspot-gallery {
   position: relative;
+  height: 50vh;
 }
 
-.hubspot-gallery .dots {
+.hubspot-gallery .dots-img-wrapper {
   position: absolute;
+  width: 40%;
+  top: 140px;
+}
+
+.hubspot-gallery .person-img-wrapper {
+  width: 75%;
+  position: absolute;
+  right: 100px;
+  top: 0;
 }
 
 .block-text-right {
@@ -257,7 +267,8 @@
 }
 
 .block-text-right p {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin: 43px 0;
 }
 
 .block-text-right h5 {
