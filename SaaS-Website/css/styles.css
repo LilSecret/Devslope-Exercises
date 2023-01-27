@@ -245,14 +245,15 @@
 
 .hubspot-gallery .dots-img-wrapper {
   position: absolute;
-  width: 40%;
-  top: 140px;
+  height: 100%;
+  width: 50%;
+  top: 50px;
 }
 
 .hubspot-gallery .person-img-wrapper {
-  width: 75%;
+  width: 80%;
   position: absolute;
-  right: 100px;
+  left: 65px;
   top: 0;
 }
 
