@@ -390,3 +390,80 @@
   color: var(--font-base-one);
   margin: 0;
 }
+
+.hire-us {
+  background: blue;
+  /* background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg"); */
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px 200px;
+}
+
+.hire-us .block-text-left {
+  padding-right: 190px;
+}
+
+.hire-us > * {
+  flex-basis: 50%;
+}
+
+.hire-us h3 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hire-us .text {
+  line-height: 1.4;
+  display: block;
+  color: var(--font-base);
+}
+
+.hire-us div {
+  margin-bottom: 30px;
+}
+
+.hire-us hr {
+  margin-left: 0;
+  width: 50%;
+}
+
+.hire-us .quote {
+  color: var(--white);
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.hire-us .name {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 35px auto 0;
+}
+
+.hire-us .position {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  margin: 35px auto 40px;
+}
+
+.person-small {
+  width: 40px;
+  height: 40px;
+}
+
+.person-big {
+  width: 50px;
+  height: 50px;
+}
+
+.people img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
