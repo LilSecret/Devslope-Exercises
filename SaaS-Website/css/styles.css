@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  /* background-color: var(--white); */
+  /* background-color: var(--light); */
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -68,10 +68,10 @@
 }
 
 .hero .logo {
-  background-color: white;
+  background-color: var(--light);
   box-sizing: content-box;
   border-radius: 5rem;
-  box-shadow: 0px 0px 20px rgba(105,105,105,0.6);
+  box-shadow: 0px 0px 20px rgba(105, 105, 105, 0.6);
   position: absolute;
 }
 
@@ -127,24 +127,33 @@
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-areas:
-  "head head head head"
-  "one two three four"
-  ;
+    "head head head head"
+    "one two three four";
   margin: 100px auto 200px;
 }
 
-.benefits-wrapper .header { grid-area: head; }
-.benefits-wrapper .one { grid-area: one; }
-.benefits-wrapper .two { grid-area: two; }
-.benefits-wrapper .three { grid-area: three; }
-.benefits-wrapper .four { grid-area: four; }
+.benefits-wrapper .header {
+  grid-area: head;
+}
+.benefits-wrapper .one {
+  grid-area: one;
+}
+.benefits-wrapper .two {
+  grid-area: two;
+}
+.benefits-wrapper .three {
+  grid-area: three;
+}
+.benefits-wrapper .four {
+  grid-area: four;
+}
 
 .benefits .header {
   margin-bottom: 50px;
 }
 
 .card {
-  box-shadow: 0px 10px 10px rgba(105,105,105,0.3);
+  box-shadow: 0px 10px 10px rgba(105, 105, 105, 0.3);
   padding: 30px;
 }
 
@@ -194,7 +203,7 @@
 .timeline-point {
   padding: 30px;
   border-radius: 50%;
-  background-color: var(--dark-white);
+  background-color: var(--ligt-grey);
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -214,7 +223,7 @@
 }
 
 .timeline-spacer {
-  background-color: #E6E9F2;
+  background-color: #e6e9f2;
   height: 2px;
   display: inline-block;
   width: 20%;
@@ -311,22 +320,33 @@
   gap: 60px;
   grid-template-columns: 4fr 3fr 3fr;
   grid-template-areas:
-  "header header header"
-  "main one two"
-  "main three four"
-  ;
+    "header header header"
+    "main one two"
+    "main three four";
 }
 
-.pricing-card { grid-area: main }
-.pricing-grid .header { grid-area: header }
-.pricing-grid .one { grid-area: one }
-.pricing-grid .two { grid-area: two }
-.pricing-grid .three { grid-area: three }
-.pricing-grid .four { grid-area: four }
+.pricing-card {
+  grid-area: main;
+}
+.pricing-grid .header {
+  grid-area: header;
+}
+.pricing-grid .one {
+  grid-area: one;
+}
+.pricing-grid .two {
+  grid-area: two;
+}
+.pricing-grid .three {
+  grid-area: three;
+}
+.pricing-grid .four {
+  grid-area: four;
+}
 
 .pricing-card {
-  background: var(--white);
-  box-shadow: 0 0 20px rgba(105,105,105,0.3);
+  background: var(--light);
+  box-shadow: 0 0 20px rgba(105, 105, 105, 0.3);
   padding: 50px;
 }
 
@@ -363,7 +383,7 @@
 
 .pricing-card-perk {
   margin-top: 20px;
-  font-size: .925rem;
+  font-size: 0.925rem;
 }
 
 .pricing-block-img-wrapper {
@@ -409,7 +429,7 @@
 }
 
 .hire-us h3 {
-  color: var(--white);
+  color: var(--light);
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -430,13 +450,13 @@
 }
 
 .hire-us .quote {
-  color: var(--white);
+  color: var(--light);
   font-style: italic;
   margin-top: 30px;
 }
 
 .hire-us .name {
-  color: var(--white);
+  color: var(--light);
   font-weight: bold;
   font-size: 1.1rem;
   margin: 35px auto 0;
@@ -466,4 +486,52 @@
 .people img {
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.hire-us-form {
+  background: var(--light);
+  border-radius: 16px;
+  text-align: left;
+  padding: 30px;
+}
+
+.hire-us-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "one two"
+  "three four"
+  "budget country"
+  "comments comments"
+  ;
+}
+
+.hire-us-grid .one { grid-area: one; }
+.hire-us-grid .two{ grid-area: two; }
+.hire-us-grid .three { grid-area: three; }
+.hire-us-grid .four { grid-area: four; }
+.hire-us-grid .budget { grid-area: budget; }
+.hire-us-grid .country { grid-area: country; }
+.hire-us-grid .comments { grid-area: comments; }
+
+.hire-us-form h5 {
+  color: var(--dark);
+  font-size: 18px;
+  margin: 0 auto 20px;
+}
+
+.hire-us-form .input {
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.hire-us-form .input-light { color: var(--light-grey); }
+.hire-us-form .input-dark { color: var(--dark); }
+
+.hire-us-form .comments {
+  height: 200px;
+  resize: none;
 }
