@@ -203,7 +203,7 @@
 .timeline-point {
   padding: 30px;
   border-radius: 50%;
-  background-color: var(--ligt-grey);
+  background-color: var(--light-grey);
   display: inline-block;
   width: 30px;
   height: 30px;
