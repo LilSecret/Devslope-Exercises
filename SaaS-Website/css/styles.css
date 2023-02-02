@@ -494,13 +494,15 @@
   border-radius: 16px;
   text-align: left;
   padding: 30px;
+  position: relative;
 }
 
 .hire-us-grid {
+  position: relative;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-areas:
   "one two"
   "three four"
   "budget country"
@@ -508,10 +510,10 @@
   ;
 }
 
-.hire-us-grid .one { grid-area: one; }
-.hire-us-grid .two{ grid-area: two; }
-.hire-us-grid .three { grid-area: three; }
-.hire-us-grid .four { grid-area: four; }
+.hire-us-grid .input-one { grid-area: one; }
+.hire-us-grid .input-two { grid-area: two; }
+.hire-us-grid .input-three { grid-area: three; }
+.hire-us-grid .input-four { grid-area: four; }
 .hire-us-grid .budget { grid-area: budget; }
 .hire-us-grid .country { grid-area: country; }
 .hire-us-grid .comments { grid-area: comments; }
@@ -533,6 +535,6 @@
 .hire-us-form .input-dark { color: var(--dark); }
 
 .hire-us-form .comments {
-  height: 200px;
+  height: 150px;
   resize: none;
 }
