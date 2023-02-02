@@ -415,17 +415,18 @@
   background: blue;
   /* background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg"); */
   display: flex;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
   padding: 50px 200px;
 }
 
 .hire-us .block-text-left {
-  padding-right: 190px;
+  padding-right: 170px;
 }
 
 .hire-us > * {
-  flex-basis: 50%;
+  width: 50%;
 }
 
 .hire-us h3 {
