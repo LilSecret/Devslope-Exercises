@@ -87,3 +87,4 @@ a {
 
 /* Colors */
 .primary { color: var(--primary) !important; }
+.grey { color: var(--font-base-two); }
