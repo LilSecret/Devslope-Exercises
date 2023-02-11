@@ -1,6 +1,6 @@
 :root {
-  --white: #FFFFFF;
-  --dark-white: #E5E8F1;
+  --light: #FFFFFF;
+  --light-grey: #E5E8F1;
   --dark: #000000;
   --primary: #2476FE;
   --dark-primary: #20335B;
@@ -48,11 +48,11 @@ a {
 
 .btn-primary {
   background-color: var(--primary );
-  color: var(--white);
+  color: var(--light);
 }
 
 .btn-light {
-  background-color: var(--white);
+  background-color: var(--light);
   color: var(--primary)
 }
 
@@ -60,7 +60,7 @@ a {
 .tag {
   border: none;
   border-radius: 2rem;
-  color: var(--white);
+  color: var(--light);
   font-size: 14px;
   font-weight: bold;
   padding: 5px 12px;
@@ -87,3 +87,4 @@ a {
 
 /* Colors */
 .primary { color: var(--primary) !important; }
+.grey { color: var(--font-base-two); }
