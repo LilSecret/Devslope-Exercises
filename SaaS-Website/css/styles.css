@@ -76,14 +76,14 @@
 }
 
 .hero .logo.big {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   padding: 25px;
 }
 
 .hero .logo.small {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
 }
 
@@ -388,4 +388,8 @@
 .pricing-block p {
   color: var(--font-base-one);
   margin: 0;
+}
+
+.hire-us {
+  background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg");
 }
