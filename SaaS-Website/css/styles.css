@@ -176,17 +176,16 @@
   width: 30%;
 }
 
-.prospectives {
+.prospective-wrapper {
   display: flex;
   justify-content: center;
-  margin: 100px auto 50px;
 }
 
-.prospectives .block-text-left {
+.prospective-wrapper .block-text-left {
   margin-right: 150px;
 }
 
-.prospectives h3 {
+.prospective-wrapper h3 {
   font-size: 2rem;
   color: var(--dark);
 }
@@ -317,7 +316,6 @@
 
 .pricing-grid {
   margin: auto;
-  width: 80%;
   display: grid;
   gap: 60px;
   grid-template-columns: 4fr 3fr 3fr;
@@ -420,7 +418,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 50px 200px;
+  /* padding: 50px 200px; */
 }
 
 .hire-us .block-text-left {
