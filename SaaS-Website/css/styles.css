@@ -1,13 +1,15 @@
 .hero-gradient {
-  background: url("/assets/banners/hero-gradient.jpg");
+  background: pink;
+  /* background: url("/assets/banners/hero-gradient.jpg"); */
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
 }
 
 .navbar {
-  /* background-color: var(--light); */
+  background-color: white;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -16,20 +18,28 @@
   z-index: 10;
 }
 
-.navbar-right {
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links ul {
   align-items: center;
   display: flex;
 }
 
-.nav .logo {
+.navbar-logo {
   width: 200px;
 }
 
-.nav .link {
-  margin-right: 20px;
-  font-weight: 500;
+.navbar-links .link {
   color: var(--font-base-one);
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.navbar-links button {
+  margin-left: 20px;
 }
 
 .hero-wrapper {

@@ -27,6 +27,11 @@ img {
   width: 100%;
 }
 
+ul {
+  padding-left: none;
+  list-style: none;
+}
+
 a {
   color: var(--primary);
   text-decoration: none;
@@ -41,8 +46,8 @@ a {
 .btn {
   border: none;
   border-radius: 2rem;
-  font-size: 1rem;
-  padding: 20px 25px;
+  font-size: 17px;
+  padding: 18px 25px;
   cursor: pointer;
 }
 
