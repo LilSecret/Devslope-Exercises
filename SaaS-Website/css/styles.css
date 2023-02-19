@@ -172,10 +172,11 @@
 .prospective-wrapper {
   display: flex;
   justify-content: center;
+  margin-inline: 50px;
 }
 
 .prospective-wrapper .block-text-left {
-  margin-right: 150px;
+  inline-size: 500px;
 }
 
 .prospective-wrapper h3 {
