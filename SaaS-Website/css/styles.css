@@ -168,6 +168,7 @@
 }
 
 .benefits .card-img-wrapper { width: 30%; }
+.prospective-wrapper.container { padding-top: 0px; }
 
 .prospective-wrapper {
   display: flex;
