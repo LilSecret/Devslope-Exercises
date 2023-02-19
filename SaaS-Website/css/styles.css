@@ -261,15 +261,16 @@
 }
 
 .hubspot-gallery .person-img-wrapper {
-  width: 80%;
+  width: 90%;
   position: absolute;
-  left: 65px;
-  top: 0;
+  left:70px;
+  top: -60px;
 }
 
 .block-text-right {
-  margin-left: 100px;
   color: var(--dark);
+  margin-left: 100px;
+  line-height: 1.4;
 }
 
 .block-text-right .hubspot-logo-wrapper {
