@@ -321,12 +321,14 @@
 .pricing-grid {
   margin: auto;
   display: grid;
-  gap: 60px;
+  gap: 40px;
   grid-template-columns: 4fr 3fr 3fr;
   grid-template-areas:
     "header header header"
     "main one two"
     "main three four";
+  margin-inline: 20px;
+  margin-bottom: 75px;
 }
 
 .pricing-card {
@@ -334,6 +336,7 @@
 }
 .pricing-grid .header {
   grid-area: header;
+  padding-bottom: 50px;
 }
 .pricing-grid .one {
   grid-area: one;
@@ -352,11 +355,12 @@
   background: var(--light);
   box-shadow: 0 0 20px rgba(105, 105, 105, 0.3);
   padding: 50px;
+  line-height: 1.5;
 }
 
 .pricing-card .top {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .pricing-card .top .price {
@@ -364,6 +368,15 @@
   font-weight: normal;
   font-size: 3rem;
   margin: 0 10px 0 0;
+  position: relative;
+  top: 10px;
+}
+
+.pricing-card-time-subscription {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  bottom: 2px;
 }
 
 .pricing-card .top span {
@@ -383,6 +396,7 @@
 .pricing-card .bottom p {
   margin-top: 20px;
   margin-bottom: 60px;
+  /* line-height: 1.5; */
 }
 
 .pricing-card-perk {
@@ -398,10 +412,10 @@
   align-items: center;
   color: var(--dark);
   display: flex;
-  font-size: 1.3rem;
 }
 
 .pricing-title h5 {
+  font-size: 1.3rem;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -413,10 +427,12 @@
 .pricing-block p {
   color: var(--font-base-one);
   margin: 0;
+  line-height: 1.5;
+  inline-size: 240px;
 }
 
 .hire-us {
-  background: blue;
+  background: #20335B;
   /* background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg"); */
   display: flex;
   align-items: center;
