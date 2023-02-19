@@ -185,9 +185,14 @@
   color: var(--dark);
 }
 
+.why-wrapper {
+  margin-top: 50px;
+}
+
 .timeline-wrapper {
   display: flex;
-  width: 60%;
+  justify-content: center;
+  width: 80%;
   margin: auto;
 }
 
