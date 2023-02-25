@@ -7,6 +7,7 @@
   width: 100%;
   padding: 15px 50px;
   z-index: 10;
+  visibility: hidden;
 }
 
 .navbar-links {
@@ -431,59 +432,59 @@
   inline-size: 240px;
 }
 
-.hire-us {
+.hire-us-wrapper {
   background: #20335B;
   /* background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg"); */
   display: flex;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  /* padding: 50px 200px; */
+  padding: 50px 20px 50px 100px;
 }
 
-.hire-us .block-text-left {
+.hire-us-wrapper .block-text-left {
   padding-right: 170px;
 }
 
-.hire-us > * {
+.hire-us-wrapper > * {
   width: 50%;
 }
 
-.hire-us h3 {
+.hire-us-wrapper h3 {
   color: var(--light);
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.hire-us .text {
+.hire-us-ingredients {
+  margin-bottom: 30px;
+}
+
+.hire-us-wrapper .text {
   line-height: 1.4;
   display: block;
   color: var(--font-base);
 }
 
-.hire-us div {
-  margin-bottom: 30px;
-}
-
-.hire-us hr {
+.hire-us-wrapper hr {
   margin-left: 0;
   width: 50%;
 }
 
-.hire-us .quote {
+.hire-us-wrapper .quote {
   color: var(--light);
   font-style: italic;
   margin-top: 30px;
 }
 
-.hire-us .name {
+.hire-us-wrapper .name {
   color: var(--light);
   font-weight: bold;
   font-size: 1.1rem;
   margin: 35px auto 0;
 }
 
-.hire-us .position {
+.hire-us-wrapper .position {
   display: inline-block;
   font-size: 14px;
 }
@@ -491,7 +492,7 @@
 .people {
   display: flex;
   align-items: center;
-  margin: 35px auto 40px;
+  margin-block: 40px;
 }
 
 .person-small {
@@ -506,7 +507,7 @@
 
 .people img {
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .hire-us-form {
@@ -516,14 +517,14 @@
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  padding: 30px;
+  padding: 20px 30px;
   position: relative;
 }
 
 .hire-us-grid {
   position: relative;
   display: grid;
-  gap: 10px;
+  gap: 25px;
   grid-auto-columns: minmax(0, 1fr);
   grid-template-areas:
   "one two"
@@ -543,38 +544,45 @@
 
 .hire-us-form h5 {
   color: var(--dark);
-  font-size: 18px;
-  margin: 0 auto 20px;
+  font-size: 22px;
 }
 
-.hire-us-form .input {
+.hire-us-form-input {
   border: 1px solid var(--light-grey);
   border-radius: 4px;
-  font-size: 16px;
-  padding: 8px;
+  font-size: 22px;
+  padding: 15px 10px;
 }
 
+.hire-us-form-input:focus { border: 1px solid var(--light-grey); }
 .hire-us-form .input-light { color: var(--light-grey); }
 .hire-us-form .input-dark { color: var(--dark); }
 
 .hire-us-form .comments {
   height: 150px;
   resize: none;
+  font-family: sans-serif;
+  margin-bottom: 22px;
 }
 
-.form-links {
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-}
-
-.form-links .link {
-  margin: 5px;
-}
+.hire-us-form div { position: relative; }
+.form-links { margin-block: 20px; }
+.form-links .link { margin-right: 35px; }
+.link.grey { border-bottom: 5px dotted var(--font-base-two); }
+.link.primary { border-bottom: 5px dotted var(--primary); }
 
 input.hire-us-checkbox {
+  border-color: var(--light-grey);
+  position: absolute;
   margin-right: 20px;
-  width: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.hire-us-checkbox-labels {
+  font-size: 22px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 .hire-us-form  button {
