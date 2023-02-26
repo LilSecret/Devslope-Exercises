@@ -585,6 +585,63 @@ input.hire-us-checkbox {
   margin-bottom: 20px;
 }
 
-.hire-us-form  button {
-  margin: 0 auto 5px;
+.hire-us-form button { margin: 0 auto 5px; }
+
+.footer-top-container {
+  display: flex;
+}
+
+.footer-logo-wrapper { width: 50%; }
+
+.footer-col {
+  margin-right: 70px;
+}
+
+.footer-col h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.footer-named-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-named-tag .tag {
+  border-radius: 4px;
+  margin-left: 10px;
+  inline-size: 110px;
+}
+
+.footer-cta-item {
+  margin-block: 15px;
+}
+.footer-ingredient-blue { color: var(--primary); }
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid var(--light-grey);
+}
+
+.footer-bread-crumbs {
+  display: flex;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.image-input {
+  background-color: var(--light-grey);
+  display: flex;
+  width: 200px;
+  height: 20px;
+  padding: 30px 20px;
+}
+
+.image-input img {
+  width: 20px;
 }

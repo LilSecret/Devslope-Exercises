@@ -602,23 +602,25 @@
     </div>
   </section>
 
-  <footer class="footer-wrapper">
-    <div class="footer-top">
+  <footer class="footer-wrapper container">
+    <div class="footer-top-container">
       <div class="footer-col one">
-        <div class="logo">
+        <div class="footer-logo-wrapper">
           <img src="/assets/project_logo/logo.svg" alt="Front logo">
         </div>
         <div class="footer-cta">
-          <h5><i class="fa-solid fa-location-arrow"></i> 153 WIlliamson Plaza, Maggieberg</h5>
-          <h5><i class="fa-solid fa-phone"></i> +1 (062) 109-9222</h5>
+          <div class="footer-cta-item"><i class="fa-solid fa-location-arrow"></i> 153 WIlliamson Plaza, Maggieberg</div>
+          <div class="footer-cta-item"><i class="fa-solid fa-phone"></i> +1 (062) 109-9222</div>
         </div>
       </div>
 
       <div class="footer-col two">
         <h5>Company</h5>
         <p>About</p>
-        <p>Career</p>
-        <div class="tag tag-primary">We're hiring</div>
+        <div class="footer-named-tag">
+          <p>Career</p>
+          <div class="tag tag-primary">We're hiring</div>
+        </div>
         <p>Blog</p>
         <p>Customers</p>
         <p>Hire us</p>
@@ -627,7 +629,7 @@
       <div class="footer-col three">
         <h5>Features</h5>
         <p>Press</p>
-        <p>Release notes</p>
+        <p class="footer-ingredient-blue">Release notes</p>
         <p>Integrations</p>
         <p>Pricing</p>
       </div>
@@ -647,49 +649,51 @@
         <p><i class="fa-solid fa-circle-user"></i> Your Account</p>
       </div>
     </div>
-    <hr>
+    <hr class="footer-separator">
     <div class="footer-bottom">
-      <div class="legal-agreements left">
-        <a href="#">Privacy & Policy</a>
-        <span>></span>
-        <a href="#">Terms</a>
-        <span>></span>
-        <a href="#">Site Map</a>
-      </div>
-
-      <div class="right">
-        <div class="socials">
-          <div class="social-icon">
-            <i class="fa-brands fa-facebook-f"></i>
+      <div class="footer-bread-crumbs">
+        <div class="legal-agreements left">
+          <a href="#">Privacy & Policy</a>
+          <span>></span>
+          <a href="#">Terms</a>
+          <span>></span>
+          <a href="#">Site Map</a>
+        </div>
+        
+        <div class="right">
+          <div class="footer-socials">
+            <div class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
           </div>
-          <div class="social-icon">
-            <i class="fa-brands fa-google"></i>
-          </div>
-          <div class="social-icon">
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-          <div class="social-icon">
-            <i class="fa-brands fa-github"></i>
+          <div class="image-input">
+            <img src="/assets/new-icons/usa-flag.png" alt="usa flag">
+            <select name="yourCountry" id="yourCountry">
+              <option value="United States" selected>United States</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="Canada">Canada</option>
+            </select>
           </div>
         </div>
-        <div class="image-input">
-          <img src="/assets/new-icons/usa-flag.png" alt="usa flag">
-          <select name="yourCountry" id="yourCountry">
-            <option value="United States" selected>United States</option>
-            <option value="Ukraine">Ukraine</option>
-            <option value="Canada">Canada</option>
-          </select>
-        </div>
       </div>
-
+      
       <div class="footer-base-bottom">
         <p>&#169; Front. 2022 Responsive designs. All Rights Reserved</p>
         <p>When you visiout or interact with our sites, services, or tools, we or our authorized service providers may
           use cookies for storing information to help provide you with a better, faster, and safer experience and for
           marketing purposes.</p>
       </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
   <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
 </body>
