@@ -631,6 +631,7 @@ input.hire-us-checkbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.2rem;
 }
 
 .legal-agreements a {
@@ -650,14 +651,16 @@ input.hire-us-checkbox {
 .social-icon {
   border: none;
   border-radius: 4px;
+  cursor: pointer;
   padding-block: 9px;
-  padding-inline: 8px;
-  margin-inline: 5px;
+  padding-inline: 10px;
+  margin-inline: 10px;
 }
 
 .social-icon i {
   display: flex;
   justify-content: center;
+  font-size: 1.2rem;
   width: 15px;
 }
 
