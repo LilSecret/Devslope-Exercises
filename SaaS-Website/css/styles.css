@@ -1,5 +1,4 @@
 .navbar {
-  background-color: white;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -33,18 +32,19 @@
 }
 
 .hero-gradient {
-  /* background: pink; */
+  background: url("/assets/banners/hero-gradient.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  height: 100vh;
 }
 
 .hero-wrapper {
   align-items: center;
   display: flex;
   height: 90vh;
-  padding: 140px 50px 45px;
+  padding: 50px 50px 45px;
 }
 
 .hero-wrapper div { flex: 1; }
