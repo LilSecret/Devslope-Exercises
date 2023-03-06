@@ -623,15 +623,52 @@ input.hire-us-checkbox {
 
 .footer-separator {
   border: none;
-  border-top: 1px solid var(--light-grey);
+  border-top: 2px solid var(--light-grey);
+  margin-block: 50px;
 }
 
 .footer-bread-crumbs {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-agreements a {
+  font-weight: normal;
+  margin-inline: 2px;
 }
 
 .footer-socials {
   display: flex;
+}
+
+.breadcrumbs-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  border: none;
+  border-radius: 4px;
+  padding-block: 9px;
+  padding-inline: 8px;
+  margin-inline: 5px;
+}
+
+.social-icon i {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+}
+
+.social-icon-light {
+  background-color: var(--light-grey);
+  color: var(--font-base-one);
+}
+
+.social-icon-dark {
+  background-color: var(--font-base-one);
+  color: var(--light-grey);
 }
 
 .image-input {
