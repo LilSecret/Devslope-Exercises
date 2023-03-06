@@ -587,6 +587,10 @@ input.hire-us-checkbox {
 
 .hire-us-form button { margin: 0 auto 5px; }
 
+.footer-wrapper.container {
+  padding-bottom: 40px;
+}
+
 .footer-top-container {
   display: flex;
 }
@@ -694,4 +698,18 @@ input.hire-us-checkbox {
   font-size: 18px;
   position: relative;
   width: 150px;
+}
+
+.footer-base-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-base-bottom p {
+  inline-size: 68%;
+  margin-block: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
