@@ -3,11 +3,9 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   padding: 15px 50px;
   z-index: 10;
-  visibility: hidden;
 }
 
 .navbar-links {
@@ -567,9 +565,9 @@
 
 .hire-us-form div { position: relative; }
 .form-links { margin-block: 20px; }
-.form-links .link { margin-right: 35px; }
-.link.grey { border-bottom: 5px dotted var(--font-base-two); }
-.link.primary { border-bottom: 5px dotted var(--primary); }
+.form-links .hire-us-form-link { margin-right: 35px; }
+.hire-us-form-link.grey { border-bottom: 5px dotted var(--font-base-two); }
+.hire-us-form-link.primary { border-bottom: 5px dotted var(--primary); }
 
 input.hire-us-checkbox {
   border-color: var(--light-grey);
