@@ -652,9 +652,8 @@ input.hire-us-checkbox {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding-block: 9px;
-  padding-inline: 10px;
-  margin-inline: 10px;
+  padding: 9px 10px;
+  margin-right: 20px;
 }
 
 .social-icon i {
@@ -674,14 +673,25 @@ input.hire-us-checkbox {
   color: var(--light-grey);
 }
 
-.image-input {
+.breadcrumbs-img-input {
+  border-radius: 4px;
   background-color: var(--light-grey);
+  cursor: pointer;
   display: flex;
   width: 200px;
-  height: 20px;
-  padding: 30px 20px;
+  padding: 9px 10px;
 }
 
-.image-input img {
+
+.breadcrumbs-img-input img {
   width: 20px;
+  margin-right: 10px;
+}
+
+.breadcrumbs-img-input select {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  position: relative;
+  width: 150px;
 }
