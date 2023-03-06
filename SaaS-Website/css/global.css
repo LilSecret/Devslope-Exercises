@@ -58,7 +58,8 @@ a {
 
 .btn-light {
   background-color: var(--light);
-  color: var(--primary)
+  color: var(--primary);
+  font-weight: bold;
 }
 
 
@@ -74,18 +75,19 @@ a {
 .tag-primary { background-color: var(--primary); }
 .tag-success { background-color: var(--success); }
 
-.header {
+.center-header {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.header h5 {
+.center-header h5 {
   color: var(--dark);
   font-weight: 700;
   font-size: 33px;
   margin: 20px 0 10px;
 }
 
-.header p {
+.center-header p {
   font-weight: normal;
   font-size: 22px;
 }
