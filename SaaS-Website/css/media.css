@@ -1,21 +1,80 @@
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .hero-gradient {
+    background: url("/assets/banners/ipad-hero-gradient.jpg");
+    background-size: cover;
+  }
+
+  .hero-logos .logo {
+    position: relative;
+  }
+
+  .hero-logos {
+    position: relative;
+  }
+
+  .logo.asana {
+    left: 100px;
+  }
+
+  .logo.atlassian {
+    top: 50px;
+    left: 200px;
+  }
+
+  .logo.calendar {
+    left: 300px;
+  }
+
+  .logo.google-a {
+    top: 200px;
+    left: 50px;
+  }
+
+  .logo.google {
+    left: 300px;
+    top: 0px;
+  }
+
+  .logo.paypal {
+    left: 80px;
+    top: -100px;
+  }
+
+  .logo.weave {
+    left: 300px;
+    top: -500px;
+  }
+
+  .prospective-wrapper .block-text-left {
+    top: 0px;
+  }
+
+  .footer-col {
+    margin-right: 20px;
+  }
+}
+
 @media screen and (min-width: 1500px) {
+  .navbar {
+    padding-top: 40px;
+    padding-inline: 12%;
+  }
   .hero-wrapper {
     padding-inline: 12%;
   }
-
+  .hero-gradient {
+    background-size: cover;
+  }
   .prospective-wrapper {
     padding: 0;
     margin-inline: 12%;
   }
-
   .prospective-wrapper.container {
     padding: 100px 0 0 50px;
   }
-
   .hire-us-wrapper {
     padding-inline: 15% 7%;
   }
-
   .container {
     padding-inline: 15%;
   }

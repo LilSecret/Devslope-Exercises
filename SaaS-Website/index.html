@@ -59,7 +59,7 @@
         <div class="logo logo-big atlassian">
           <img src="/assets/logo_icons/atlassian.png" alt="atlassian">
         </div>
-        <div class="logo logo-big calender">
+        <div class="logo logo-big calendar">
           <img src="/assets/logo_icons/calendar.png" alt="calender">
         </div>
         <div class="logo logo-small google-a">
@@ -696,6 +696,16 @@
     </footer>
 
   <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener("scroll", function() {
+      if (window.scrollY >= 200) {
+        document.querySelector(".navbar").style.background = "white";
+        document.querySelector(".navbar").style.paddingBlock = "5px";
+        document.querySelector(".navbar-logo-wrapper").style.width = "150px";
+        document.querySelector(".navbar .btn").style.height = "50px";
+      }
+    })
+  </script>
 </body>
 
 </html>
