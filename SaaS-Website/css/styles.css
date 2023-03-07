@@ -41,6 +41,11 @@
 
 .hero-wrapper div { flex: 1; }
 
+.hero-text {
+  position: relative;
+  bottom: 120px;
+}
+
 .hero-text h1 {
   color: var(--dark);
   font-size: 3rem;
@@ -68,6 +73,7 @@
   border-radius: 5rem;
   box-shadow: 0px 0px 20px rgba(105, 105, 105, 0.6);
   position: absolute;
+  animation: hero-logo cubic-bezier(.38,-0.22,.37,1.6) .5s;
 }
 
 .hero-logos .logo-big {
@@ -158,13 +164,22 @@
 .benefits-wrapper .card-img-wrapper { width: 30%; }
 
 .prospective-wrapper {
-  background: #F9FAFE;
+  background: #F8F9FF;
   display: flex;
   justify-content: center;
   margin-inline: 50px;
 }
 
-.prospective-wrapper .block-text-left { inline-size: 500px; }
+.prospective-wrapper .block-text-left {
+  inline-size: 500px;
+  position: relative;
+  top: 50px;
+  margin-right: 20px;
+}
+
+.prospective-img {
+  box-shadow: -15px -15px 50px rgb(224,231,239);
+}
 
 .prospective-wrapper h3 {
   font-size: 2rem;
@@ -672,4 +687,17 @@ input.hire-us-checkbox {
   margin-block: 15px;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+@keyframes hero-logo {
+  0% { 
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  top: calc(inherit - 50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    top: calc(inherit - 0px)
+  }
 }

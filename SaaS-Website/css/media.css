@@ -1,0 +1,22 @@
+@media screen and (min-width: 1500px) {
+  .hero-wrapper {
+    padding-inline: 12%;
+  }
+
+  .prospective-wrapper {
+    padding: 0;
+    margin-inline: 12%;
+  }
+
+  .prospective-wrapper.container {
+    padding: 100px 0 0 50px;
+  }
+
+  .hire-us-wrapper {
+    padding-inline: 15% 7%;
+  }
+
+  .container {
+    padding-inline: 15%;
+  }
+}
