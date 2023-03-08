@@ -180,4 +180,14 @@
   .navbar-links ul {
     flex-direction: column;
   }
+
+  .benefits-wrapper {
+    grid-template-areas: 
+    "head"
+    "one"
+    "two"
+    "three"
+    "four"
+    ;
+  }
 }
