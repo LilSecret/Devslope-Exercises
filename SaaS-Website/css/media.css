@@ -59,6 +59,20 @@
     left: 30px;
     top: -53px;
   }
+
+  .hire-us-checkbox-labels {
+    margin-bottom: 0px;
+  }
+
+  .form-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire-us-form-link {
+    margin-block: 7px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1100px) {
