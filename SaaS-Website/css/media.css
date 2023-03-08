@@ -1,3 +1,5 @@
+
+
 @media (max-width: 1100px) {
   .hamburger {
     display: block;
@@ -14,18 +16,19 @@
   }
   
   .navbar-links ul {
-    flex-direction: column;
     justify-content: center;
     position: absolute;
     transition: 0.3s;
-    left: -100%;
+    left: -200%;
+    width: 100%;
   }
   
   .navbar-links ul.active {
     background-color: white;
-    top: 30px;
+    top: 34px;
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 5px;
   }
   
   .navbar-links ul li {
@@ -33,13 +36,8 @@
     margin-block: 5px;
   }
   
-  .navbar-links button {
-    margin-left: 0;
-  }
-
-  .hero-gradient {
-    height: 110vh;
-  }
+  .navbar-links button { margin-left: 0; }
+  .hero-gradient { height: 110vh; }
 
   .benefits-wrapper {
     grid-template-areas: 
@@ -48,34 +46,6 @@
     "three four"
     ;
   }
-
-  .hubspot-wrapper .block-text-right {
-    position: relative;
-    top: -50px;
-  }
-
-  .hubspot-gallery .person-img-wrapper {
-    width: 100%;
-    left: 30px;
-    top: -53px;
-  }
-
-  .hire-us-checkbox-labels {
-    margin-bottom: 0px;
-  }
-
-  .form-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hire-us-form-link {
-    margin-block: 7px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 1100px) {
 
   .hero-gradient {
     background: url("/assets/banners/ipad-hero-gradient.jpg");
@@ -106,8 +76,30 @@
     left: 300px;
     top: -500px;
   }
+
   .prospective-wrapper .block-text-left { top: 0px; }
   .footer-col { margin-right: 20px; }
+
+  .hubspot-wrapper .block-text-right {
+    position: relative;
+    top: -50px;
+  }
+
+  .hubspot-gallery .person-img-wrapper {
+    width: 100%;
+    left: 30px;
+    top: -53px;
+  }
+
+  .hire-us-checkbox-labels { margin-bottom: 0px; }
+
+  .form-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire-us-form-link { margin-block: 7px; }
 }
 
 @media screen and (min-width: 1500px) {
@@ -119,6 +111,7 @@
     padding-inline: 12%;
   }
   .hero-gradient {
+    background: url("/assets/banners/hero-gradient.jpg");
     background-size: cover;
   }
   .prospective-wrapper {
@@ -133,5 +126,15 @@
   }
   .container {
     padding-inline: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-gradient {
+    background: url("/assets/banners/hero-gradient-mobile.jpg");
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
   }
 }

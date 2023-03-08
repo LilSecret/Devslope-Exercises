@@ -177,14 +177,14 @@
 .card-heading-wrapper {
   display: flex;
   align-items: center;
+  height: 50px;
 }
 
 .card-heading-wrapper h5 {
   font-size: 1.1rem;
   font-weight: bold;
   color: var(--dark);
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .benefits-wrapper .card-img-wrapper { width: 30%; }
@@ -493,6 +493,10 @@
   display: flex;
   align-items: center;
   margin-block: 40px;
+}
+
+.person.active {
+  box-shadow: 0px 0px 5px var(--light);
 }
 
 .person-small {

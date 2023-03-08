@@ -70,6 +70,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   padding: 5px 12px;
+  margin-left: 5px;
 }
 
 .tag-primary { background-color: var(--primary); }
