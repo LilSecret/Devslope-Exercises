@@ -48,6 +48,17 @@
     "three four"
     ;
   }
+
+  .hubspot-wrapper .block-text-right {
+    position: relative;
+    top: -50px;
+  }
+
+  .hubspot-gallery .person-img-wrapper {
+    width: 100%;
+    left: 30px;
+    top: -53px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1100px) {
