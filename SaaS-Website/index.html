@@ -36,8 +36,13 @@
           <li>
             <a href="#" class="link">Hire Us</a>
           </li>
+          <button class="btn btn-primary">Buy Now</button>
         </ul>
-        <button class="btn btn-primary">Buy Now</button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
     
@@ -704,6 +709,14 @@
         document.querySelector(".navbar-logo-wrapper").style.width = "150px";
         document.querySelector(".navbar .btn").style.height = "50px";
       }
+    })
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".navbar-links ul");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
     })
   </script>
 </body>

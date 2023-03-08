@@ -22,9 +22,29 @@
   font-weight: 500;
   font-size: 18px;
   margin-inline: 20px;
+  transition: 0.7s ease;
+}
+
+.navbar-links .link:hover {
+  color: var(--primary);
 }
 
 .navbar-links button { margin-left: 20px; }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-block: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--font-base-one);
+}
 
 .hero-gradient {
   background: url("/assets/banners/hero-gradient.jpg");

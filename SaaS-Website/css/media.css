@@ -1,57 +1,88 @@
+@media (max-width: 1100px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .navbar-links ul {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transition: 0.3s;
+    left: -100%;
+  }
+  
+  .navbar-links ul.active {
+    background-color: white;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-links ul li {
+    background-color: var(--light);
+    margin-block: 5px;
+  }
+  
+  .navbar-links button {
+    margin-left: 0;
+  }
+
+  .hero-gradient {
+    height: 110vh;
+  }
+
+  .benefits-wrapper {
+    grid-template-areas: 
+    "head head"
+    "one two"
+    "three four"
+    ;
+  }
+}
+
 @media screen and (min-width: 500px) and (max-width: 1100px) {
+
   .hero-gradient {
     background: url("/assets/banners/ipad-hero-gradient.jpg");
     background-size: cover;
   }
 
-  .hero-logos .logo {
-    position: relative;
-  }
-
-  .hero-logos {
-    position: relative;
-  }
-
-  .logo.asana {
-    left: 100px;
-  }
-
+  .hero-logos .logo { position: relative; }
+  .hero-logos { position: relative; }
+  .logo.asana { left: 100px; }
   .logo.atlassian {
     top: 50px;
     left: 200px;
   }
-
-  .logo.calendar {
-    left: 300px;
-  }
-
+  .logo.calendar { left: 300px; }
   .logo.google-a {
     top: 200px;
     left: 50px;
-  }
-
+}
   .logo.google {
     left: 300px;
     top: 0px;
   }
-
   .logo.paypal {
     left: 80px;
     top: -100px;
   }
-
   .logo.weave {
     left: 300px;
     top: -500px;
   }
-
-  .prospective-wrapper .block-text-left {
-    top: 0px;
-  }
-
-  .footer-col {
-    margin-right: 20px;
-  }
+  .prospective-wrapper .block-text-left { top: 0px; }
+  .footer-col { margin-right: 20px; }
 }
 
 @media screen and (min-width: 1500px) {
