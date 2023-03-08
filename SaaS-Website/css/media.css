@@ -215,4 +215,13 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .why-wrapper {
+    margin-top: 100px;
+  }
+
+  .why-wrapper .center-header {
+    margin-inline: auto;
+    inline-size: 300px;
+  }
 }
