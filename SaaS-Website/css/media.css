@@ -102,7 +102,7 @@
   .hire-us-form-link { margin-block: 7px; }
 }
 
-@media screen and (min-width: 1500px) {
+@media (min-width: 1500px) {
   .navbar {
     padding-top: 40px;
     padding-inline: 12%;
@@ -121,6 +121,11 @@
   .prospective-wrapper.container {
     padding: 100px 0 0 50px;
   }
+
+  .pricing-card .bottom p {
+    margin-bottom: 60px;
+  }
+
   .hire-us-wrapper {
     padding-inline: 15% 7%;
   }
@@ -132,6 +137,44 @@
 @media (max-width: 500px) {
   .hero-gradient {
     background: url("/assets/banners/hero-gradient-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-text .btn-primary {
+  margin-bottom: 7px;
+  }
+
+  .logo.asana {
+    left: -120px;
+  }
+
+  .logo.atlassian {
+    left: 00px;
+    top: -10px;
+  }
+
+  .logo.paypal {
+    top: -230px;
+    left: -70px;
+  }
+
+  .logo.google-a {
+    top: -210px;
+    left: 150px;
+  }
+
+  .logo.google {
+    top: -100px;
+    left: 140px;
+  }
+
+  .logo.calendar {
+    left: 80px;
+    top: -300px;
   }
 
   .navbar-links ul {

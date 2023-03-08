@@ -402,7 +402,7 @@
 
 .pricing-card .bottom p {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .pricing-card-perk {
@@ -710,6 +710,7 @@ input.hire-us-checkbox {
   flex-direction: column;
   text-align: center;
   margin-top: 50px;
+  user-select: none;
 }
 
 .footer-base-bottom p {
