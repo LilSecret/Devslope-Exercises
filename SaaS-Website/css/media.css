@@ -189,5 +189,30 @@
     "three"
     "four"
     ;
+    margin-bottom: 100px;
+  }
+
+  .prospective-wrapper {
+    flex-direction: column;
+    margin-inline: 20px;
+  }
+
+  .prospective-wrapper.container {
+    padding: 50px 20px;
+  }
+
+  .prospective-wrapper .block-text-left {
+    inline-size: auto;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .prospective-img {
+    width: 110%;
+    margin-inline: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
