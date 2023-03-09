@@ -74,7 +74,7 @@
   }
   .logo.weave {
     left: 300px;
-    top: -500px;
+    top:-600px;
   }
 
   .prospective-wrapper .block-text-left { top: 0px; }
@@ -87,7 +87,7 @@
 
   .hubspot-gallery .person-img-wrapper {
     width: 100%;
-    left: 30px;
+    left: 15px;
     top: -53px;
   }
 
@@ -269,6 +269,7 @@
   #banner.container {
     margin-inline: 3px;
     padding: 5px 0;
+    margin-bottom: 20px;
   }
 
   .hubspot-wrapper {
