@@ -10,6 +10,7 @@
   <!-- my stylesheets  -->
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/active.css">
   <link rel="stylesheet" href="/css/media.css">
 </head>
 
@@ -702,21 +703,25 @@
 
   <script src="https://kit.fontawesome.com/6335a9bd6c.js" crossorigin="anonymous"></script>
   <script>
-    window.addEventListener("scroll", function() {
-      if (window.scrollY >= 200) {
-        document.querySelector(".navbar").style.background = "white";
-        document.querySelector(".navbar").style.paddingBlock = "5px";
-        document.querySelector(".navbar-logo-wrapper").style.width = "150px";
-        document.querySelector(".navbar .btn").style.height = "50px";
-      }
-    })
-
+    const navbar = document.querySelector(".navbar");
+    const navbarLogo = document.querySelector(".navbar-logo-wrapper");
+    const navbarBtn = document.querySelector(".navbar .btn");
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".navbar-links ul");
+    window.addEventListener("scroll", function() {
+      if (window.scrollY >= 200) {
+        navbar.classList.add("active");
+        navbarLogo.classList.add("active");
+        navbarBtn.classList.add("active");
+      }
+    })
 
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
+      navbar.classList.add("active");
+      navbarLogo.classList.add("active");
+      navbarBtn.classList.add("active");
     })
   </script>
 </body>

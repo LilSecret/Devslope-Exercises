@@ -168,6 +168,13 @@
 .card {
   box-shadow: 0px 10px 10px rgba(105, 105, 105, 0.3);
   padding: 30px;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 10px #97b5da;
+  bottom: 10px;
 }
 
 .card .details {
@@ -363,6 +370,12 @@
   box-shadow: 0 0 20px rgba(105, 105, 105, 0.3);
   padding: 50px;
   line-height: 1.5;
+  position: relative;
+}
+
+.pricing-card:hover {
+  box-shadow: 0px 10px 10px #97b5da;
+  bottom: 10px;
 }
 
 .pricing-card .top {
@@ -558,6 +571,10 @@
   padding: 15px 10px;
 }
 
+.hire-us-form-input:hover {
+  border: 1px solid #97b5da;
+}
+
 .hire-us-form-input:focus { border: 1px solid var(--light-grey); }
 .hire-us-form .input-light { color: var(--light-grey); }
 .hire-us-form .input-dark { color: var(--dark); }
@@ -690,6 +707,7 @@ input.hire-us-checkbox {
   padding: 9px 10px;
 }
 
+.breadcrumbs-img-input select:focus { outline: none; }
 
 .breadcrumbs-img-input img {
   width: 20px;

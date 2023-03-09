@@ -5,30 +5,12 @@
     display: block;
   }
   
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
   .navbar-links ul {
     justify-content: center;
     position: absolute;
     transition: 0.3s;
     left: -200%;
     width: 100%;
-  }
-  
-  .navbar-links ul.active {
-    background-color: white;
-    top: 34px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 5px;
   }
   
   .navbar-links ul li {
@@ -131,6 +113,23 @@
   }
   .container {
     padding-inline: 15%;
+  }
+}
+
+@media(max-width: 768px) {
+  .logo.weave,
+  .logo.calendar {
+    left: 250px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "one two"
+    "three four"
+    ;
   }
 }
 
