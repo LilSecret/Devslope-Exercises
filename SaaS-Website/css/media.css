@@ -131,6 +131,10 @@
     "three four"
     ;
   }
+
+  .hire-us-wrapper {
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 500px) {
