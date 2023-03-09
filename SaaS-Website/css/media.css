@@ -323,4 +323,26 @@
   .pricing-grid .center-header {
     padding-bottom: 0;
   }
+
+  .hire-us-wrapper {
+    flex-direction: column;
+    padding-inline: 10px;
+  }
+
+  .hire-us-wrapper > * {
+    width: 100%;
+  }
+
+  .hire-us-wrapper .block-text-left {
+    padding-right: 0;
+    width: 85%;
+  }
+
+  .form-links {
+    align-items: flex-start;
+  }
+
+  .form-links .hire-us-form-link {
+    margin-right: 0;
+  }
 }
