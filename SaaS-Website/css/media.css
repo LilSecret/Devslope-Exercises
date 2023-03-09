@@ -306,4 +306,21 @@
   .trusted-img-wrapper:last-of-type {
     border-bottom: none;
   }
+
+  .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "one"
+    "two"
+    "three"
+    "four"
+    ;
+  }
+
+  .pricing-grid .center-header {
+    padding-bottom: 0;
+  }
 }
