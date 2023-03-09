@@ -136,6 +136,7 @@
 
 @media (max-width: 500px) {
   .container {
+    padding: 50px 20px;
     margin-inline: 20px;
     margin-block: 50px;
   }
@@ -202,10 +203,6 @@
     margin-inline: 20px;
   }
 
-  .prospective-wrapper.container {
-    padding: 50px 20px;
-  }
-
   .prospective-wrapper .block-text-left {
     inline-size: auto;
     margin-right: 0;
@@ -255,5 +252,10 @@
     width: 2px;
     position: relative;
     left: 18px;
+  }
+
+  #banner.container {
+    margin-inline: 3px;
+    padding: 5px 0;
   }
 }
