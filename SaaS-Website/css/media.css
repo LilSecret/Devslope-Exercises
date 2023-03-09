@@ -345,4 +345,29 @@
   .form-links .hire-us-form-link {
     margin-right: 0;
   }
+
+  .footer-top-container {
+    flex-direction: column;
+  }
+  
+  .footer-col {
+    margin-right: 0;
+    margin-block: 5px;
+  }
+
+  .footer-named-tag {
+    justify-content: flex-start;
+    position: relative;
+    margin-block: -4px;
+  }
+
+  .footer-named-tag p {
+    margin-block: 10px;
+  }
+
+  .footer-named-tag .tag {
+    position: absolute;
+    left: 50px;
+  }
+
 }
