@@ -135,6 +135,11 @@
 }
 
 @media (max-width: 500px) {
+  .container {
+    margin-inline: 20px;
+    margin-block: 50px;
+  }
+
   .hero-gradient {
     background: url("/assets/banners/hero-gradient-mobile.jpg");
     background-repeat: no-repeat;
@@ -223,5 +228,32 @@
   .why-wrapper .center-header {
     margin-inline: auto;
     inline-size: 300px;
+  }
+
+  .timeline-wrapper {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .timeline-element {
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline-heading {
+    top: 1px;
+    left: 0;
+    transform: translateX(0);
+    position: relative;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .timeline-spacer {
+    margin-block: 4px;
+    height: 20px;
+    width: 2px;
+    position: relative;
+    left: 18px;
   }
 }
