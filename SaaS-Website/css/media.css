@@ -346,6 +346,11 @@
     margin-right: 0;
   }
 
+  .footer-wrapper.container {
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+  }
+
   .footer-top-container {
     flex-direction: column;
   }
@@ -370,4 +375,29 @@
     left: 50px;
   }
 
+  .footer-separator {
+    margin-block: 35px;
+  }
+
+  .footer-breadcrumbs {
+    flex-direction: column;
+  }
+
+  .breadcrumbs-right {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  
+  .footer-socials {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .social-icon {
+    margin-right: 4px;
+  }
+
+  .footer-base-bottom {
+    margin-top: 20px;
+  }
 }
