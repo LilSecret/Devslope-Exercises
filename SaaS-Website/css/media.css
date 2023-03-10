@@ -138,9 +138,20 @@
     "three four"
     ;
   }
-
+  
   .hire-us-wrapper {
+    flex-direction: column;
     padding-left: 30px;
+    padding-inline: 50px;
+  }
+
+  .hire-us-wrapper > * {
+    width: 100%;
+  }
+
+  .hire-us-wrapper .block-text-left {
+    padding-right: 0;
+    inline-size: 450px;
   }
 
   .footer-top-container {
@@ -359,11 +370,6 @@
 
   .pricing-grid .center-header {
     padding-bottom: 0;
-  }
-
-  .hire-us-wrapper {
-    flex-direction: column;
-    padding-inline: 10px;
   }
 
   .hire-us-wrapper > * {
