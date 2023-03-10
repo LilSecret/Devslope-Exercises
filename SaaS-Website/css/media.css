@@ -181,28 +181,40 @@
   margin-bottom: 7px;
   }
 
+  .hero-logos .logo-big {
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+  }
+
+  .hero-logos .logo-small {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+  }
+
   .logo.asana {
     left: -120px;
   }
 
   .logo.atlassian {
-    left: 00px;
-    top: -10px;
+    left: 100px;
+    top: -100px;
   }
 
   .logo.paypal {
-    top: -230px;
+    top: -200px;
     left: -70px;
   }
 
   .logo.google-a {
-    top: -210px;
-    left: 150px;
+    top: -160px;
+    left: 40px;
   }
 
   .logo.google {
-    top: -100px;
-    left: 140px;
+    top: -300px;
+    left: -40px;
   }
 
   .logo.calendar {
@@ -211,8 +223,8 @@
   }
 
   .logo.weave {
-    left: 0px;
-    top: -70px;
+    left: 100px;
+    top: -250px;
   }
 
   .navbar-links ul {
