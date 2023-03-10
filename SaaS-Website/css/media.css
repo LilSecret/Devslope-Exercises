@@ -142,7 +142,7 @@
   .hire-us-wrapper {
     flex-direction: column;
     padding-left: 30px;
-    padding-inline: 50px;
+    padding-inline: 35px;
   }
 
   .hire-us-wrapper > * {
@@ -316,7 +316,7 @@
   #banner.container {
     margin-inline: 3px;
     padding: 5px 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .hubspot-wrapper {
@@ -372,13 +372,25 @@
     padding-bottom: 0;
   }
 
-  .hire-us-wrapper > * {
-    width: 100%;
-  }
-
   .hire-us-wrapper .block-text-left {
     padding-right: 0;
     width: 85%;
+  }
+
+  .hire-us-grid {
+    grid-template-areas: 
+    "one one"
+    "two two"
+    "three three"
+    "four four"
+    "budget budget"
+    "country country"
+    "comments comments"
+    ;
+  }
+
+  .hire-us-checkbox-labels {
+    margin-left: 45px;
   }
 
   .form-links {
@@ -386,6 +398,7 @@
   }
 
   .form-links .hire-us-form-link {
+    font-size: 1rem;
     margin-right: 0;
   }
 
@@ -424,6 +437,7 @@
 
   .footer-breadcrumbs {
     flex-direction: column;
+    font-size: 1rem;
   }
 
   .breadcrumbs-right {
