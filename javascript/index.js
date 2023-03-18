@@ -83,23 +83,43 @@ Expected Output:
 => SKATE!
 */
 
+// let readyToSkate = false;
+// let crewStatus = true;
+// let cameraBattery = "green";
+
+// if (crewStatus && cameraBattery === "green") {
+//    console.log("Crew & cameraBattery is a go!");
+//    readyToSkate = true;
+// } else {
+//    console.log("WARNING: Crew or cameraBattery not ready!");
+//    readyToSkate = false;
+// }
+
+// if (readyToSkate) {
+//    console.log("Grab your skateboard...");
+//    console.log("Ready...");
+//    console.log("Set...");
+//    console.log("SKATE!");
+// } else {
+//    console.log("No skating today.");
+// }
+
+/*
+Directions:
+1. Fix runtime errors.
+2. Remember to examine the error message for clues about what is going wrong.
+3. Pay close attention to any line numbers mentioned in the message - these will help you locate and fix the mistake in the code
+Expected Result:
+=> WARNING: Insufficient energy!
+*/
+
 let readyToSkate = false;
-let crewStatus = true;
-let cameraBattery = "green";
+let energyLevel = 18000;
 
-if (crewStatus && cameraBattery === "green") {
-   console.log("Crew & cameraBattery is a go!");
-   readyToSkate = true;
+if (energyLevel >= 21000) {
+  console.log("Energy level is a go!");
+  readyToSkate = true;
 } else {
-   console.log("WARNING: Crew or cameraBattery not ready!");
-   readyToSkate = false;
-}
-
-if (readyToSkate) {
-   console.log("Grab your skateboard...");
-   console.log("Ready...");
-   console.log("Set...");
-   console.log("SKATE!");
-} else {
-   console.log("No skating today.");
+  console.log("WARNING: Insufficient energy!");
+  readyToSkate = false;
 }
