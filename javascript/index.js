@@ -227,50 +227,58 @@ Expected Result:
 
 // ###############################Spacer########################
 
-let favMovies = [
-  {
-    title: 'Hacksaw Ridge',
-    genre: 'awesome',
-    finished: false
-  },
-  {
-    title: 'Transformers II',
-    genre: 'awesome',
-    finished: false
-  },
-  {
-    title: 'How to Train a Dragon',
-    genre: 'awesome',
-    finished: false
-  },
-  {
-    title: 'I am Legend',
-    genre: 'awesome',
-    finished: false
-  },
-  {
-    title: 'Rick and Morty',
-    genre: 'kids',
-    finished: true
-  }
-]
+// let favMovies = [
+//   {
+//     title: 'Hacksaw Ridge',
+//     genre: 'awesome',
+//     finished: false
+//   },
+//   {
+//     title: 'Transformers II',
+//     genre: 'awesome',
+//     finished: false
+//   },
+//   {
+//     title: 'How to Train a Dragon',
+//     genre: 'awesome',
+//     finished: false
+//   },
+//   {
+//     title: 'I am Legend',
+//     genre: 'awesome',
+//     finished: false
+//   },
+//   {
+//     title: 'Rick and Morty',
+//     genre: 'kids',
+//     finished: true
+//   }
+// ]
 
-let finishedMovies = [];
-let notFinishedMovies = [];
+// let finishedMovies = [];
+// let notFinishedMovies = [];
 
-for(let i = 0; i < favMovies.length; i++) {
-  if(favMovies[i].finished === true) {
-    finishedMovies.push(favMovies[i])
+// for(let i = 0; i < favMovies.length; i++) {
+//   if(favMovies[i].finished === true) {
+//     finishedMovies.push(favMovies[i])
+//   }
+// }
+// for(let i = 0; i < favMovies.length; i++) {
+//   if(favMovies[i].finished === false) {
+//     notFinishedMovies.push(favMovies[i])
+//   }
+// }
+// console.log(notFinishedMovies);
+// console.log(finishedMovies);
+
+var bottles = 99;
+var bottleWord = 'bottles';
+
+
+while (bottles >= 1) {
+  if (bottles === 1) {
+    bottleWord = 'bottle';
   }
+  console.log(bottles + ' ' + bottleWord + ' of milk on the wall');
+  bottles--;
 }
-for(let i = 0; i < favMovies.length; i++) {
-  if(favMovies[i].finished === false) {
-    notFinishedMovies.push(favMovies[i])
-  }
-}
-console.log(notFinishedMovies);
-console.log(finishedMovies);
-
-// for (let i = 0; i < favMovies.length; i++ ) {
-//   console.log(favMovies[i]);
-// } 
