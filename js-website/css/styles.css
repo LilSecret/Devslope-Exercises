@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-wrap: row nowrap;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.brand-logo a h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 1.42;
+}
+
+.navbar .main-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar .nav-link {
+  padding: 18px;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: lowercase;
+  line-height: 26px;
+}
