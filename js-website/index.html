@@ -21,8 +21,8 @@
           </div>
           <ul class="ul-defaults-none main-menu">
             <li class="nav-link">home</li>
-            <li class="nav-link">about me</li>
-            <li class="nav-link">contact</li>
+            <li class="nav-link" data-open="about">about me</li>
+            <li class="nav-link" data-open="contact">contact</li>
           </ul>
         </nav>
 
@@ -30,10 +30,10 @@
 
     </main>
 
-    <div class="full-site-modal page-block" data-animation="zoomInOut">
+    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
       <header class="modal-header">
         <h3>About Page</h3>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times" data-close="about"></i>
       </header>
       <div class="modal-body">
         <div class="modal-img">
