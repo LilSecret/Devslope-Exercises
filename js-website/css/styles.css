@@ -23,3 +23,50 @@ nav {
   text-transform: lowercase;
   line-height: 26px;
 }
+
+.full-site-modal {
+  position: fixed;
+  inset: 0;
+  padding: 1rem;
+  transition: all 0.35s ease-in;
+  /* visibility: hidden;
+  opacity: 0; */
+}
+
+.modal-header {
+  display: flex;
+  place-content: center space-between;
+  padding-bottom: 1rem;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+
+.modal-body .img-wrapper {
+  border-radius: 50%;
+}
+
+.modal-header .fa-times {
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in;
+}
+
+[data-animation="zoomInOut"].full-site-modal {
+  transform: scale(0.2);
+}
+
+[data-animation="zoomInOut"].full-site-modal.is-visible {
+  transform: none;
+}
+
+.modal-header .fa-times:hover {
+  transition: scale(1.1);
+  cursor: pointer;
+}
+
+.full-site-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
