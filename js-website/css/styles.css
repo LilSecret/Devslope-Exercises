@@ -24,6 +24,35 @@ nav {
   line-height: 26px;
 }
 
+.hero-content {
+  text-align: center;
+  padding-block: 5.5rem;
+}
+
+.code-icon {
+  background-color: #da5252;
+  border-radius: 50%;
+  color: var(--color-text);
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.code-icon i {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
 .full-site-modal {
   position: fixed;
   inset: 0;
