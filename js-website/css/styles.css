@@ -1,3 +1,76 @@
+.theme-panel {
+  border-bottom-left-radius: 25px;
+  background-color: #495fef;
+  color: var(--bg);
+  position: fixed;
+  padding: 8px 13px 15px;
+  top: 25%;
+  right: 0px;
+  text-align: center;
+  transition: 0.4s;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+.theme-panel.open {
+  transform: translateX(0%);
+}
+
+.theme-panel > span {
+  display: inline-flex;
+  line-height: 26px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.09px;
+  padding-bottom: 8px;
+}
+
+.theme-body {
+  border-radius: 33px;
+  background-color: #fff;
+  box-shadow: 0 12px 34px rgba(2, 28, 45, 0.2);
+  max-width: 153px;
+  display: flex;
+  overflow: hidden;
+}
+
+.theme-body button.active {
+  background-color: #C8CEE2;
+}
+
+.theme-body button {
+  border: none;
+  width: 50%;
+  padding: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  height: 45px;
+  text-transform: uppercase;
+}
+
+.theme-tab {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #495fef;
+  color: var(--bg);
+  border: none;
+  position: absolute;
+  line-height: 32px;
+  top: 0px;
+  left: -22px;
+  padding-block: 5px;
+  padding-inline: 8px;
+}
+
+.theme-tab i {
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.theme-panel.open .theme-tab i {
+  transform: rotate(180deg);
+}
+
 nav {
   display: flex;
   flex-wrap: row nowrap;
