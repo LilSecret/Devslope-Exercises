@@ -13,6 +13,7 @@ const isVisible = 'is-visible';
 
 // Portfolio 
 const dataFilter = '[data-filter]'
+const portfolioCard = '[data-card]'
 
 const root = document.documentElement;
 
@@ -23,6 +24,8 @@ const currentTheme = localStorage.getItem(theme);
 
 // Portfolio
 const filterLink = document.querySelectorAll(dataFilter);
+const portfolioDeck = document.querySelectorAll(portfolioCard);
+
 
 // Modal
 const openModal = document.querySelectorAll(modalOpen);
@@ -79,7 +82,17 @@ for (let elm of switcher) {
 for (let link of filterLink) {
   link.addEventListener('click', function() {
     setActive(link, '.filter-link');
-    // console.log(link);
+    const genre = this.dataset.filter;
+    portfolioDeck.forEach((card) => {
+      if (genre === 'all') {
+        card.style.display = 'block';
+      } 
+      else if (card.dataset.card === genre) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    })
   })
 }
 
