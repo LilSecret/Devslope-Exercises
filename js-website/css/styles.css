@@ -163,6 +163,71 @@ nav {
   color: #495fef;
 }
 
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.portfolio-card {
+  position: relative;
+  margin: 0 1rem 1.8rem;
+  max-width: 255px;
+}
+
+.card-body img {
+  width: 100%;
+  border-radius: 8px;
+  height: 255px;
+  object-fit: cover;
+}
+
+.card-popup-box {
+  position: absolute;
+  inset: auto 0 8px 0;
+  margin-inline: 18px;
+  /* margin-bottom: 10px; */
+  padding: 1.25rem 1.875rem;
+  transition: 0.4s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.portfolio-card:hover .card-popup-box {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.card-popup-box::before {
+  position: absolute;
+  content: "";
+  background-color: var(--bg); 
+  border-radius: 8px;
+  inset: 0;
+  opacity: 0.9;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.card-popup-box span {
+  color: var(--color-text-opacity);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  line-height: 1.63;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.card-popup-box h4 {
+  color: var(--color-headings);
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+
 .full-site-modal {
   position: fixed;
   inset: 0;
