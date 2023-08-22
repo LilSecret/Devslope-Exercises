@@ -166,8 +166,11 @@ nav {
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
   justify-content: center;
   padding: 3rem 1rem;
+  margin-inline: auto;
 }
 
 .portfolio-card {
