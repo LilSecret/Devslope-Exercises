@@ -11,12 +11,20 @@ const modalOpen = '[data-open]';
 const modalClose = '[data-close]';
 const isVisible = 'is-visible';
 
+// Portfolio 
+const dataFilter = '[data-filter]'
+
 const root = document.documentElement;
 
+// Theme 
 const toggleTheme = document.querySelector(themeTab);
 const switcher = document.querySelectorAll(switcherBtn);
 const currentTheme = localStorage.getItem(theme);
 
+// Portfolio
+const filterLink = document.querySelectorAll(dataFilter);
+
+// Modal
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
@@ -65,6 +73,13 @@ for (let elm of switcher) {
     const toggle = this.dataset.toggle;
     setActive(elm, switcherBtn);
     setTheme(toggle);
+  })
+}
+
+for (let link of filterLink) {
+  link.addEventListener('click', function() {
+    setActive(link, '.filter-link');
+    // console.log(link);
   })
 }
 
