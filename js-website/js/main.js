@@ -168,3 +168,15 @@ for (const elm of closeModal) {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   })
 }
+
+document.addEventListener('click', (e) => {
+  if (e.target === document.querySelector('.full-site-modal.is-visible')) {
+    e.target.classList.remove('is-visible');
+  }
+})
+
+document.addEventListener('keyup', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelector('.modal-wrapper.is-visible').classList.remove('is-visible');
+  }
+})
