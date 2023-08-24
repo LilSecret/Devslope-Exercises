@@ -191,7 +191,6 @@ nav {
   position: absolute;
   inset: auto 0 8px 0;
   margin-inline: 18px;
-  /* margin-bottom: 10px; */
   padding: 1.25rem 1.875rem;
   transition: 0.4s;
   z-index: 1;
@@ -269,6 +268,7 @@ nav {
 .modal-wrapper {
   background-color:rgba(0, 0, 0, 0.7);
   display: flex;
+  color: var(--color-text-base) !important;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -278,10 +278,13 @@ nav {
   inset: 0;
 }
 
+.modal-wrapper h3 {
+  color: var(--color-text-base) !important;
+}
+
 .modal-dialogue {
   background-color: var(--bg-panel);
   border-radius: 5px;
-  color: var(--color-text-base);
   max-width: 800px;
   min-height: auto;
   padding: 1.25rem;
