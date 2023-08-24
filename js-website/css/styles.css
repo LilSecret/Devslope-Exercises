@@ -201,6 +201,7 @@ nav {
 .portfolio-card:hover .card-popup-box {
   opacity: 1;
   bottom: 20px;
+  cursor: pointer;
 }
 
 .card-popup-box::before {
