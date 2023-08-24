@@ -15,10 +15,9 @@ const isVisible = 'is-visible';
 const dataFilter = '[data-filter]';
 const portfolioCard = '[data-card]';
 const portfolio = '[data-grid]';
-const portfolioTypes = ['Web <br> Development', 'App <br> Development', 'UI Design'];
 const webHeadings = ['Green Circle', 'Web Responsive', 'Computer Development', 'Compatible Website'];
 const appHeadings = ['Shopping Easy', 'New VPN Browsing'];
-const uiHeading = ['Connect to Us', 'Our App'];
+const uiHeadings = ['Connect to Us', 'Our App'];
 
 const root = document.documentElement;
 
@@ -80,7 +79,23 @@ const addPortfolioCard = (type, num, genre, title) => {
   portfolioGrid.appendChild(card);
 }
 
-addPortfolioCard('web', 1);
+const buildPortfolioDeck = () => {
+  let num = 0;
+  for (let heading of webHeadings) {
+    num++;
+    addPortfolioCard('web', num, 'Web <br> Development', heading);
+  }
+  for (let heading of appHeadings) {
+    num++;
+    addPortfolioCard('app', num, 'App <br> Development', heading)
+  }
+  for (let heading of uiHeadings) {
+    num++;
+    addPortfolioCard('ui', num, 'UI / UX Design', heading);
+  }
+}
+
+buildPortfolioDeck();
 
 if (currentTheme) {
   root.setAttribute(dataTheme, currentTheme);
@@ -140,7 +155,6 @@ for (let link of filterLink) {
     })
   })
 }
-
 
 
 
