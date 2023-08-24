@@ -307,6 +307,15 @@ nav {
   transform: none;
 }
 
+[data-animation="slideInOutTop"] .modal-dialogue {
+  transform: translateY(-80%);
+  transition: 0.4s;
+}
+
+[data-animation="slideInOutTop"].is-visible .modal-dialogue {
+  transform: translateY(0%);
+}
+
 .modal-header .fa-times:hover {
   transition: scale(1.1);
   cursor: pointer;
