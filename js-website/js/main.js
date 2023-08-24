@@ -95,8 +95,6 @@ const buildPortfolioDeck = () => {
   }
 }
 
-buildPortfolioDeck();
-
 if (currentTheme) {
   root.setAttribute(dataTheme, currentTheme);
   switcher.forEach((btn) => {
