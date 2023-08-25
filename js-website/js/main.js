@@ -98,18 +98,18 @@ const buildPortfolioDeck = () => {
 }
 
 const createCardModal = (target) => {
-  const modelWrapper = document.createElement('div');
+  const modalWrapper = document.createElement('div');
   let title = target.dataset.card.charAt(0).toUpperCase() + target.dataset.card.substr(1);
   const project = target.dataset.open.slice(-1);
   const image = target.children[0].children[0].getAttribute('src').match(/(\d+)/)[0];
-  const heading = target.children[0].children[1].children[1].innerHTML
+  const heading = target.children[0].children[1].children[1].innerHTML;
   if (title === 'Ui') {
     title = title.toUpperCase();
   }
-  modelWrapper.setAttribute('id', target.dataset.open);
-  modelWrapper.setAttribute('class', 'modal-wrapper full-site-modal is-visible');
-  modelWrapper.setAttribute('data-animation', 'slideInOutTop');
-  modelWrapper.innerHTML = `
+  modalWrapper.setAttribute('id', target.dataset.open);
+  modalWrapper.setAttribute('class', 'modal-wrapper full-site-modal');
+  modalWrapper.setAttribute('data-animation', 'slideInOutTop');
+  modalWrapper.innerHTML = `
   <div class="modal-dialogue">
   <header class="modal-header">
     <h3>${title} Project ${project}</h3>
@@ -127,13 +127,13 @@ const createCardModal = (target) => {
   </div>
 </div>
   `
-  document.querySelector('main').appendChild(modelWrapper);
+  main.appendChild(modalWrapper);
 }
 
 const removeElm = (parent, elm) => {
   setTimeout(() => {
     parent.removeChild(parent.children[elm]);
-  }, 1500);
+  }, 800);
 }
 
 if (currentTheme) {
@@ -178,6 +178,7 @@ searchBox.addEventListener('keyup', (e) => {
   })
 })
 
+// Link Filters 
 for (let link of filterLink) {
   link.addEventListener('click', function() {
     setActive(link, '.filter-link');
@@ -205,7 +206,9 @@ for (let card of portfolioDeck) {
 for (const elm of openModal) {
   elm.addEventListener('click', function() {
     const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add(isVisible);
+    setTimeout(() => {
+      document.getElementById(modalId).classList.add(isVisible);
+    }, 100);
   })
 }
 
