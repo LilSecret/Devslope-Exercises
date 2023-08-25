@@ -130,6 +130,12 @@ const createCardModal = (target) => {
   document.querySelector('main').appendChild(modelWrapper);
 }
 
+const removeElm = (parent, elm) => {
+  setTimeout(() => {
+    parent.removeChild(parent.children[elm]);
+  }, 1500);
+}
+
 if (currentTheme) {
   root.setAttribute(dataTheme, currentTheme);
   switcher.forEach((btn) => {
@@ -190,7 +196,7 @@ for (let link of filterLink) {
 }
 
 for (let card of portfolioDeck) {
-  card.addEventListener('click', function(e) {
+  card.addEventListener('click', function() {
     createCardModal(this);
   })
 }
@@ -199,7 +205,7 @@ for (let card of portfolioDeck) {
 for (const elm of openModal) {
   elm.addEventListener('click', function() {
     const modalId = this.dataset.open;
-    // document.getElementById(modalId).classList.add(isVisible);
+    document.getElementById(modalId).classList.add(isVisible);
   })
 }
 
@@ -212,15 +218,13 @@ for (const elm of closeModal) {
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.full-site-modal.is-visible')) {
     e.target.classList.remove('is-visible');
-    
+    removeElm(main, main.children.length - 1);
   }
 })
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape') {
     document.querySelector('.modal-wrapper.is-visible').classList.remove('is-visible');
-    setTimeout(() => {
-      main.removeChild(main.lastChild);
-    }, 1500);
+    removeElm(main, main.children.length - 1);
   }
 })
