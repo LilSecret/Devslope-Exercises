@@ -38,6 +38,8 @@ const portfolioGrid = document.querySelector(portfolio);
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
+const main = document.querySelector('main');
+
 const setActive = (elm, selector) => {
   if(document.querySelector(`${selector}.${active}`) !== null) {
     document.querySelector(`${selector}.${active}`).classList.remove(`${active}`);
@@ -93,6 +95,39 @@ const buildPortfolioDeck = () => {
     num++;
     addPortfolioCard('ui', num, 'UI / UX Design', heading);
   }
+}
+
+const createCardModal = (target) => {
+  const modelWrapper = document.createElement('div');
+  let title = target.dataset.card.charAt(0).toUpperCase() + target.dataset.card.substr(1);
+  const project = target.dataset.open.slice(-1);
+  const image = target.children[0].children[0].getAttribute('src').match(/(\d+)/)[0];
+  const heading = target.children[0].children[1].children[1].innerHTML
+  if (title === 'Ui') {
+    title = title.toUpperCase();
+  }
+  modelWrapper.setAttribute('id', target.dataset.open);
+  modelWrapper.setAttribute('class', 'modal-wrapper full-site-modal is-visible');
+  modelWrapper.setAttribute('data-animation', 'slideInOutTop');
+  modelWrapper.innerHTML = `
+  <div class="modal-dialogue">
+  <header class="modal-header">
+    <h3>${title} Project ${project}</h3>
+    <i class="fas fa-times" data-close="modal-dialogue"></i>
+  </header>
+  <div class="modal-body">
+    <div class="img-wrapper">
+      <img src="./assets/images/portfolio-${image}.jpg" alt="portfolio image">
+    </div>
+    <div class="text-wrapper">
+      <h5>${heading}</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
+    </div>
+  </div>
+</div>
+  `
+  document.querySelector('main').appendChild(modelWrapper);
 }
 
 if (currentTheme) {
@@ -154,12 +189,17 @@ for (let link of filterLink) {
   })
 }
 
+for (let card of portfolioDeck) {
+  card.addEventListener('click', function(e) {
+    createCardModal(this);
+  })
+}
 
 
 for (const elm of openModal) {
   elm.addEventListener('click', function() {
     const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add(isVisible);
+    // document.getElementById(modalId).classList.add(isVisible);
   })
 }
 
@@ -172,11 +212,15 @@ for (const elm of closeModal) {
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.full-site-modal.is-visible')) {
     e.target.classList.remove('is-visible');
+    
   }
 })
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape') {
     document.querySelector('.modal-wrapper.is-visible').classList.remove('is-visible');
+    setTimeout(() => {
+      main.removeChild(main.lastChild);
+    }, 1500);
   }
 })
