@@ -8,7 +8,7 @@ const open = 'open';
 const active = 'active';
 
 const modalOpen = '[data-open]';
-const modalClose = '[data-close]';
+const modalClose = 'fa-times';
 const isVisible = 'is-visible';
 
 // Portfolio 
@@ -36,7 +36,7 @@ const portfolioGrid = document.querySelector(portfolio);
 
 // Modal
 const openModal = document.querySelectorAll(modalOpen);
-let closeModal = document.querySelectorAll(modalClose);
+const closeModal = document.getElementsByClassName(modalClose);
 
 const main = document.querySelector('main');
 
