@@ -266,13 +266,13 @@ nav {
   aspect-ratio: 1.5 / .7;
   background-color: var(--bg-panel);
   color: var(--color-text-base);
-  margin-inline: auto;
   text-align: left;
   pointer-events: none;
   position: absolute;
   max-width: 450px;
   padding: 2rem;
   border-radius: 24px;
+  transition: all 200ms ease-in-out;
   z-index: -1;
   opacity: 0;
   box-shadow: 0px 22px 34px rgba(22, 28, 45, 0.6);
@@ -284,6 +284,7 @@ nav {
 }
 .review-item.previous,
 .review-item.next {opacity: 0.25;}
+
 .review-item.previous {transform: translate(-75%, 10%);}
 .review-item.next {transform: translate(75%, 10%);}
 
