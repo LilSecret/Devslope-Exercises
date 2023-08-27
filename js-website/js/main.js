@@ -36,7 +36,7 @@ const portfolioGrid = document.querySelector(portfolio);
 
 // Modal
 const openModal = document.querySelectorAll(modalOpen);
-const closeModal = document.querySelectorAll(modalClose);
+let closeModal = document.querySelectorAll(modalClose);
 
 const main = document.querySelector('main');
 
@@ -214,7 +214,9 @@ for (const elm of openModal) {
 
 for (const elm of closeModal) {
   elm.addEventListener("click", function() {
-    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+    setTimeout(() => {
+      this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+    }, 100);
   })
 }
 
