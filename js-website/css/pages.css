@@ -27,3 +27,27 @@
 .about-txt {
   font-size: 1.2rem;
 }
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.marquee-content {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.marquee-content li {
+  width: var(--marquee-elms-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 6);
+}

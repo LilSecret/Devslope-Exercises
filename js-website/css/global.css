@@ -1,3 +1,11 @@
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 15vw;
+  --marquee-elms-display: 5;
+  --marquee-elms-width: calc(var(--marquee-width) / var(--marquee-elms-display));
+  --marquee-duration-animation: calc(var(--marquee-elms) * 3s);
+}
+
 section,
 footer,
 header,
