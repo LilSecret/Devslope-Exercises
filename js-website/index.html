@@ -227,7 +227,7 @@
       <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
         <div class="container-fluid">
           <header class="modal-header">
-            <h3>About Page</h3>
+            <h3 class="header-md">About Page</h3>
             <i class="fas fa-times" data-close="about"></i>
           </header>
           <div class="modal-body">
@@ -270,16 +270,24 @@
             <i class="fas fa-times" data-close="contact"></i>
           </header>
           <div class="modal-body">
-            <div class="modal-img">
-              <img class="img-wrapper" src="./assets/images/img6.jpg" alt="head shot">
+            <div class="contact-text">
+              <h3 class="header-md">Charles Marchant</h3>
+              <p>Have a project or question? Send me a message.</p>
+              <p>I will reply within 48 hours.</p>
             </div>
-            <div>
-            <h2>Charles Marchant</h2>
-            <p>Text 1</p>
-            <p>Text 2</p>
-              <div>Email Me:</div>
-              <a href="mailto:chuckm248@gmail.com">chuck248@gmail.com</a>
-            </div>
+            <form action="#">
+              <label for="name">
+                <input name="name" type="text" placeholder="Name">
+              </label>
+              <label for="email">
+                <input name="email" type="email" placeholder="Email">
+              </label>
+              <label for="subject">
+                <input name="subject" type="text" placeholder="Subject">
+              </label>
+              <textarea name="comments" id="" cols="30" rows="3" placeholder="Write your message"></textarea>
+              <input type="submit" value="Send" class="btn btn-primary round-pill"></input>
+            </form>
           </div>
         </div>
       </div>
