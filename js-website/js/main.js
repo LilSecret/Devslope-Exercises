@@ -233,3 +233,13 @@ document.addEventListener('keyup', (e) => {
     removeElm(main, main.children.length - 1);
   }
 })
+
+// Marquee
+const elmsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elms-display');
+const marqueeContent = document.querySelector('.marquee-content');
+
+root.style.setProperty('--marquee-elms', marqueeContent.children.length);
+
+for (let i = 1; i < elmsDisplay; i+=1) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
