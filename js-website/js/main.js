@@ -107,7 +107,7 @@ const createCardModal = (target) => {
     title = title.toUpperCase();
   }
   modalWrapper.setAttribute('id', target.dataset.open);
-  modalWrapper.setAttribute('class', 'modal-wrapper full-site-modal');
+  modalWrapper.setAttribute('class', 'modal-wrapper full-site-modal portfolio-modal');
   modalWrapper.setAttribute('data-animation', 'slideInOutTop');
   modalWrapper.innerHTML = `
   <div class="modal-dialogue">
@@ -221,7 +221,7 @@ for (const elm of closeModal) {
 }
 
 document.addEventListener('click', (e) => {
-  if (e.target === document.querySelector('.full-site-modal.is-visible')) {
+  if (e.target === document.querySelector('.full-site-modal.is-visible.portfolio-modal')) {
     e.target.classList.remove('is-visible');
     removeElm(main, main.children.length - 1);
   }
