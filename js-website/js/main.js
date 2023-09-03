@@ -130,7 +130,7 @@ const createCardModal = (target) => {
   main.appendChild(modalWrapper);
 }
 
-const removeElm = (parent, elm) => {
+const removeChild = (parent, elm) => {
   setTimeout(() => {
     parent.removeChild(parent.children[elm]);
   }, 800);
@@ -223,14 +223,17 @@ for (const elm of closeModal) {
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.full-site-modal.is-visible.portfolio-modal')) {
     e.target.classList.remove('is-visible');
-    removeElm(main, main.children.length - 1);
+    removeChild(main, main.children.length - 1);
   }
 })
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape') {
-    document.querySelector('.modal-wrapper.is-visible').classList.remove('is-visible');
-    removeElm(main, main.children.length - 1);
+    let target = document.querySelector('.full-site-modal.is-visible');
+    target.classList.remove('is-visible');
+    if (target.className.includes('portfolio-modal')) {
+      removeChild(main, main.children.length - 1);
+    }
   }
 })
 
