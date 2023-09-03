@@ -212,14 +212,6 @@ for (const elm of openModal) {
   })
 }
 
-for (const elm of closeModal) {
-  elm.addEventListener("click", function() {
-    setTimeout(() => {
-      this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-    }, 100);
-  })
-}
-
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.full-site-modal.is-visible.portfolio-modal')) {
     e.target.classList.remove('is-visible');
@@ -236,6 +228,17 @@ document.addEventListener('keyup', (e) => {
     }
   }
 })
+
+// Dynamic JS
+document.querySelector('body').addEventListener('click', function(event) {
+  for (const elm of closeModal) {
+    elm.addEventListener("click", function() {
+      setTimeout(() => {
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+      }, 100);
+    })
+  }
+});
 
 // Marquee
 const elmsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elms-display');
