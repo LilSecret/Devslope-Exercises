@@ -1,0 +1,10 @@
+@media (max-width: 991px) {
+  #about .modal-img,
+  #about .modal-txt {
+    flex: initial;
+    margin-inline: auto;
+  }
+  .page-block {
+    text-align: center;
+  }
+}
