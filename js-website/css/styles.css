@@ -98,6 +98,8 @@ nav {
   line-height: 26px;
 }
 
+.navbar .nav-link:hover {color: var(--primary);}
+
 .hero-content {
   text-align: center;
   padding-block: 5.5rem;
@@ -241,6 +243,10 @@ nav {
   overflow: hidden;
 }
 
+[data-theme='dark'] .reviews .header-md {
+  text-shadow: var(--bg) 1px 1px 7px;
+}
+
 .review-preview {
   max-width: 400px;
   margin-inline: auto;
@@ -329,7 +335,7 @@ nav {
   padding: 0;
   font-size: 32px;
   transition: all .3s ease-in-out;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .slide-ctrl-container button:hover {opacity: 1;}
@@ -374,6 +380,8 @@ nav {
   font-size: 1.5rem;
   transition: all 0.5s ease-in;
 }
+
+.modal-header .fa-times:hover {color: var(--primary);}
 
 .modal-wrapper {
   background-color:rgba(0, 0, 0, 0.7);

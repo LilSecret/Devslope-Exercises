@@ -1,4 +1,5 @@
 :root {
+  --primary: #495FEF;
   --marquee-width: 80vw;
   --marquee-height: 15vw;
   --marquee-elms-display: 5;

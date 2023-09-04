@@ -120,7 +120,7 @@ const createCardModal = (target) => {
       <img src="./assets/images/portfolio-${image}.jpg" alt="portfolio image">
     </div>
     <div class="text-wrapper">
-      <h5>${heading}</h5>
+      <h3>${heading}</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
     </div>
