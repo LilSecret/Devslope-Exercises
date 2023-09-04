@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+  .portfolio-section .container {
+    padding-inline: 3rem;
+  }
   #about .modal-img,
   #about .modal-txt {
     flex: initial;
@@ -6,5 +9,14 @@
   }
   .page-block {
     text-align: center;
+  }
+  #contact .modal-body {
+    align-items: center;
+  }
+  #contact .contact-btn {
+    margin-inline: auto;
+  }
+  .header-md {
+    font-size: 1.8rem;
   }
 }

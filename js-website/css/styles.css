@@ -72,6 +72,7 @@
 }
 
 nav {
+  align-items: center;
   display: flex;
   flex-wrap: row nowrap;
   width: 100%;
@@ -125,6 +126,7 @@ nav {
 
 .search-box-container i {
   position: absolute;
+  color: var(--bg);
   top: 48%;
   transform: translateY(-50%);
   right: 20px;
@@ -133,7 +135,7 @@ nav {
 .search-input {
   background-color: transparent;
   border: none;
-  color: var(--color-text);
+  color: var(--bg);
   outline: none;
   padding: 0.75rem 1.5rem;
 }
@@ -350,6 +352,7 @@ nav {
 
 .modal-header {
   display: flex;
+  align-items: center;
   place-content: center space-between;
   padding-bottom: 1rem;
 }
