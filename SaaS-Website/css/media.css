@@ -34,7 +34,7 @@
   .hamburger {
     display: block;
   }
-  
+
   .navbar-links ul {
     justify-content: center;
     position: absolute;
@@ -42,21 +42,24 @@
     left: -200%;
     width: 100%;
   }
-  
+
   .navbar-links ul li {
     background-color: var(--light);
     margin-block: 5px;
   }
-  
-  .navbar-links button { margin-left: 0; }
-  .hero-gradient { height: 110vh; }
+
+  .navbar-links button {
+    margin-left: 0;
+  }
+  .hero-gradient {
+    height: 110vh;
+  }
 
   .benefits-wrapper {
-    grid-template-areas: 
-    "head head"
-    "one two"
-    "three four"
-    ;
+    grid-template-areas:
+      "head head"
+      "one two"
+      "three four";
   }
 
   .hero-gradient {
@@ -64,16 +67,28 @@
     background-size: cover;
   }
 
-  .hero-logos .logo { position: relative; }
-  .hero-logos { position: relative; }
-  .logo.asana { left: 100px; }
+  .hero-logos {
+    top: 100px;
+  }
+
+  .hero-logos .logo {
+    position: relative;
+  }
+  .hero-logos {
+    position: relative;
+  }
+  .logo.asana {
+    left: 100px;
+  }
 
   .logo.atlassian {
     top: 50px;
     left: 200px;
   }
-  
-  .logo.calendar { left: 300px; }
+
+  .logo.calendar {
+    left: 300px;
+  }
 
   .logo.google-a {
     top: 200px;
@@ -89,14 +104,18 @@
     left: 80px;
     top: -100px;
   }
-  
+
   .logo.weave {
     left: 300px;
-    top:-600px;
+    top: -600px;
   }
 
-  .prospective-wrapper .block-text-left { top: 0px; }
-  .footer-col { margin-right: 20px; }
+  .prospective-wrapper .block-text-left {
+    top: 0px;
+  }
+  .footer-col {
+    margin-right: 20px;
+  }
 
   .hubspot-wrapper .block-text-right {
     position: relative;
@@ -109,7 +128,9 @@
     top: -53px;
   }
 
-  .hire-us-checkbox-labels { margin-bottom: 0px; }
+  .hire-us-checkbox-labels {
+    margin-bottom: 0px;
+  }
 
   .form-links {
     display: flex;
@@ -117,10 +138,12 @@
     align-items: center;
   }
 
-  .hire-us-form-link { margin-block: 7px; }
+  .hire-us-form-link {
+    margin-block: 7px;
+  }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .logo.google {
     left: 250px;
   }
@@ -131,14 +154,13 @@
 
   .pricing-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "one two"
-    "three four"
-    ;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "one two"
+      "three four";
   }
-  
+
   .hire-us-wrapper {
     flex-direction: column;
     padding-left: 30px;
@@ -168,11 +190,11 @@
   .block-text-right .hubspot-logo-wrapper {
     margin-inline: auto;
   }
-  
+
   .block-text-right {
     text-align: center;
   }
-  
+
   .container {
     padding: 50px 20px;
     margin-inline: 20px;
@@ -189,7 +211,7 @@
   }
 
   .hero-text .btn-primary {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
   }
 
   .hero-logos .logo-big {
@@ -243,20 +265,19 @@
   }
 
   .benefits-wrapper {
-    grid-template-areas: 
-    "head"
-    "one"
-    "two"
-    "three"
-    "four"
-    ;
+    grid-template-areas:
+      "head"
+      "one"
+      "two"
+      "three"
+      "four";
     margin-bottom: 100px;
   }
 
   .prospective-wrapper.container {
     margin-top: 0;
   }
-  
+
   .prospective-wrapper {
     flex-direction: column;
     margin-inline: 20px;
@@ -268,7 +289,7 @@
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   .prospective-img {
     width: 110%;
     margin-inline: auto;
@@ -357,15 +378,14 @@
 
   .pricing-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-template-areas: 
-    "header"
-    "main"
-    "main"
-    "one"
-    "two"
-    "three"
-    "four"
-    ;
+    grid-template-areas:
+      "header"
+      "main"
+      "main"
+      "one"
+      "two"
+      "three"
+      "four";
   }
 
   .pricing-grid .center-header {
@@ -378,15 +398,14 @@
   }
 
   .hire-us-grid {
-    grid-template-areas: 
-    "one one"
-    "two two"
-    "three three"
-    "four four"
-    "budget budget"
-    "country country"
-    "comments comments"
-    ;
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "budget budget"
+      "country country"
+      "comments comments";
   }
 
   .hire-us-checkbox-labels {
@@ -410,7 +429,7 @@
   .footer-top-container {
     flex-direction: column;
   }
-  
+
   .footer-col {
     margin-right: 0;
     margin-block: 5px;
@@ -444,7 +463,7 @@
     margin-top: 20px;
     flex-direction: column;
   }
-  
+
   .footer-socials {
     justify-content: center;
     margin-bottom: 10px;
