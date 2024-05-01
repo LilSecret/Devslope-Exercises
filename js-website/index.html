@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>folio</title>
   </head>
   <body>
@@ -147,7 +148,7 @@
       </section>
 
       <section class="reviews">
-        <div>What People Say</div>
+        <div class="header-md">What People Say</div>
         <h2 class="header-md">Trusted by Clients.</h2>
         <div class="review-preview">
           <img src="./assets/images/cube.png" alt="cube">
@@ -164,7 +165,7 @@
               </div>
               <div class="details">
                 <div class="name">Charles Marchant</div>
-                <div class="title">We love Code</div>
+                <div class="title">We love to Code</div>
               </div>
             </div>
           </div>
@@ -191,8 +192,8 @@
                 <img src="./assets/images/ava-1.jpg" alt="avatar">
               </div>
               <div class="details">
-                <div class="name">Ammon Billings</div>
-                <div class="title">Gym Type Bros</div>
+                <div class="name">Devin Anderson</div>
+                <div class="title">Minecraft Creator</div>
               </div>
             </div>
           </div>
@@ -227,20 +228,37 @@
       <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
         <div class="container-fluid">
           <header class="modal-header">
-            <h3>About Page</h3>
+            <h3 class="header-md">About Page</h3>
             <i class="fas fa-times" data-close="about"></i>
           </header>
           <div class="modal-body">
             <div class="modal-img">
               <img class="img-wrapper" src="./assets/images/img6.jpg" alt="head shot">
             </div>
-            <h2>Charles Marchant</h2>
-            <p>Text 1</p>
-            <p>Text 2</p>
-            <div>
-              <div>Email Me:</div>
-              <a href="mailto:chuckm248@gmail.com">chuck248@gmail.com</a>
+            <div class="modal-txt">
+              <h2>Charles Marchant</h2>
+              <p>Full Stack Developer based in Utah, USA. Nobody can see how elegant my code is...so I snapshot it, frame it, and hang it on my wall.</p>
+              <p>I write code like I diet - lean. jk. It's more like Taco Bell Beefy 5 Layers Burritos...which is still leaner than some other foods.</p>
+              <div>
+                <div>Email Me:</div>
+                <a href="mailto:chuckm248@gmail.com">chuck248@gmail.com</a>
+              </div>
             </div>
+          </div>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-vuejs"></i></li>
+              <li><i class="fab fa-angular"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+              <li><i class="fab fa-docker"></i></li>
+              <li><i class="fab fa-android"></i></li>
+              <li><i class="fab fa-github"></i></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -249,20 +267,28 @@
       <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
         <div class="container-fluid">
           <header class="modal-header">
-            <h3>Contact Page</h3>
+            <h3 class="header-md">Contact Page</h3>
             <i class="fas fa-times" data-close="contact"></i>
           </header>
           <div class="modal-body">
-            <div class="modal-img">
-              <img class="img-wrapper" src="./assets/images/img6.jpg" alt="head shot">
+            <div class="contact-text">
+              <h3 class="header-md">Charles Marchant</h3>
+              <p>Have a project or question? Send me a message.</p>
+              <p>I will reply within 48 hours.</p>
             </div>
-            <h2>Charles Marchant</h2>
-            <p>Text 1</p>
-            <p>Text 2</p>
-            <div>
-              <div>Email Me:</div>
-              <a href="mailto:chuckm248@gmail.com">chuck248@gmail.com</a>
-            </div>
+            <form action="#" class="contact-form">
+              <label for="name">
+                <input class="contact-input" name="name" type="text" placeholder="Name" required>
+              </label>
+              <label for="email">
+                <input class="contact-input" name="email" type="email" placeholder="Email" required>
+              </label>
+              <label for="subject">
+                <input class="contact-input" name="subject" type="text" placeholder="Subject" required>
+              </label>
+              <textarea class="contact-input" name="comments" id="" cols="30" rows="3" placeholder="Write your message"></textarea>
+              <input type="submit" value="Send" class="btn btn-primary round-pill contact-btn"></input>
+            </form>
           </div>
         </div>
       </div>

@@ -107,7 +107,7 @@ const createCardModal = (target) => {
     title = title.toUpperCase();
   }
   modalWrapper.setAttribute('id', target.dataset.open);
-  modalWrapper.setAttribute('class', 'modal-wrapper full-site-modal');
+  modalWrapper.setAttribute('class', 'modal-wrapper full-site-modal portfolio-modal');
   modalWrapper.setAttribute('data-animation', 'slideInOutTop');
   modalWrapper.innerHTML = `
   <div class="modal-dialogue">
@@ -120,7 +120,7 @@ const createCardModal = (target) => {
       <img src="./assets/images/portfolio-${image}.jpg" alt="portfolio image">
     </div>
     <div class="text-wrapper">
-      <h5>${heading}</h5>
+      <h3>${heading}</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod r adipiscing elit, sed do eiusmod</p>
     </div>
@@ -130,7 +130,7 @@ const createCardModal = (target) => {
   main.appendChild(modalWrapper);
 }
 
-const removeElm = (parent, elm) => {
+const removeChild = (parent, elm) => {
   setTimeout(() => {
     parent.removeChild(parent.children[elm]);
   }, 800);
@@ -212,24 +212,40 @@ for (const elm of openModal) {
   })
 }
 
-for (const elm of closeModal) {
-  elm.addEventListener("click", function() {
-    setTimeout(() => {
-      this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-    }, 100);
-  })
-}
-
 document.addEventListener('click', (e) => {
-  if (e.target === document.querySelector('.full-site-modal.is-visible')) {
+  if (e.target === document.querySelector('.full-site-modal.is-visible.portfolio-modal')) {
     e.target.classList.remove('is-visible');
-    removeElm(main, main.children.length - 1);
+    removeChild(main, main.children.length - 1);
   }
 })
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape') {
-    document.querySelector('.modal-wrapper.is-visible').classList.remove('is-visible');
-    removeElm(main, main.children.length - 1);
+    let target = document.querySelector('.full-site-modal.is-visible');
+    target.classList.remove('is-visible');
+    if (target.className.includes('portfolio-modal')) {
+      removeChild(main, main.children.length - 1);
+    }
   }
 })
+
+// Dynamic JS
+document.querySelector('body').addEventListener('click', function(event) {
+  for (const elm of closeModal) {
+    elm.addEventListener("click", function() {
+      setTimeout(() => {
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+      }, 100);
+    })
+  }
+});
+
+// Marquee
+const elmsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elms-display');
+const marqueeContent = document.querySelector('.marquee-content');
+
+root.style.setProperty('--marquee-elms', marqueeContent.children.length);
+
+for (let i = 1; i < elmsDisplay; i+=1) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
